@@ -1,0 +1,174 @@
+CRITICAL - 2022-05-17 02:27:46 --> Attempt to read property "nik" on null
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenData.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenData->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 02:37:40 --> Class "App\controllers\userModel" not found
+#0 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenData->update()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-05-17 02:39:41 --> Undefined property: stdClass::$idUser
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenData.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenData->update()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 02:45:18 --> Undefined variable $id
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenData.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenData->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 03:36:29 --> Undefined property: stdClass::$nama
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenRegister.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenRegister->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 03:53:29 --> Call to undefined function App\controllers\dei()
+#0 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenData->update()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-05-17 04:22:51 --> Undefined property: stdClass::$nama
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenRegister.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenRegister->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 04:25:19 --> Undefined property: stdClass::$nama
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenRegister.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenRegister->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 04:26:11 --> Undefined property: stdClass::$nama
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenRegister.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenRegister->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 04:27:41 --> Undefined property: stdClass::$nama
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenRegister.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenRegister->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 04:29:20 --> Undefined property: stdClass::$nama
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenRegister.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenRegister->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 04:30:08 --> Undefined property: stdClass::$nama
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenRegister.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenRegister->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 04:30:10 --> Undefined property: stdClass::$nama
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenRegister.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenRegister->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 04:32:12 --> Undefined property: stdClass::$nama
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenRegister.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenRegister->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 21:44:38 --> Undefined property: stdClass::$jumlah
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 21:45:55 --> Undefined property: stdClass::$jumlah
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 23:20:42 --> syntax error, unexpected single-quoted string " tidak ditemukan", expecting ")"
+#0 /var/www/html/APIBaznas/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/APIBaznas/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(790): class_exists()
+#4 /var/www/html/APIBaznas/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-05-17 23:35:37 --> Attempt to read property "namaAbsenUser" on array
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenGetUser.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIAbsenGetUser->show()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 23:36:30 --> Attempt to read property "namaAbsenUser" on array
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenGetUser.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIAbsenGetUser->show()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 23:37:29 --> Cannot use object of type stdClass as array
+#0 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIAbsenGetUser->show()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-05-17 23:38:41 --> Undefined array key "namaAbsenUser"
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenGetUser.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIAbsenGetUser->show()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-17 23:39:18 --> Cannot use object of type stdClass as array
+#0 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIAbsenGetUser->show()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}

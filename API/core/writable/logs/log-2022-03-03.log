@@ -1,0 +1,21 @@
+CRITICAL - 2022-03-03 22:22:26 --> Class 'App\Models\pendanaanModel' not found
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->index()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-03 22:24:55 --> Class 'App\Models\pendanaanModel' not found
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->index()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-03 22:24:58 --> Class 'App\Models\pendanaanModel' not found
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->index()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

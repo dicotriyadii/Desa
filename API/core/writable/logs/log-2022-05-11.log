@@ -1,0 +1,54 @@
+ERROR - 2022-05-11 02:53:55 --> Error connecting to the database: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+CRITICAL - 2022-05-11 02:53:55 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+#0 C:\xampp\htdocs\APIBaznas\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\APIBaznas\system\Database\BaseBuilder.php(1588): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\APIBaznas\system\Model.php(728): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#3 C:\xampp\htdocs\APIBaznas\app\Controllers\APILogin.php(25): CodeIgniter\Model->__call('getWhere', Array)
+#4 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APILogin->create()
+#5 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APILogin))
+#6 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-05-11 02:55:31 --> Error connecting to the database: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+CRITICAL - 2022-05-11 02:55:31 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+#0 C:\xampp\htdocs\APIBaznas\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\APIBaznas\system\Database\BaseBuilder.php(1588): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\APIBaznas\system\Model.php(728): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#3 C:\xampp\htdocs\APIBaznas\app\Controllers\APILogin.php(25): CodeIgniter\Model->__call('getWhere', Array)
+#4 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APILogin->create()
+#5 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APILogin))
+#6 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-05-11 22:21:23 --> Array to string conversion
+#0 /var/www/html/APIBaznas/app/Controllers/APIGetTransaksi.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIGetTransaksi->show()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-11 22:21:39 --> Array to string conversion
+#0 /var/www/html/APIBaznas/app/Controllers/APIGetTransaksi.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIGetTransaksi->show()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-11 22:26:37 --> Array to string conversion
+#0 /var/www/html/APIBaznas/app/Controllers/APIGetTransaksi.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIGetTransaksi->show()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}

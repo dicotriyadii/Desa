@@ -1,0 +1,72 @@
+CRITICAL - 2022-05-16 12:07:29 --> Trying to access array offset on value of type null
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenLogin.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIAbsenLogin->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-16 21:44:30 --> Undefined property: stdClass::$jumlah
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-16 21:46:43 --> Undefined property: stdClass::$jumlah
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-16 22:30:35 --> Undefined property: stdClass::$nama
+#0 /var/www/html/APIBaznas/app/Controllers/APIAbsenRegister.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\controllers\APIAbsenRegister->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-16 23:00:20 --> syntax error, unexpected token "}"
+#0 /var/www/html/APIBaznas/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/APIBaznas/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(790): class_exists()
+#4 /var/www/html/APIBaznas/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-05-16 23:01:00 --> syntax error, unexpected token "}"
+#0 /var/www/html/APIBaznas/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/APIBaznas/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(790): class_exists()
+#4 /var/www/html/APIBaznas/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-05-16 23:01:16 --> syntax error, unexpected token "}"
+#0 /var/www/html/APIBaznas/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/APIBaznas/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(790): class_exists()
+#4 /var/www/html/APIBaznas/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-05-16 23:02:11 --> syntax error, unexpected token "}"
+#0 /var/www/html/APIBaznas/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/APIBaznas/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(790): class_exists()
+#4 /var/www/html/APIBaznas/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}

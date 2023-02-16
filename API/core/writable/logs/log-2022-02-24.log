@@ -1,0 +1,52 @@
+CRITICAL - 2022-02-24 02:51:21 --> Undefined variable: data
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\masterZakat.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\masterZakat->show('1')
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\masterZakat))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-24 02:51:44 --> Undefined variable: data
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\masterZakat.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\masterZakat->show('1')
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\masterZakat))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-24 22:14:14 --> Class 'App\Controllers\kegiatan' not found
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIKegiatan->index()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIKegiatan))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-24 22:14:38 --> Class 'App\Controllers\kegiatan' not found
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIKegiatan->index()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIKegiatan))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-24 22:15:10 --> Class 'App\Controllers\kegiatanModel' not found
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIKegiatan->index()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIKegiatan))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-02-24 22:15:52 --> Table 'db_baznas.tblkegiatan' doesn't exist
+CRITICAL - 2022-02-24 22:15:52 --> Table 'db_baznas.tblkegiatan' doesn't exist
+#0 C:\xampp\htdocs\APIBaznas\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\APIBaznas\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\APIBaznas\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\APIBaznas\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\APIBaznas\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\APIBaznas\app\Controllers\APIKegiatan.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIKegiatan->index()
+#8 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIKegiatan))
+#9 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}

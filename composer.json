@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.25",
+        "firebase/php-jwt": "^6.3",
+        "dompdf/dompdf": "^2.0"
+    }
+}

@@ -1,0 +1,88 @@
+CRITICAL - 2023-01-20 04:21:33 --> syntax error, unexpected variable "$cekToken"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-20 04:21:45 --> Unknown column 'nik' in 'where clause'
+CRITICAL - 2023-01-20 04:21:45 --> Unknown column 'nik' in 'where clause'
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\PermohonanSKDomisili.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\PermohonanSKDomisili->create()
+#8 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PermohonanSKDomisili))
+#9 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-20 05:04:23 --> syntax error, unexpected variable "$domisili"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-20 05:05:09 --> syntax error, unexpected token "exit"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-20 05:05:48 --> syntax error, unexpected token "exit"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-20 05:05:56 --> syntax error, unexpected token "exit"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-20 05:26:43 --> There is no data to update.
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\Login.php(64): CodeIgniter\Model->update('27', Array)
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\Login->create()
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-20 05:59:51 --> Undefined variable $title_pdf
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Views\suratDomisili.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(1089): CodeIgniter\View\View->render('suratDomisili', Array, true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\ProsesSurat.php(30): view('suratDomisili', Array)
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->buatSurat()
+#6 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#7 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-20 07:13:34 --> syntax error, unexpected variable "$Pdfgenerator"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

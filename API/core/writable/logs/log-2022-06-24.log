@@ -1,0 +1,80 @@
+CRITICAL - 2022-06-24 03:48:31 --> Undefined property: stdClass::$jenisPembayaran
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-06-24 03:49:00 --> Undefined property: stdClass::$jenisPembayaran
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-06-24 03:54:14 --> Undefined property: stdClass::$jenisPembayaran
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-06-24 03:55:20 --> Undefined property: stdClass::$jenisPembayaran
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-06-24 04:51:25 --> Undefined property: stdClass::$jenisPembayaran
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-06-24 04:52:13 --> Undefined property: stdClass::$jenisPembayaran
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-06-24 04:52:32 --> Undefined property: stdClass::$jenisPembayaran
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-06-24 04:54:00 --> Undefined property: stdClass::$jenisPembayaran
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-06-24 05:14:02 --> Undefined property: stdClass::$jenisPembayaran
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-06-24 05:14:57 --> Undefined property: stdClass::$jenisPembayaran
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}

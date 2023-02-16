@@ -1,0 +1,53 @@
+CRITICAL - 2022-06-14 03:33:50 --> Class "App\Controllers\DateTime" not found
+#0 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APITerimaDanaInfaq->show()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-06-14 03:35:00 --> Class "App\Controllers\DateTime" not found
+#0 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APITerimaDanaInfaq->show()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-06-14 03:35:11 --> Class "App\Controllers\DateTime" not found
+#0 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APITerimaDanaInfaq->show()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-06-14 04:03:01 --> Undefined array key "tanggal"
+#0 /var/www/html/APIBaznas/app/Controllers/APITerimaDanaInfaq.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APITerimaDanaInfaq->show()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-06-14 04:04:05 --> Attempt to read property "tanggal" on array
+#0 /var/www/html/APIBaznas/app/Controllers/APITerimaDanaInfaq.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APITerimaDanaInfaq->show()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-06-14 22:43:24 --> Undefined property: stdClass::$jumlah
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-06-14 22:45:32 --> Undefined property: stdClass::$jumlah
+#0 /var/www/html/APIBaznas/app/Controllers/APIPembayaranOnline.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/APIBaznas/system/CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 /var/www/html/APIBaznas/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/APIBaznas/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/APIBaznas/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/APIBaznas/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}

@@ -1,0 +1,139 @@
+CRITICAL - 2022-03-27 23:03:28 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-27 23:03:38 --> Undefined property: stdClass::$jumlahPembayaran
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-27 23:04:10 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-27 23:04:26 --> Trying to get property 'jumlahPembayaran' of non-object
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-27 23:05:03 --> Trying to get property 'tanggal' of non-object
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-27 23:05:32 --> Undefined variable: d
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-27 23:05:56 --> Undefined variable: d
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-27 23:06:16 --> Undefined variable: d
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-27 23:06:27 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-27 23:06:44 --> Undefined property: stdClass::$jumlahPembayaran
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-27 23:09:44 --> Undefined property: stdClass::$jumlahPembayaran
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-27 23:09:59 --> Trying to get property 'jumlahPembayaran' of non-object
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-27 23:10:21 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-27 23:10:32 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-27 23:10:39 --> Undefined offset: 0
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-27 23:11:35 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-27 23:12:58 --> Undefined property: stdClass::$jumlahPembayaran
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-27 23:13:14 --> Undefined property: stdClass::$jumlahPembayaran
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPendanaan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPendanaan->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPendanaan))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

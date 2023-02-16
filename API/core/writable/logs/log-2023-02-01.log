@@ -1,0 +1,34 @@
+CRITICAL - 2023-02-01 03:13:58 --> Call to a member function LIKE() on string
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\CatatanStatusIbu->create()
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatatanStatusIbu))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2023-02-01 03:15:03 --> Unknown column 'nama_desa_wisma' in 'field list'
+CRITICAL - 2023-02-01 03:15:03 --> Unknown column 'nama_desa_wisma' in 'field list'
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\APIDesaDigital\core\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\Dasawisma.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\Dasawisma->create()
+#9 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dasawisma))
+#10 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-01 03:27:17 --> Call to a member function like() on string
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\CatatanStatusIbu->create()
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatatanStatusIbu))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-02-01 22:56:24 --> Undefined array key 0
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\CatatanStatusIbu.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 67)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\CatatanStatusIbu->create()
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatatanStatusIbu))
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

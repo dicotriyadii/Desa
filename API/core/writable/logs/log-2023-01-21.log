@@ -1,0 +1,245 @@
+CRITICAL - 2023-01-21 12:37:36 --> syntax error, unexpected single-quoted string "data", expecting "]"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-21 12:37:49 --> syntax error, unexpected single-quoted string "data", expecting "]"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-21 12:38:22 --> Undefined variable $dataUser
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\Login.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\Login->create()
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-21 13:17:59 --> syntax error, unexpected variable "$cekPermohonan"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-21 13:18:09 --> syntax error, unexpected token "=>"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-21 13:19:03 --> syntax error, unexpected token "=>"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-21 13:20:54 --> syntax error, unexpected token "return"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-21 13:34:13 --> Undefined variable $warga
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\StatusPermohonan.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\StatusPermohonan->create()
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatusPermohonan))
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-21 13:34:53 --> Class "App\Controllers\Model_warga" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\StatusPermohonan->create()
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatusPermohonan))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-21 13:56:03 --> syntax error, unexpected token "=="
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-21 14:06:14 --> Class "App\Controllers\Model_jenisSurat" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '8')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-21 14:06:22 --> Undefined variable $idDomisili
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\ProsesSurat.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '8')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-21 14:06:52 --> compact(): Undefined variable $dataDomisili
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'compact(): Unde...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\ProsesSurat.php(32): compact('dataWarga', 'dataDomisili')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '8')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-21 14:07:03 --> Undefined variable $dataDomisili
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Views\suratDomisili.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(1089): CodeIgniter\View\View->render('suratDomisili', Array, true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\ProsesSurat.php(32): view('suratDomisili', Array)
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '8')
+#6 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#7 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 14:07:36 --> Undefined variable $dataSurat
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Views\suratDomisili.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(1089): CodeIgniter\View\View->render('suratDomisili', Array, true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\ProsesSurat.php(32): view('suratDomisili', Array)
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '8')
+#6 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#7 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 14:07:46 --> compact(): Undefined variable $dataSurat
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'compact(): Unde...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\ProsesSurat.php(32): compact('dataWarga', 'dataSurat')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '8')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-21 14:07:54 --> Undefined variable $datasurat
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\ProsesSurat.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '8')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-21 14:08:00 --> Undefined variable $dataDomisili
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Views\suratDomisili.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(1089): CodeIgniter\View\View->render('suratDomisili', Array, true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\ProsesSurat.php(32): view('suratDomisili', Array)
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '8')
+#6 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#7 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 14:09:50 --> Undefined array key "jenisSurat"
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Views\suratDomisili.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(1089): CodeIgniter\View\View->render('suratDomisili', Array, true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\ProsesSurat.php(32): view('suratDomisili', Array)
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '8')
+#6 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#7 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 14:27:24 --> There is no data to update.
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\PersetujuanSurat.php(41): CodeIgniter\Model->update('8', Array)
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\PersetujuanSurat->create()
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersetujuanSurat))
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-21 14:32:40 --> Undefined variable $response
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\PersetujuanSurat.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 75)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\PersetujuanSurat->create()
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersetujuanSurat))
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-21 18:04:12 --> Undefined variable $domisili
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\PersetujuanSurat.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\PersetujuanSurat->create()
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersetujuanSurat))
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-21 20:56:52 --> Class "App\Controllers\Model_user" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\Profile->show('123123123')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2023-01-21 21:03:47 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2023-01-21 21:03:47 --> Unknown column 'username' in 'where clause'
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\Profile.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\Profile->create()
+#8 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#9 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-21 21:04:12 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2023-01-21 21:04:12 --> Unknown column 'username' in 'where clause'
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\Profile.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\Profile->create()
+#8 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#9 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-21 21:05:10 --> Undefined variable $cekToken
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\Profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\Profile->create()
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-21 21:16:00 --> syntax error, unexpected variable "$dataSurat"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-21 21:16:33 --> syntax error, unexpected single-quoted string "data", expecting "]"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

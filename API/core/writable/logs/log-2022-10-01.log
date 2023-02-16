@@ -1,0 +1,16 @@
+CRITICAL - 2022-10-01 02:31:46 --> Undefined variable $nilai
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPembayaranOnline.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 94)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPembayaranOnline))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-10-01 02:42:19 --> Undefined property: stdClass::$keterangan
+#0 C:\xampp\htdocs\APIBaznas\app\Controllers\APIPembayaranOnline.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 101)
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIPembayaranOnline->create()
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIPembayaranOnline))
+#3 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

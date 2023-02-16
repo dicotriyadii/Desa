@@ -1,0 +1,60 @@
+CRITICAL - 2023-01-27 03:47:46 --> Class "App\Controllers\CURLFILE" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '13')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-27 03:50:27 --> Class "App\Controllers\CURLFILE" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '13')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-27 03:54:23 --> Class "App\Controllers\http\Client" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '13')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-27 03:55:02 --> Class "App\Controllers\Client" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '13')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-27 03:56:02 --> Class "App\Controllers\CURLFILE" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '13')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-27 04:03:39 --> Class "App\Controllers\CURLFILE" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '13')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-27 04:03:56 --> Class "App\Controllers\CURLFile" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\ProsesSurat->surat('123123123', '13')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProsesSurat))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-27 04:04:19 --> syntax error, unexpected token "/"
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-27 04:09:48 --> Unclosed '{' on line 12
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

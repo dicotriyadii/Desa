@@ -1,0 +1,98 @@
+CRITICAL - 2022-03-02 06:48:13 --> Class 'App\Controllers\rekekingModel' not found
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIRekening->index()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIRekening))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-02 06:48:42 --> Class 'App\Controllers\rekeningModel' not found
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIRekening->index()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIRekening))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-02 06:49:08 --> Class 'App\Models\rekeningModel' not found
+#0 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIRekening->index()
+#1 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIRekening))
+#2 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-02 11:18:42 --> There is no data to insert.
+#0 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(NULL, 'insert')
+#2 C:\xampp\htdocs\APIBaznas\system\Model.php(625): CodeIgniter\BaseModel->insert(NULL, true)
+#3 C:\xampp\htdocs\APIBaznas\app\Controllers\APIUser.php(41): CodeIgniter\Model->insert(NULL)
+#4 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIUser->create()
+#5 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIUser))
+#6 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-02 11:25:26 --> There is no data to insert.
+#0 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(NULL, 'insert')
+#2 C:\xampp\htdocs\APIBaznas\system\Model.php(625): CodeIgniter\BaseModel->insert(NULL, true)
+#3 C:\xampp\htdocs\APIBaznas\app\Controllers\APIUser.php(41): CodeIgniter\Model->insert(NULL)
+#4 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIUser->create()
+#5 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIUser))
+#6 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-02 11:27:47 --> There is no data to insert.
+#0 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(NULL, 'insert')
+#2 C:\xampp\htdocs\APIBaznas\system\Model.php(625): CodeIgniter\BaseModel->insert(NULL, true)
+#3 C:\xampp\htdocs\APIBaznas\app\Controllers\APIUser.php(41): CodeIgniter\Model->insert(NULL)
+#4 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIUser->create()
+#5 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIUser))
+#6 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-02 22:55:23 --> There is no data to insert.
+#0 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(NULL, 'insert')
+#2 C:\xampp\htdocs\APIBaznas\system\Model.php(625): CodeIgniter\BaseModel->insert(NULL, true)
+#3 C:\xampp\htdocs\APIBaznas\app\Controllers\APIUser.php(41): CodeIgniter\Model->insert(NULL)
+#4 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIUser->create()
+#5 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIUser))
+#6 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-02 22:55:24 --> There is no data to insert.
+#0 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(NULL, 'insert')
+#2 C:\xampp\htdocs\APIBaznas\system\Model.php(625): CodeIgniter\BaseModel->insert(NULL, true)
+#3 C:\xampp\htdocs\APIBaznas\app\Controllers\APIUser.php(41): CodeIgniter\Model->insert(NULL)
+#4 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIUser->create()
+#5 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIUser))
+#6 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-02 22:55:24 --> There is no data to insert.
+#0 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(NULL, 'insert')
+#2 C:\xampp\htdocs\APIBaznas\system\Model.php(625): CodeIgniter\BaseModel->insert(NULL, true)
+#3 C:\xampp\htdocs\APIBaznas\app\Controllers\APIUser.php(41): CodeIgniter\Model->insert(NULL)
+#4 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIUser->create()
+#5 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIUser))
+#6 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-02 22:55:24 --> There is no data to insert.
+#0 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\APIBaznas\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(NULL, 'insert')
+#2 C:\xampp\htdocs\APIBaznas\system\Model.php(625): CodeIgniter\BaseModel->insert(NULL, true)
+#3 C:\xampp\htdocs\APIBaznas\app\Controllers\APIUser.php(41): CodeIgniter\Model->insert(NULL)
+#4 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(825): App\Controllers\APIUser->create()
+#5 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIUser))
+#6 C:\xampp\htdocs\APIBaznas\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\APIBaznas\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\APIBaznas\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}

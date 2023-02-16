@@ -1,0 +1,9 @@
+CRITICAL - 2023-02-10 03:55:37 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\TambahBarang.php(65): CodeIgniter\Model->__call('getBarang', Array)
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\TambahBarang->create()
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahBarang))
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

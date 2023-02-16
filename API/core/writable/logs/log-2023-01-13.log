@@ -1,0 +1,99 @@
+CRITICAL - 2023-01-13 01:07:53 --> Class "Kint\Renderer\Renderer" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(250): config('Config\\Kint')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(186): CodeIgniter\CodeIgniter->initializeKint()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(28): require('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-01-13 01:08:04 --> Class "Kint\Renderer\Renderer" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(250): config('Config\\Kint')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(186): CodeIgniter\CodeIgniter->initializeKint()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(28): require('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-01-13 01:12:40 --> Class "Kint\Renderer\Renderer" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(250): config('Config\\Kint')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(186): CodeIgniter\CodeIgniter->initializeKint()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(28): require('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-01-13 01:14:13 --> Class "Kint\Renderer\Renderer" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(250): config('Config\\Kint')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(186): CodeIgniter\CodeIgniter->initializeKint()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(28): require('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-01-13 01:14:25 --> Class "Kint\Renderer\Renderer" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(250): config('Config\\Kint')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(186): CodeIgniter\CodeIgniter->initializeKint()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(28): require('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-01-13 01:15:18 --> Class "Kint\Renderer\Renderer" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(250): config('Config\\Kint')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(186): CodeIgniter\CodeIgniter->initializeKint()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(28): require('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-01-13 01:15:28 --> Class "Kint\Renderer\Renderer" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(250): config('Config\\Kint')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(186): CodeIgniter\CodeIgniter->initializeKint()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(28): require('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-01-13 01:25:38 --> Class "Kint\Renderer\Renderer" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(250): config('Config\\Kint')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(186): CodeIgniter\CodeIgniter->initializeKint()
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(28): require('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-01-13 01:33:55 --> Class "App\Controllers\BaseController" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-13 01:34:23 --> Class "App\Controllers\BaseController" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-13 01:34:44 --> Class "App\Controllers\BaseController" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Router\Router.php(518): include_once()
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('/')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-13 01:35:12 --> Class "App\Controllers\ResourceController" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Router\Router.php(518): include_once()
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('/')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-13 01:35:50 --> Class "Dompdf\Options" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\Home.php(31): App\Libraries\Pdfgenerator->generate('<!-- DEBUG-VIEW...', 'laporan_penjual...', 'A4', 'portrait')
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\Home->view_pdf()
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
