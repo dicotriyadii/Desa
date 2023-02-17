@@ -104,7 +104,7 @@ class Users extends BaseController
             $valid = $this->validate([
                 'nik' => [
                     'label' => 'Nama Anggota',
-                    'rules' => 'required|is_unique[tbl_struktur_pkk.nik]',
+                    'rules' => 'required|is_unique[tbl_user_dasawisma.nik]',
                     'errors' => [
                         'required' => '{field} tidak boleh kosong',
                         'is_unique' => '{field} sudah Ada'

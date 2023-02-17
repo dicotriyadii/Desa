@@ -38,11 +38,16 @@ class DasaWisma extends BaseController
         $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
         $nama_jabatan = $kode_dasa_wisma['jabatan'];
 
-        $data = [
-            'jabatan' => $nama_jabatan,
-            'title' => 'Dasa Wisma - Dashboard Dasa Wisma',
-        ];
-        return view('auth/dasaWisma/index', $data);
+        if ($nama_jabatan == 'Anggota') {
+            return redirect()->to(base_url() . '/CatatanKeluarga');;
+        } else {
+
+            $data = [
+                'jabatan' => $nama_jabatan,
+                'title' => 'Dasa Wisma - Dashboard Dasa Wisma',
+            ];
+            return view('auth/dasaWisma/index', $data);
+        }
     }
 
     public function getdata()
