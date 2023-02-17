@@ -54,7 +54,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'db_desabandarkuala',
+        'database' => 'db_desaujungrambe',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
