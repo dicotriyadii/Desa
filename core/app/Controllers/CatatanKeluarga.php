@@ -193,6 +193,91 @@ class CatatanKeluarga extends BaseController
                         'required' => '{field} tidak boleh kosong'
                     ]
                 ],
+                'jmlh_kk' => [
+                    'label' => 'Jumlah KK',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_total_laki_laki' => [
+                    'label' => 'Jumlah Total Laki-Laki',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_total_perempuan' => [
+                    'label' => 'Jumlah Total Perempuan',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_balita_laki_laki' => [
+                    'label' => 'Jumlah Balita Laki-Laki',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_balita_perempuan' => [
+                    'label' => 'Jumlah Balita Perempuan',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'pus' => [
+                    'label' => 'PUS',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'wus' => [
+                    'label' => 'WUS',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_ibu_hamil' => [
+                    'label' => 'Jumlah Ibu Hamil',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jlmh_ibu_menyusui' => [
+                    'label' => 'Jumlah Ibu Menyusui',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_lansia' => [
+                    'label' => 'Jumlah Lansia',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_3_buta' => [
+                    'label' => 'Jumlah 3 Buta',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_jamban_keluarga' => [
+                    'label' => 'Jumlah Jamban Keluarga',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+
             ]);
             if (!$valid) {
                 $msg = [
@@ -207,6 +292,18 @@ class CatatanKeluarga extends BaseController
                         'nama_kegiatan' => $validation->getError('nama_kegiatan'),
                         'makanan_pokok' => $validation->getError('makanan_pokok'),
                         'keterangan' => $validation->getError('keterangan'),
+                        'jmlh_kk' => $validation->getError('jmlh_kk'),
+                        'jmlh_total_laki_laki' => $validation->getError('jmlh_total_laki_laki'),
+                        'jmlh_total_perempuan' => $validation->getError('jmlh_total_perempuan'),
+                        'jmlh_balita_laki_laki' => $validation->getError('jmlh_balita_laki_laki'),
+                        'jmlh_balita_perempuan' => $validation->getError('jmlh_balita_perempuan'),
+                        'pus' => $validation->getError('pus'),
+                        'wus' => $validation->getError('wus'),
+                        'jmlh_ibu_hamil' => $validation->getError('jmlh_ibu_hamil'),
+                        'jlmh_ibu_menyusui' => $validation->getError('jlmh_ibu_menyusui'),
+                        'jmlh_lansia' => $validation->getError('jmlh_lansia'),
+                        'jmlh_3_buta' => $validation->getError('jmlh_3_buta'),
+                        'jmlh_jamban_keluarga' => $validation->getError('jmlh_jamban_keluarga'),
                     ]
                 ];
             } else {
@@ -232,6 +329,18 @@ class CatatanKeluarga extends BaseController
 
                 $tgl = $this->request->getVar('tgl');
                 $nik = $this->request->getVar('nik');
+                $jmlh_kk = $this->request->getVar('jmlh_kk');
+                $jmlh_total_laki_laki = $this->request->getVar('jmlh_total_laki_laki');
+                $jmlh_total_perempuan = $this->request->getVar('jmlh_total_perempuan');
+                $jmlh_balita_laki_laki = $this->request->getVar('jmlh_balita_laki_laki');
+                $jmlh_balita_perempuan = $this->request->getVar('jmlh_balita_perempuan');
+                $pus = $this->request->getVar('pus');
+                $wus = $this->request->getVar('wus');
+                $jmlh_ibu_hamil = $this->request->getVar('jmlh_ibu_hamil');
+                $jlmh_ibu_menyusui = $this->request->getVar('jlmh_ibu_menyusui');
+                $jmlh_lansia = $this->request->getVar('jmlh_lansia');
+                $jmlh_3_buta = $this->request->getVar('jmlh_3_buta');
+                $jmlh_jamban_keluarga = $this->request->getVar('jmlh_jamban_keluarga');
                 $berkebutuhan_khusus = $this->request->getVar('berkebutuhan_khusus');
                 $kriteria_rumah = $this->request->getVar('kriteria_rumah');
                 $sumber_air = $this->request->getVar('sumber_air');
@@ -247,6 +356,18 @@ class CatatanKeluarga extends BaseController
                     'kode_desa' => $desa,
                     'kode_dasa_wisma' => $dasa_wisma,
                     'nik' => $nik,
+                    'jumlah_kk' => $jmlh_kk,
+                    'jml_laki_laki' => $jmlh_total_laki_laki,
+                    'jml_perempuan' => $jmlh_total_perempuan,
+                    'balita_laki_laki' => $jmlh_balita_laki_laki,
+                    'balita_perempuan' => $jmlh_balita_perempuan,
+                    'pus' => $pus,
+                    'wus' =>  $wus,
+                    'ibu_hamil' => $jmlh_ibu_hamil,
+                    'ibu_menyusui' => $jlmh_ibu_menyusui,
+                    'lansia' =>  $jmlh_lansia,
+                    '3_buta' =>  $jmlh_3_buta,
+                    'jml_jamban_keluarga' => $jmlh_jamban_keluarga,
                     'berkebutuhan_khusus' => $berkebutuhan_khusus,
                     'kriteria_rumah' => $kriteria_rumah,
                     'sumber_air' => $sumber_air,
@@ -591,6 +712,91 @@ class CatatanKeluarga extends BaseController
                         'required' => '{field} tidak boleh kosong'
                     ]
                 ],
+                'jmlh_kk' => [
+                    'label' => 'Jumlah KK',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_total_laki_laki' => [
+                    'label' => 'Jumlah Total Laki-Laki',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_total_perempuan' => [
+                    'label' => 'Jumlah Total Perempuan',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_balita_laki_laki' => [
+                    'label' => 'Jumlah Balita Laki-Laki',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_balita_perempuan' => [
+                    'label' => 'Jumlah Balita Perempuan',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'pus' => [
+                    'label' => 'PUS',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'wus' => [
+                    'label' => 'WUS',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_ibu_hamil' => [
+                    'label' => 'Jumlah Ibu Hamil',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jlmh_ibu_menyusui' => [
+                    'label' => 'Jumlah Ibu Menyusui',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_lansia' => [
+                    'label' => 'Jumlah Lansia',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_3_buta' => [
+                    'label' => 'Jumlah 3 Buta',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'jmlh_jamban_keluarga' => [
+                    'label' => 'Jumlah Jamban Keluarga',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+
             ]);
             if (!$valid) {
                 $msg = [
@@ -605,6 +811,18 @@ class CatatanKeluarga extends BaseController
                         'nama_kegiatan' => $validation->getError('nama_kegiatan'),
                         'makanan_pokok' => $validation->getError('makanan_pokok'),
                         'keterangan' => $validation->getError('keterangan'),
+                        'jmlh_kk' => $validation->getError('jmlh_kk'),
+                        'jmlh_total_laki_laki' => $validation->getError('jmlh_total_laki_laki'),
+                        'jmlh_total_perempuan' => $validation->getError('jmlh_total_perempuan'),
+                        'jmlh_balita_laki_laki' => $validation->getError('jmlh_balita_laki_laki'),
+                        'jmlh_balita_perempuan' => $validation->getError('jmlh_balita_perempuan'),
+                        'pus' => $validation->getError('pus'),
+                        'wus' => $validation->getError('wus'),
+                        'jmlh_ibu_hamil' => $validation->getError('jmlh_ibu_hamil'),
+                        'jlmh_ibu_menyusui' => $validation->getError('jlmh_ibu_menyusui'),
+                        'jmlh_lansia' => $validation->getError('jmlh_lansia'),
+                        'jmlh_3_buta' => $validation->getError('jmlh_3_buta'),
+                        'jmlh_jamban_keluarga' => $validation->getError('jmlh_jamban_keluarga'),
                     ]
                 ];
             } else {
@@ -631,6 +849,18 @@ class CatatanKeluarga extends BaseController
                 $id = $this->request->getVar('idCatatanKeluarga');
                 $tgl = $this->request->getVar('tgl');
                 $nik = $this->request->getVar('nik');
+                $jmlh_kk = $this->request->getVar('jmlh_kk');
+                $jmlh_total_laki_laki = $this->request->getVar('jmlh_total_laki_laki');
+                $jmlh_total_perempuan = $this->request->getVar('jmlh_total_perempuan');
+                $jmlh_balita_laki_laki = $this->request->getVar('jmlh_balita_laki_laki');
+                $jmlh_balita_perempuan = $this->request->getVar('jmlh_balita_perempuan');
+                $pus = $this->request->getVar('pus');
+                $wus = $this->request->getVar('wus');
+                $jmlh_ibu_hamil = $this->request->getVar('jmlh_ibu_hamil');
+                $jlmh_ibu_menyusui = $this->request->getVar('jlmh_ibu_menyusui');
+                $jmlh_lansia = $this->request->getVar('jmlh_lansia');
+                $jmlh_3_buta = $this->request->getVar('jmlh_3_buta');
+                $jmlh_jamban_keluarga = $this->request->getVar('jmlh_jamban_keluarga');
                 $berkebutuhan_khusus = $this->request->getVar('berkebutuhan_khusus');
                 $kriteria_rumah = $this->request->getVar('kriteria_rumah');
                 $sumber_air = $this->request->getVar('sumber_air');
@@ -646,6 +876,18 @@ class CatatanKeluarga extends BaseController
                     'kode_desa' => $desa,
                     'kode_dasa_wisma' => $dasa_wisma,
                     'nik' => $nik,
+                    'jumlah_kk' => $jmlh_kk,
+                    'jml_laki_laki' => $jmlh_total_laki_laki,
+                    'jml_perempuan' => $jmlh_total_perempuan,
+                    'balita_laki_laki' => $jmlh_balita_laki_laki,
+                    'balita_perempuan' => $jmlh_balita_perempuan,
+                    'pus' => $pus,
+                    'wus' =>  $wus,
+                    'ibu_hamil' => $jmlh_ibu_hamil,
+                    'ibu_menyusui' => $jlmh_ibu_menyusui,
+                    'lansia' =>  $jmlh_lansia,
+                    '3_buta' =>  $jmlh_3_buta,
+                    'jml_jamban_keluarga' => $jmlh_jamban_keluarga,
                     'berkebutuhan_khusus' => $berkebutuhan_khusus,
                     'kriteria_rumah' => $kriteria_rumah,
                     'sumber_air' => $sumber_air,

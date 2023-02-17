@@ -8,7 +8,7 @@ class CatatanKeluarga_Model extends Model
 {
     protected $table      = 'tb_catatan_keluarga';
     protected $primaryKey = 'idCatatanKeluarga';
-    protected $allowedFields = ['kode_kecamatan', 'kode_desa', 'kode_dasa_wisma', 'nik', 'berkebutuhan_khusus', 'kriteria_rumah', 'sumber_air', 'tempat_sampah', 'jenis_kegiatan_id', 'nama_kegiatan', 'makanan_pokok', 'keterangan', 'tgl'];
+    protected $allowedFields = ['kode_kecamatan', 'kode_desa', 'kode_dasa_wisma', 'nik', 'jumlah_kk', 'jml_laki_laki', 'jml_perempuan', 'balita_laki_laki', 'balita_perempuan', 'pus', 'wus', 'ibu_hamil', 'ibu_menyusui', 'lansia', '3_buta', 'jml_jamban_keluarga', 'berkebutuhan_khusus', 'kriteria_rumah', 'sumber_air', 'tempat_sampah', 'jenis_kegiatan_id', 'nama_kegiatan', 'makanan_pokok', 'keterangan', 'tgl'];
 
     protected $curl;
 
@@ -101,30 +101,30 @@ class CatatanKeluarga_Model extends Model
             ->get()->getResultArray();
     }
 
-    public function post_catatan_keluarga($kode_nik, $kode_token, $kecamatan, $desa, $dasa_wisma, $tgl, $nik, $berkebutuhan_khusus, $kriteria_rumah, $sumber_air, $tempat_sampah, $jenis_kegiatan_id, $nama_kegiatan, $makanan_pokok, $keterangan)
-    {
-        $response = $this->curl->request('POST', 'http://localhost/ujungRambe/API/catatanKeluarga', [
-            'Content-Type' => 'application/json',
-            'json' => [
-                'nik' => $kode_nik,
-                'token' => $kode_token,
-                'kodeKecamatan' => $kecamatan,
-                'kodeDesa' => $desa,
-                'kodeDasaWisma' => $dasa_wisma,
-                'nik' => $nik,
-                'berkebutuhanKhusus' => $berkebutuhan_khusus,
-                'kriteriaRumahId' => $kriteria_rumah,
-                'sumberAirId' =>  $sumber_air,
-                'tempatSampahId' => $tempat_sampah,
-                'jenisKegiatanId' => $jenis_kegiatan_id,
-                'namaKegiatan' => $nama_kegiatan,
-                'makananPokokId' => $makanan_pokok,
-                'keterangan' => $keterangan,
-                'tgl' => $tgl
-            ]
-        ]);
+    // public function post_catatan_keluarga($kode_nik, $kode_token, $kecamatan, $desa, $dasa_wisma, $tgl, $nik, $berkebutuhan_khusus, $kriteria_rumah, $sumber_air, $tempat_sampah, $jenis_kegiatan_id, $nama_kegiatan, $makanan_pokok, $keterangan)
+    // {
+    //     $response = $this->curl->request('POST', 'http://localhost/ujungRambe/API/catatanKeluarga', [
+    //         'Content-Type' => 'application/json',
+    //         'json' => [
+    //             'nik' => $kode_nik,
+    //             'token' => $kode_token,
+    //             'kodeKecamatan' => $kecamatan,
+    //             'kodeDesa' => $desa,
+    //             'kodeDasaWisma' => $dasa_wisma,
+    //             'nik' => $nik,
+    //             'berkebutuhanKhusus' => $berkebutuhan_khusus,
+    //             'kriteriaRumahId' => $kriteria_rumah,
+    //             'sumberAirId' =>  $sumber_air,
+    //             'tempatSampahId' => $tempat_sampah,
+    //             'jenisKegiatanId' => $jenis_kegiatan_id,
+    //             'namaKegiatan' => $nama_kegiatan,
+    //             'makananPokokId' => $makanan_pokok,
+    //             'keterangan' => $keterangan,
+    //             'tgl' => $tgl
+    //         ]
+    //     ]);
 
-        $result = json_decode($response->getBody(), TRUE);
-        return $result;
-    }
+    //     $result = json_decode($response->getBody(), TRUE);
+    //     return $result;
+    // }
 }
