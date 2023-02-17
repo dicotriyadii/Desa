@@ -1,13 +1,16 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE HTML>
 
 <html>
 
 <head>
-
-	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title><?= $title ?></title>
 
 	<style type="text/css">
+		* {
+			font-family: DejaVu Sans !important;
+		}
+
 		body,
 		div,
 		table,

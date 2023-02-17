@@ -1,13 +1,16 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE HTML>
 
 <html>
 
 <head>
-
-	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title><?= $title ?></title>
 
 	<style type="text/css">
+		* {
+			font-family: DejaVu Sans !important;
+		}
+
 		body,
 		div,
 		table,
@@ -435,32 +438,32 @@
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom>
 					<?php if ($l['kriteria_rumah'] == 6) : ?>
-						&#10060
+						×
 					<?php elseif ($l['kriteria_rumah'] == 5) : ?>
-						&#9989
+						✓
 					<?php elseif ($l['kriteria_rumah'] == 4) : ?>
-						&#9989
+						✓
 					<?php elseif ($l['kriteria_rumah'] == 3) : ?>
-						&#10060
+						×
 					<?php elseif ($l['kriteria_rumah'] == 2) : ?>
-						&#9989
+						✓
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="16" sdnum="1033;">
 					<?php if ($l['kriteria_rumah'] == 6) : ?>
-						&#9989
+						✓
 					<?php elseif ($l['kriteria_rumah'] == 5) : ?>
-						&#10060
+						×
 					<?php elseif ($l['kriteria_rumah'] == 4) : ?>
-						&#10060
+						×
 					<?php elseif ($l['kriteria_rumah'] == 3) : ?>
-						&#9989
+						✓
 					<?php elseif ($l['kriteria_rumah'] == 2) : ?>
-						&#10060
+						×
 					<?php else : ?>
-						&#9989
+						✓
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
@@ -468,150 +471,150 @@
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
 					<?php if ($l['kriteria_rumah'] == 6) : ?>
-						&#9989
+						✓
 					<?php elseif ($l['kriteria_rumah'] == 5) : ?>
-						&#10060
+						×
 					<?php elseif ($l['kriteria_rumah'] == 4) : ?>
-						&#10060
+						×
 					<?php elseif ($l['kriteria_rumah'] == 3) : ?>
-						&#9989
+						✓
 					<?php elseif ($l['kriteria_rumah'] == 2) : ?>
-						&#9989
+						✓
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
 					<?php if ($l['kriteria_rumah'] == 6) : ?>
-						&#9989
+						✓
 					<?php elseif ($l['kriteria_rumah'] == 5) : ?>
-						&#9989
+						✓
 					<?php elseif ($l['kriteria_rumah'] == 4) : ?>
-						&#9989
+						✓
 					<?php elseif ($l['kriteria_rumah'] == 3) : ?>
-						&#9989
+						✓
 					<?php elseif ($l['kriteria_rumah'] == 2) : ?>
-						&#9989
+						✓
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
 					<?php if ($l['kriteria_rumah'] == 6) : ?>
-						&#10060
+						×
 					<?php elseif ($l['kriteria_rumah'] == 5) : ?>
-						&#10060
+						×
 					<?php elseif ($l['kriteria_rumah'] == 4) : ?>
-						&#9989
+						✓
 					<?php elseif ($l['kriteria_rumah'] == 3) : ?>
-						&#9989
+						✓
 					<?php elseif ($l['kriteria_rumah'] == 2) : ?>
-						&#9989
+						✓
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="1" sdnum="1033;">
 					<?php if ($l['jenis_sumber_air'] == 'PDAM') : ?>
-						&#9989
+						✓
 					<?php elseif ($l['jenis_sumber_air'] == 'SUMUR') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_sumber_air'] == 'LAINNYA') : ?>
-						&#10060
+						×
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
 					<?php if ($l['jenis_sumber_air'] == 'PDAM') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_sumber_air'] == 'SUMUR') : ?>
-						&#9989
+						✓
 					<?php elseif ($l['jenis_sumber_air'] == 'LAINNYA') : ?>
-						&#10060
+						×
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
 					<?php if ($l['jenis_sumber_air'] == 'PDAM') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_sumber_air'] == 'SUMUR') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_sumber_air'] == 'LAINNYA') : ?>
-						&#9989
+						✓
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
 					<?php if ($l['makanan_pokok'] == 'BERAS') : ?>
-						&#9989
+						✓
 					<?php elseif ($l['makanan_pokok'] == 'NON BERAS') : ?>
-						&#10060
+						×
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
 					<?php if ($l['makanan_pokok'] == 'BERAS') : ?>
-						&#10060
+						×
 					<?php elseif ($l['makanan_pokok'] == 'NON BERAS') : ?>
-						&#9989
+						✓
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
 					<?php if ($l['jenis_kegiatan'] == 'UP2K' or $l['jenis_kegiatan'] == 'PENGEMBANGAN KEHIDUPAN BERKOPERASI' or $l['jenis_kegiatan'] == 'PENDIDIKAN DAN KETRAMPILAN' or $l['jenis_kegiatan'] == 'PENGHAYATAN DAN PENGAMALAN PANCASILA') : ?>
-						&#9989
+						✓
 					<?php elseif ($l['jenis_kegiatan'] == 'PEMANFAATAN TANAH PEKARANGAN' or $l['jenis_kegiatan'] == 'GOTONG ROYONG' or $l['jenis_kegiatan'] == 'KESEHATAN') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_kegiatan'] == 'INDUSTRI RUMAH TANGGA' or $l['jenis_kegiatan'] == 'PANGAN' or $l['jenis_kegiatan'] == 'SANDANG') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_kegiatan'] == 'KESEHATAN LINGKUNGAN' or $l['jenis_kegiatan'] == 'GOTONG ROYONG' or $l['jenis_kegiatan'] == 'PERENCANAAN SEHAT' or $l['jenis_kegiatan'] == 'KESEHATAN') : ?>
-						&#10060
+						×
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
 					<?php if ($l['jenis_kegiatan'] == 'UP2K' or $l['jenis_kegiatan'] == 'PENGEMBANGAN KEHIDUPAN BERKOPERASI' or $l['jenis_kegiatan'] == 'PENDIDIKAN DAN KETRAMPILAN' or $l['jenis_kegiatan'] == 'PENGHAYATAN DAN PENGAMALAN PANCASILA') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_kegiatan'] == 'PEMANFAATAN TANAH PEKARANGAN' or $l['jenis_kegiatan'] == 'GOTONG ROYONG' or $l['jenis_kegiatan'] == 'KESEHATAN') : ?>
-						&#9989
+						✓
 					<?php elseif ($l['jenis_kegiatan'] == 'INDUSTRI RUMAH TANGGA' or $l['jenis_kegiatan'] == 'PANGAN' or $l['jenis_kegiatan'] == 'SANDANG') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_kegiatan'] == 'KESEHATAN LINGKUNGAN' or $l['jenis_kegiatan'] == 'GOTONG ROYONG' or $l['jenis_kegiatan'] == 'PERENCANAAN SEHAT' or $l['jenis_kegiatan'] == 'KESEHATAN') : ?>
-						&#10060
+						×
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
 					<?php if ($l['jenis_kegiatan'] == 'UP2K' or $l['jenis_kegiatan'] == 'PENGEMBANGAN KEHIDUPAN BERKOPERASI' or $l['jenis_kegiatan'] == 'PENDIDIKAN DAN KETRAMPILAN' or $l['jenis_kegiatan'] == 'PENGHAYATAN DAN PENGAMALAN PANCASILA') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_kegiatan'] == 'PEMANFAATAN TANAH PEKARANGAN' or $l['jenis_kegiatan'] == 'GOTONG ROYONG' or $l['jenis_kegiatan'] == 'KESEHATAN') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_kegiatan'] == 'INDUSTRI RUMAH TANGGA' or $l['jenis_kegiatan'] == 'PANGAN' or $l['jenis_kegiatan'] == 'SANDANG') : ?>
-						&#9989
+						✓
 					<?php elseif ($l['jenis_kegiatan'] == 'KESEHATAN LINGKUNGAN' or $l['jenis_kegiatan'] == 'GOTONG ROYONG' or $l['jenis_kegiatan'] == 'PERENCANAAN SEHAT' or $l['jenis_kegiatan'] == 'KESEHATAN') : ?>
-						&#10060
+						×
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
 					<?php if ($l['jenis_kegiatan'] == 'UP2K' or $l['jenis_kegiatan'] == 'PENGEMBANGAN KEHIDUPAN BERKOPERASI' or $l['jenis_kegiatan'] == 'PENDIDIKAN DAN KETRAMPILAN' or $l['jenis_kegiatan'] == 'PENGHAYATAN DAN PENGAMALAN PANCASILA') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_kegiatan'] == 'PEMANFAATAN TANAH PEKARANGAN' or $l['jenis_kegiatan'] == 'GOTONG ROYONG' or $l['jenis_kegiatan'] == 'KESEHATAN') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_kegiatan'] == 'INDUSTRI RUMAH TANGGA' or $l['jenis_kegiatan'] == 'PANGAN' or $l['jenis_kegiatan'] == 'SANDANG') : ?>
-						&#10060
+						×
 					<?php elseif ($l['jenis_kegiatan'] == 'KESEHATAN LINGKUNGAN' or $l['jenis_kegiatan'] == 'GOTONG ROYONG' or $l['jenis_kegiatan'] == 'PERENCANAAN SEHAT' or $l['jenis_kegiatan'] == 'KESEHATAN') : ?>
-						&#9989
+						✓
 					<?php else : ?>
-						&#10060
+						×
 					<?php endif; ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
