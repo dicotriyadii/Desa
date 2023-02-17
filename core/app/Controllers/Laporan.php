@@ -69,7 +69,7 @@ class Laporan extends BaseController
 
         $kode_nik = session()->get('nik');
         $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
-        $dasa_wisma = $kode_dasa_wisma['dasa_wisma_id'];
+        $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
 
         $nama_jabatan = $kode_dasa_wisma['jabatan'];
 
@@ -196,7 +196,7 @@ class Laporan extends BaseController
         $data_user = $this->warga->where('nomorIndukKependudukan', $nik)->first();
 
         $data_dasa_wisma = $this->user->where('nik', $nik)->get()->getRowArray();
-        $data_anggota = $data_dasa_wisma['dasa_wisma_id'];
+        $data_anggota = $data_dasa_wisma['idDasawisma'];
 
         $dasa_wisma = $this->dasa_wisma->where('id', $data_anggota)->get()->getRowArray();
 
@@ -272,7 +272,7 @@ class Laporan extends BaseController
         $data_user = $this->warga->where('nomorIndukKependudukan', $nik)->first();
 
         $data_dasa_wisma = $this->user->where('nik', $nik)->get()->getRowArray();
-        $data_anggota = $data_dasa_wisma['dasa_wisma_id'];
+        $data_anggota = $data_dasa_wisma['idDasawisma'];
 
         $dasa_wisma = $this->dasa_wisma->where('id', $data_anggota)->get()->getRowArray();
 
@@ -329,7 +329,7 @@ class Laporan extends BaseController
         $dusun = $data_user['dusun'];
 
         $data_dasa_wisma = $this->user->where('nik', $nik)->get()->getRowArray();
-        $data_anggota = $data_dasa_wisma['dasa_wisma_id'];
+        $data_anggota = $data_dasa_wisma['idDasawisma'];
 
         $dasa_wisma = $this->dasa_wisma->where('id', $data_anggota)->get()->getRowArray();
 
@@ -367,7 +367,7 @@ class Laporan extends BaseController
         $data_user = $this->warga->where('nomorIndukKependudukan', $nik)->first();
 
         $data_dasa_wisma = $this->user->where('nik', $nik)->get()->getRowArray();
-        $data_anggota = $data_dasa_wisma['dasa_wisma_id'];
+        $data_anggota = $data_dasa_wisma['idDasawisma'];
 
         $dasa_wisma = $this->dasa_wisma->where('id', $data_anggota)->get()->getRowArray();
 

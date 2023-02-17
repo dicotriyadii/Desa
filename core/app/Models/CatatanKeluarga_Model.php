@@ -45,7 +45,7 @@ class CatatanKeluarga_Model extends Model
             ->join('tb_tempat_sampah', 'tb_tempat_sampah.id = tb_catatan_keluarga.tempat_sampah')
             ->join('tb_kegiatan_pkk_yg_diikuti', 'tb_kegiatan_pkk_yg_diikuti.id = tb_catatan_keluarga.jenis_kegiatan_id')
             ->join('tb_makanan_pokok', 'tb_makanan_pokok.id = tb_catatan_keluarga.makanan_pokok')
-            ->orderBy('tb_catatan_keluarga.id', 'DESC')
+            ->orderBy('tb_catatan_keluarga.idCatatanKeluarga', 'DESC')
             ->where('nik', $nik)
             ->get()->getRowArray();
     }
