@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class CatatanKeluarga_Model extends Model
 {
     protected $table      = 'tb_catatan_keluarga';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'idCatatanKeluarga';
     protected $allowedFields = ['kode_kecamatan', 'kode_desa', 'kode_dasa_wisma', 'nik', 'berkebutuhan_khusus', 'kriteria_rumah', 'sumber_air', 'tempat_sampah', 'jenis_kegiatan_id', 'nama_kegiatan', 'makanan_pokok', 'keterangan', 'tgl'];
 
     protected $curl;
@@ -29,7 +29,7 @@ class CatatanKeluarga_Model extends Model
             ->join('tb_tempat_sampah', 'tb_tempat_sampah.id = tb_catatan_keluarga.tempat_sampah')
             ->join('tb_kegiatan_pkk_yg_diikuti', 'tb_kegiatan_pkk_yg_diikuti.id = tb_catatan_keluarga.jenis_kegiatan_id')
             ->join('tb_makanan_pokok', 'tb_makanan_pokok.id = tb_catatan_keluarga.makanan_pokok')
-            ->orderBy('tb_catatan_keluarga.id', 'DESC')
+            ->orderBy('tb_catatan_keluarga.idCatatanKeluarga', 'DESC')
             ->get()->getResultArray();
     }
 

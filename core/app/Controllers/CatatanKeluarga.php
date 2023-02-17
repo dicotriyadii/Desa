@@ -67,7 +67,7 @@ class CatatanKeluarga extends BaseController
 
             $kode_nik = session()->get('nik');
             $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
-            $dasa_wisma = $kode_dasa_wisma['dasa_wisma_id'];
+            $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
             $nama_jabatan = $kode_dasa_wisma['jabatan'];
 
             $data = [
@@ -228,7 +228,7 @@ class CatatanKeluarga extends BaseController
                 $desa = $get_kd_desa['kodeDesa'];
 
                 $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
-                $dasa_wisma = $kode_dasa_wisma['dasa_wisma_id'];
+                $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
 
                 $tgl = $this->request->getVar('tgl');
                 $nik = $this->request->getVar('nik');
@@ -259,7 +259,7 @@ class CatatanKeluarga extends BaseController
                 ];
 
                 // $data = $this->catatan_keluarga->post_catatan_keluarga($kode_nik, $kode_token, $kecamatan, $desa, $dasa_wisma, $tgl, $nik, $berkebutuhan_khusus, $kriteria_rumah, $sumber_air, $tempat_sampah, $jenis_kegiatan_id, $nama_kegiatan, $makanan_pokok, $keterangan);
-
+                // print_r($data_catatan_keluarga);
                 $this->catatan_keluarga->insert($data_catatan_keluarga);
 
                 $msg = [
@@ -276,7 +276,7 @@ class CatatanKeluarga extends BaseController
     {
         if ($this->request->isAJAX()) {
 
-            $id = $this->request->getVar('id');
+            $id = $this->request->getVar('idCatatanKeluarga');
             $jmldata = count($id);
             for ($i = 0; $i < $jmldata; $i++) {
 
@@ -296,7 +296,7 @@ class CatatanKeluarga extends BaseController
     {
         if ($this->request->isAJAX()) {
 
-            $id = $this->request->getVar('id');
+            $id = $this->request->getVar('idCatatanKeluarga');
 
             $this->catatan_keluarga->delete($id);
 
@@ -368,7 +368,7 @@ class CatatanKeluarga extends BaseController
                 $desa = $get_kd_desa['kodeDesa'];
 
                 $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
-                $dasa_wisma = $kode_dasa_wisma['dasa_wisma_id'];
+                $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
 
                 // if ($ext) {
                 //     $msg = [
@@ -487,7 +487,7 @@ class CatatanKeluarga extends BaseController
     {
         if ($this->request->isAJAX()) {
 
-            $id = $this->request->getVar('id');
+            $id = $this->request->getVar('idCatatanKeluarga');
 
             $kode_nik = session()->get('nik');
             $nama_dusun = $this->warga->where('nomorIndukKependudukan', $kode_nik)->get()->getRowArray();
@@ -626,9 +626,9 @@ class CatatanKeluarga extends BaseController
                 $desa = $get_kd_desa['kodeDesa'];
 
                 $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
-                $dasa_wisma = $kode_dasa_wisma['dasa_wisma_id'];
+                $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
 
-                $id = $this->request->getVar('id');
+                $id = $this->request->getVar('idCatatanKeluarga');
                 $tgl = $this->request->getVar('tgl');
                 $nik = $this->request->getVar('nik');
                 $berkebutuhan_khusus = $this->request->getVar('berkebutuhan_khusus');
