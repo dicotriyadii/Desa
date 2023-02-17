@@ -33,10 +33,10 @@ class Database extends Config
 
     public $default = [
         'DSN'      => '',
-        'hostname' => '10.0.22.80',
-        'username' => 'desa_db',
-        'password' => 'desa123!!@@##',
-        'database' => 'db_desaujungrambe',
+        'hostname' => 'localhost',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'db_desaupdate',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

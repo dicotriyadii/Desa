@@ -7,7 +7,7 @@ class Model_data extends Model
     public function getWargaAll()
     {
         $db      = \Config\Database::connect();
-        $builder = $db->table('tbl_warga');
+        $builder = $db->table('tbl_Warga');
         $builder->select('*');
         return $builder->get()->getResultArray();
     }
@@ -100,6 +100,15 @@ class Model_data extends Model
         $builder = $db->table('tb_dasa_wisma');
         $builder->select('*');
         return $builder->get()->getResultArray();
+    }   
+    public function getAnggotaDasawisma()
+    {
+        $db      = \Config\Database::connect();
+        $builder = $db->table('tbl_user_dasawisma');
+        $builder->select('*');
+        $builder->join('tbl_warga', 'tbl_warga.nomorIndukKependudukan = tbl_user_dasawisma.nik');
+        $builder->join('tb_dasa_wisma', 'tb_dasa_wisma.id = tbl_user_dasawisma.idDasawisma');
+        return $builder->get()->getResultArray();
     }
 
     // Tampil Detail
@@ -130,5 +139,14 @@ class Model_data extends Model
         $builder->join('tbl_warga', 'tbl_warga.nomorIndukKependudukan = tbl_struktur_pemerintah_desa.nik');
         return $builder->get()->getResultArray();
     }
-
+    public function getStrukturDasawismaDetail($id=null)
+    {
+        $db      = \Config\Database::connect();
+        $builder = $db->table('tbl_user_dasawisma');
+        $builder->select('*');
+        $builder->where('nik',$id);
+        $builder->join('tbl_warga', 'tbl_warga.nomorIndukKependudukan = tbl_user_dasawisma.nik');
+        $builder->join('tb_dasa_wisma', 'tb_dasa_wisma.id = tbl_user_dasawisma.idDasawisma');
+        return $builder->get()->getResultArray();
+    }
 }
