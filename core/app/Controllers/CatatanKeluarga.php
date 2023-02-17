@@ -501,7 +501,7 @@ class CatatanKeluarga extends BaseController
                 'tempat_sampah' => $this->tempat_sampah->get()->getResultArray(),
                 'jenis_kegiatan' => $this->jenis_kegiatan->get()->getResultArray(),
                 'makanan_pokok' => $this->makanan_pokok->get()->getResultArray(),
-                'list' => $this->catatan_keluarga->where('id', $id)->get()->getRowArray(),
+                'list' => $this->catatan_keluarga->where('idCatatanKeluarga', $id)->get()->getRowArray(),
                 'dusun' => $dusun
             ];
 

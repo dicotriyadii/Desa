@@ -34,6 +34,90 @@
                 </div>
 
                 <div class="form-group">
+                    <label>Jumlah KK di Dalam Rumah</label>
+                    <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
+                    <div class="invalid-feedback error_berkebutuhan_khusus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Total Laki-Laki</label>
+                    <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
+                    <div class="invalid-feedback error_berkebutuhan_khusus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Total Perempuan</label>
+                    <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
+                    <div class="invalid-feedback error_berkebutuhan_khusus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Balita Laki-Laki</label>
+                    <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
+                    <div class="invalid-feedback error_berkebutuhan_khusus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Balita Perempuan</label>
+                    <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
+                    <div class="invalid-feedback error_berkebutuhan_khusus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>PUS</label>
+                    <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
+                    <div class="invalid-feedback error_berkebutuhan_khusus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>WUS</label>
+                    <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
+                    <div class="invalid-feedback error_berkebutuhan_khusus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Ibu Hamil</label>
+                    <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
+                    <div class="invalid-feedback error_berkebutuhan_khusus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Ibu Menyusui</label>
+                    <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
+                    <div class="invalid-feedback error_berkebutuhan_khusus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Lansia</label>
+                    <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
+                    <div class="invalid-feedback error_berkebutuhan_khusus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah 3 Buta</label>
+                    <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
+                    <div class="invalid-feedback error_berkebutuhan_khusus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Jamban Keluarga</label>
+                    <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
+                    <div class="invalid-feedback error_berkebutuhan_khusus">
+                    </div>
+                </div>
+
+                <div class="form-group">
                     <label>Berkebutuhan Khusus</label>
                     <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
                     <div class="invalid-feedback error_berkebutuhan_khusus">
