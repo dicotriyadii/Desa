@@ -54,7 +54,6 @@ class CatatanStatusIbu extends ResourceController
                 'kode_desa' => $cekDataWarga[0]['kodeDesa'],
             ];
             $cekKodeDasawisma = $dasawisma->where($dataKode)->findAll();
-
             if($cekDataWarga == null){
                 $response []= [
                     'status'    => 400,
