@@ -401,37 +401,37 @@
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="left" valign=bottom><?= $i++ ?><br></td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['namaWarga'] ?></td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="3" sdnum="1033;">
-
+					<?= $l['jumlah_kk'] ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="6" sdnum="1033;">
-					<font color="#FFFFFF">6</font>
+					<?= $l['jml_laki_laki'] ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="5" sdnum="1033;">
-					<font color="#FFFFFF">5</font>
+					<?= $l['jml_perempuan'] ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="1" sdnum="1033;">
-					<font color="#FFFFFF">1</font>
+					<?= $l['balita_laki_laki'] ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
-					<font color="#FFFFFF">-</font>
+					<?= $l['balita_perempuan'] ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
-
+					<?= $l['pus'] ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
-					<font color="#FFFFFF">2</font>
+					<?= $l['wus'] ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
-					<font color="#FFFFFF">-</font>
+					<?= $l['ibu_hamil'] ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
-					<font color="#FFFFFF">-</font>
+					<?= $l['ibu_menyusui'] ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
-
+					<?= $l['lansia'] ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
-					<font color="#FFFFFF">-</font>
+					<?= $l['3_buta'] ?>
 				</td>
 				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
 					<?= $l['berkebutuhan_khusus'] ?>

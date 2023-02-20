@@ -112,31 +112,31 @@ class CatatanStatusIbu_Model extends Model
             ->get()->getResultArray();
     }
 
-    public function post_catatan_status_ibu($kode_nik, $kode_token, $kecamatan, $desa, $dasa_wisma, $tgl, $nik_ibu, $nama_suami, $status, $catatan_status_ibu, $nama_bayi, $jenis_kelamin, $tgl_lahir, $akte)
-    {
-        $response = $this->curl->request('POST', 'http://localhost/ujungRambe/API/catatanStatusIbu', [
-            'Content-Type' => 'application/json',
-            'json' => [
-                'nik' => $kode_nik,
-                'token' => $kode_token,
-                'kodeKecamatan' => $kecamatan,
-                'kodeDesa' => $desa,
-                'kodeDasaWisma' => $dasa_wisma,
-                'tgl' => $tgl,
-                'nikIbu' => $nik_ibu,
-                'namaSuami' => $nama_suami,
-                'status' => $status,
-                'namaBayi' => $nama_bayi,
-                'jenisKelamin' => $jenis_kelamin,
-                'tglLahir' => $tgl_lahir,
-                'akte' =>  $akte,
-                'tglMeninggal' => '494',
-                'sebabMeninggal' => '494',
-                'keterangan' => '494'
-            ]
-        ]);
+    // public function post_catatan_status_ibu($kode_nik, $kode_token, $kecamatan, $desa, $dasa_wisma, $tgl, $nik_ibu, $nama_suami, $status, $catatan_status_ibu, $nama_bayi, $jenis_kelamin, $tgl_lahir, $akte)
+    // {
+    //     $response = $this->curl->request('POST', 'http://localhost/ujungRambe/API/catatanStatusIbu', [
+    //         'Content-Type' => 'application/json',
+    //         'json' => [
+    //             'nik' => $kode_nik,
+    //             'token' => $kode_token,
+    //             'kodeKecamatan' => $kecamatan,
+    //             'kodeDesa' => $desa,
+    //             'kodeDasaWisma' => $dasa_wisma,
+    //             'tgl' => $tgl,
+    //             'nikIbu' => $nik_ibu,
+    //             'namaSuami' => $nama_suami,
+    //             'status' => $status,
+    //             'namaBayi' => $nama_bayi,
+    //             'jenisKelamin' => $jenis_kelamin,
+    //             'tglLahir' => $tgl_lahir,
+    //             'akte' =>  $akte,
+    //             'tglMeninggal' => '494',
+    //             'sebabMeninggal' => '494',
+    //             'keterangan' => '494'
+    //         ]
+    //     ]);
 
-        $result = json_decode($response->getBody(), TRUE);
-        return $result;
-    }
+    //     $result = json_decode($response->getBody(), TRUE);
+    //     return $result;
+    // }
 }

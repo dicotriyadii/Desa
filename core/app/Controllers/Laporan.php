@@ -187,6 +187,45 @@ class Laporan extends BaseController
     //     // return view('auth/laporan/catatan_keluarga', $data);
     // }
 
+    public function catatan_keluarga_tingkat_dusun()
+    {
+        $tgl_mulai = $this->request->getVar('tgl_mulai_catatan_data_tingkat_dusun');
+        $tgl_akhir = $this->request->getVar('tgl_akhir_catatan_data_tingkat_dusun');
+
+        $nik = session()->get('nik');
+        $data_user = $this->warga->where('nomorIndukKependudukan', $nik)->first();
+
+        $data_dasa_wisma = $this->user->where('nik', $nik)->get()->getRowArray();
+        $data_anggota = $data_dasa_wisma['idDasawisma'];
+
+        $dasa_wisma = $this->dasa_wisma->where('id', $data_anggota)->get()->getRowArray();
+
+
+        $data = [
+            'title' => 'REKAPITULASI CATATAN DATA DAN KEGIATAN WARGA TINGKAT DUSUN',
+            'list' => $this->catatan_keluarga->list_catatan_keluarga_tingkat_dusun($tgl_mulai, $tgl_akhir),
+            'dusun' => $data_user['dusun'],
+            'desa' => $data_user['desa'],
+            'rt' => $data_user['RT'],
+            'rw' => $data_user['RW'],
+            'dasa_wisma' => $dasa_wisma['nama_dasa_wisma']
+        ];
+
+        $filename = date('y-m-d-H-i-s') . '' . 'REKAPITULASI CATATAN DATA DAN KEGIATAN WARGA TINGKAT DUSUN';
+        $dompdf = new Dompdf();
+        $dompdf->loadHtml(view('auth/laporan/catatan_keluarga_tingkat_dusun', $data));
+        $dompdf->setPaper('sra2', 'landscape');
+
+        // render html as PDF
+        $dompdf->render();
+
+        // output the generated pdf
+        $dompdf->stream($filename, array("Attachment" => false));
+
+
+        // return view('auth/laporan/Catatan_data_keluarga_kelompok_dasa_wisma', $data);
+    }
+
     public function catatan_keluarga_kelompok_dasa_wisma()
     {
         $tgl_mulai = $this->request->getVar('tgl_mulai_catatan_data_kelompok_dasa_wisma');
