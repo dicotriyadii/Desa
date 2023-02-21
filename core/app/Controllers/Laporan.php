@@ -199,11 +199,12 @@ class Laporan extends BaseController
         $data_anggota = $data_dasa_wisma['idDasawisma'];
 
         $dasa_wisma = $this->dasa_wisma->where('id', $data_anggota)->get()->getRowArray();
+        $dusun = $data_user['dusun'];
 
 
         $data = [
             'title' => 'REKAPITULASI CATATAN DATA DAN KEGIATAN WARGA TINGKAT DUSUN',
-            'list' => $this->catatan_keluarga->list_catatan_keluarga_tingkat_dusun($tgl_mulai, $tgl_akhir),
+            'list' => $this->catatan_keluarga->list_catatan_keluarga_tingkat_dusun($tgl_mulai, $tgl_akhir, $dusun),
             'dusun' => $data_user['dusun'],
             'desa' => $data_user['desa'],
             'rt' => $data_user['RT'],
