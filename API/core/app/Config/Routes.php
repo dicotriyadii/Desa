@@ -51,11 +51,11 @@ $routes->get('/DownloadBerkas/(:any)', 'PermohonanSurat::DownloadBerkas/$1');
 // API DasaWisma
 $routes->resource('LoginDasaWisma');
 $routes->resource('dasawisma');
-$routes->resource('KegiatanPKK');
-$routes->resource('KriteriaRumah');
-$routes->resource('SumberAirKeluarga');
-$routes->resource('MakananPokok');
-$routes->resource('TempatSampah');
+$routes->resource('kegiatanPKK');
+$routes->resource('kriteriaRumah');
+$routes->resource('sumberAirKeluarga');
+$routes->resource('makananPokok');
+$routes->resource('tempatSampah');
 $routes->resource('CatatanKeluarga');
 $routes->resource('inventaris');
 $routes->resource('pengeluaranKeuangan');
@@ -69,6 +69,8 @@ $routes->resource('TambahSumberAirKeluarga');
 $routes->resource('TambahKriteriaRumah');
 $routes->resource('TambahKegiatanPKK');
 $routes->resource('TambahTempatSampah');
+$routes->resource('TambahAnggotaDasawisma');
+$routes->resource('HapusAnggotaDasawisma');
 $routes->resource('DataAnggotaPKK');
 $routes->resource('DataInventaris');
 $routes->resource('DataPemasukkanKeuangan');
@@ -77,6 +79,7 @@ $routes->resource('DataStatusIbu');
 $routes->resource('DataStatusIbuBayiMeninggal');
 $routes->resource('DataStatusKeluarga');
 $routes->resource('DataDasaWisma');
+$routes->resource('DataAnggotaDasawisma');
 
 // Layanan Surat
 $routes->resource('APILoginAdmin');

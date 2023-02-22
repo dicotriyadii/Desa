@@ -1,0 +1,52 @@
+CRITICAL - 2023-02-16 02:53:49 --> Class "App\Models\Model_AnggotaDasawisma" not found
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\LoginWarga->create()
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginWarga))
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2023-02-16 03:00:55 --> Table 'db_desaupdate.tbl_dasawisma' doesn't exist
+CRITICAL - 2023-02-16 03:00:55 --> Table 'db_desaupdate.tbl_dasawisma' doesn't exist
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\APIDesaDigital\core\app\Models\Model_data.php(141): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\LoginWarga.php(87): App\Models\Model_data->getStrukturDasawismaDetail('101010101010101...')
+#6 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\LoginWarga->create()
+#7 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginWarga))
+#8 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-02-16 03:01:37 --> Table 'db_desaupdate.tbl_dasa_wisma' doesn't exist
+CRITICAL - 2023-02-16 03:01:37 --> Table 'db_desaupdate.tbl_dasa_wisma' doesn't exist
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\APIDesaDigital\core\app\Models\Model_data.php(141): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\LoginWarga.php(87): App\Models\Model_data->getStrukturDasawismaDetail('101010101010101...')
+#6 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\LoginWarga->create()
+#7 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginWarga))
+#8 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-02-16 03:02:55 --> Unknown column 'tbl_struktur_pemerintah_desa.nik' in 'on clause'
+CRITICAL - 2023-02-16 03:02:55 --> Unknown column 'tbl_struktur_pemerintah_desa.nik' in 'on clause'
+#0 C:\xampp\htdocs\APIDesaDigital\core\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\APIDesaDigital\core\app\Models\Model_data.php(141): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\LoginWarga.php(87): App\Models\Model_data->getStrukturDasawismaDetail('101010101010101...')
+#6 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\LoginWarga->create()
+#7 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginWarga))
+#8 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 21:10:29 --> Undefined array key 0
+#0 C:\xampp\htdocs\APIDesaDigital\core\app\Controllers\TambahAnggotaDasawisma.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(825): App\Controllers\TambahAnggotaDasawisma->create()
+#2 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahAnggotaDasawisma))
+#3 C:\xampp\htdocs\APIDesaDigital\core\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\APIDesaDigital\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -26,7 +26,6 @@ class App extends BaseConfig
     // public $baseURL = 'https://baznas.deliserdangkab.go.id/';
     // public $baseURL = 'https://localhost/websitedesa/index.php';
     public $baseURL = 'https://desaujungrambe.deliserdangkab.go.id/index.php';
-    // /**
     /**
      * --------------------------------------------------------------------------
      * Index File
