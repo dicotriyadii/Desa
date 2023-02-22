@@ -83,38 +83,66 @@
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
 			<td align="right" valign=bottom>
-				<font size=4>Lampiran III - 17a</font>
+				<font size=4>Lampiran III - 16d</font>
 			</td>
 		</tr>
 		<tr>
-			<td colspan=35 height="45" align="center" valign=middle><b>
-					<font size=6>CATATAN DATA DAN KEGIATAN WARGA </font>
+			<td colspan=33 height="35" align="center" valign=middle><b>
+					<font size=5>REKAPITULASI</font>
 				</b></td>
 		</tr>
 		<tr>
-			<td colspan=35 height="35" align="center" valign=middle><b>
-					<font size=5>TP PKK DESA/ KELURAHAN </font>
+			<td colspan=33 height="35" align="center" valign=middle><b>
+					<font size=5>CATATAN DATA DAN KEGIATAN WARGA </font>
 				</b></td>
 		</tr>
 		<tr>
-			<td colspan=35 height="25" align="center" valign=middle>
-				<font size=4>TAHUN <?= date('Y') ?></font>
+			<td colspan=33 height="35" align="center" valign=middle><b>
+					<font size=5 color="#000000">KELOMPOK PKK DUSUN/ LINGKUNGAN</font>
+				</b></td>
+		</tr>
+		<tr>
+			<td height="25" align="center" valign=middle>
+				<font size=4 color="#000000"><br></font>
 			</td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
 		</tr>
 		<tr>
-			<td height="20" align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom>TP. PKK DESA/KEL</td>
-			<td align="left" valign=bottom>:&nbsp;<?= $desa ?></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
+			<td height="20" align="left" valign=bottom>
+				<font color="#000000"><br></font>
+			</td>
 			<td align="center" valign=middle><br></td>
 			<td align="center" valign=middle><br></td>
 			<td align="center" valign=middle><br></td>
@@ -132,41 +160,42 @@
 			<td align="center" valign=middle><br></td>
 			<td align="center" valign=middle><br></td>
 			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=middle>
+				<font color="#000000">DUSUN/LINGKUNGAN</font>
+			</td>
+			<td align="left" valign=bottom>
+				<font color="#000000"><br></font>
+			</td>
+			<td align="left" valign=middle>
+				<font color="#000000">: <?= $dusun ?></font>
+			</td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
+			<td align="center" valign=middle><br></td>
 		</tr>
 		<tr>
-			<td height="20" align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom>KECAMATAN </td>
-			<td align="left" valign=bottom>:&nbsp;<?= $kecamatan ?></td>
+			<td height="20" align="left" valign=bottom>
+				<font color="#000000"><br></font>
+			</td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=middle><br></td>
 			<td align="left" valign=bottom><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
-			<td align="center" valign=middle><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
@@ -174,66 +203,15 @@
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
-		</tr>
-		<tr>
-			<td height="20" align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom>KAB/ KOTA</td>
-			<td align="left" valign=bottom>:&nbsp;<?= $kabupaten ?></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-		</tr>
-		<tr>
-			<td height="20" align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom>PROVINSI </td>
-			<td align="left" valign=bottom>:&nbsp;<?= $provinsi ?></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
-			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom>
+				<font color="#000000">DESA/ KELURAHAN</font>
+			</td>
+			<td align="left" valign=bottom>
+				<font color="#000000"><br></font>
+			</td>
+			<td align="left" valign=middle>
+				<font color="#000000">: <?= $desa ?></font>
+			</td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
@@ -248,8 +226,50 @@
 			<td align="left" valign=bottom><br></td>
 		</tr>
 		<tr>
-			<td height="20" align="left" valign=bottom><br></td>
+			<td height="20" align="left" valign=bottom>
+				<font color="#000000"><br></font>
+			</td>
 			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom>
+				<font color="#000000">TAHUN</font>
+			</td>
+			<td align="left" valign=bottom>
+				<font color="#000000"><br></font>
+			</td>
+			<td align="left" valign=middle>
+				<font color="#000000">: <?= date('Y') ?></font>
+			</td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+			<td align="left" valign=bottom><br></td>
+		</tr>
+		<tr>
+			<td height="20" align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
 			<td align="left" valign=bottom><br></td>
@@ -285,14 +305,20 @@
 		</tr>
 		<tr>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 height="89" align="center" valign=middle>NO</td>
-			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>NAMA DUSUN/ LINGKUNGAN</td>
-			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>JUML. RW</td>
-			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>JUML. RT</td>
-			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>JUML. DASA WISMA</td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>
+				<font color="#000000">NOMOR RW</font>
+			</td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>
+				<font color="#000000">JML. PKK RT</font>
+			</td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>
+				<font color="#000000">JUMLAH DASA WISMA</font>
+			</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>JML. KRT</td>
-			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>JML KK</td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>JML. KK</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000" colspan=11 align="center" valign=middle>JUMLAH ANGGOTA KELUARGA</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=6 align="center" valign=middle>JUMLAH RUMAH</td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>JML. jAMBAN KELUARGA</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=middle>SUMBER AIR KELUARGA</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=middle>MAKANAN POKOK</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000" colspan=4 align="center" valign=middle>WARGA MENGIKUTI KEGIATAN</td>
@@ -312,24 +338,25 @@
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>TIDAK SEHAT</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>MEMILIKI TMP. PEMB. SAMPAH</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>MEMILIKI SPAL</td>
-			<td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>MEMILIKI JAMBAN KELUARGA</td>
+			<td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>YANG MEMILIKI JAMBAN </td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle bgcolor="#FFFFFF">MENEMPEL STIKER P4K</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>PDAM</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>SUMUR</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>DLL</td>
 			<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000" rowspan=2 align="center" valign=middle>BERAS</td>
 			<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>NON BERAS</td>
-			<td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle>UP2K</td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>UP2K</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>PEMANFAATAN TANAH PEKARANGAN</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>INDUSTRI RUMAH TANGGA</td>
-			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>KESEHATAN LINGKUNGAN</td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle>
+				<font color="#FF0000">KESEHATAN LINGKUNGAN</font>
+			</td>
 		</tr>
 		<tr>
 			<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle>L</td>
 			<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle>P</td>
 			<td align="center" valign=middle>L</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle>P</td>
-			<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><br></td>
 		</tr>
 		<tr>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center" valign=bottom sdval="1" sdnum="1033;">1</td>
@@ -365,84 +392,83 @@
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="31" sdnum="1033;">31</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="32" sdnum="1033;">32</td>
 			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="33" sdnum="1033;">33</td>
-			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="34" sdnum="1033;">34</td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="33" sdnum="1033;">34</td>
+
+			<?php $i = 1 ?>
+			<?php foreach ($list as $l) : ?>
+		<tr>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="left" valign=bottom><?= $i++ ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['rw'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_dasa_wisma'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_krt'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_kk'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_laki_laki'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_perempuan'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_balita_laki_laki'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_balita_perempuan'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_pus'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_wus'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_ibu_hamil'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_ibu_menyusui'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_lansia'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_3_buta'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_berkebutuhan_khusus'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_kriteria_rumah_sehat'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_kriteria_rumah_kurang_sehat'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_tempat_sampah'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_kriteria_memiliki_spal'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_jamban'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_menempel_stiker'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_jamban'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_pdam'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_sumur'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_lainnya'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_beras'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_non_beras'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_up2k'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_pemanfaatan_tanah_perkarangan'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_industri_rumah_tangga'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_kesehatan_lingkungan'] ?><br></td>
+			<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom> <?= $l['keterangan'] ?><br></td>
 		</tr>
-		<?php $i = 1 ?>
-		<?php foreach ($list as $l) : ?>
-			<tr>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="left" valign=bottom><?= $i++ ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['dusun'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
-
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_dasa_wisma'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_krt'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_kk'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_laki_laki'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_perempuan'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_balita_laki_laki'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_balita_perempuan'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_pus'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_wus'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_ibu_hamil'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_ibu_menyusui'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_lansia'] ?><br></td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><?= $l['jumlah_3_buta'] ?><br></td>
-
-
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
-					<?= $l['jumlah_berkebutuhan_khusus'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom>
-					<?= $l['jumlah_kriteria_rumah_sehat'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="16" sdnum="1033;">
-					<?= $l['jumlah_kriteria_rumah_kurang_sehat'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
-					<?= $l['jumlah_tempat_sampah'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
-					<?= $l['jumlah_kriteria_memiliki_spal'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
-					<?= $l['jumlah_jamban'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
-					<?= $l['jumlah_menempel_stiker'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="1" sdnum="1033;">
-					<?= $l['jumlah_pdam'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
-					<?= $l['jumlah_sumur'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
-					<?= $l['jumlah_lainnya'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
-					<?= $l['jumlah_beras'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
-					<?= $l['jumlah_non_beras'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
-					<?= $l['jumlah_up2k'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
-					<?= $l['jumlah_pemanfaatan_tanah_perkarangan'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
-					<?= $l['jumlah_industri_rumah_tangga'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="2" sdnum="1033;">
-					<?= $l['jumlah_kesehatan_lingkungan'] ?>
-				</td>
-				<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
-					<?= $l['keterangan'] ?>
-				</td>
-			</tr>
-		<?php endforeach; ?>
+	<?php endforeach; ?>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>JUMLAH</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><br></td>
+	</tr>
 	</table>
 	<!-- ************************************************************************** -->
 </body>

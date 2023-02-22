@@ -34,6 +34,90 @@
                 </div>
 
                 <div class="form-group">
+                    <label>Jumlah KK di Dalam Rumah</label>
+                    <input type="number" class="form-control" id="jmlh_kk" name="jmlh_kk">
+                    <div class="invalid-feedback error_jmlh_kk">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Total Laki-Laki</label>
+                    <input type="number" class="form-control" id="jmlh_total_laki_laki" name="jmlh_total_laki_laki">
+                    <div class="invalid-feedback error_jmlh_total_laki_laki">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Total Perempuan</label>
+                    <input type="number" class="form-control" id="jmlh_total_perempuan" name="jmlh_total_perempuan">
+                    <div class="invalid-feedback error_jmlh_total_perempuan">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Balita Laki-Laki</label>
+                    <input type="number" class="form-control" id="jmlh_balita_laki_laki" name="jmlh_balita_laki_laki">
+                    <div class="invalid-feedback error_jmlh_balita_laki_laki">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Balita Perempuan</label>
+                    <input type="number" class="form-control" id="jmlh_balita_perempuan" name="jmlh_balita_perempuan">
+                    <div class="invalid-feedback error_jmlh_balita_perempuan">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>PUS</label>
+                    <input type="number" class="form-control" id="pus" name="pus">
+                    <div class="invalid-feedback error_pus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>WUS</label>
+                    <input type="number" class="form-control" id="wus" name="wus">
+                    <div class="invalid-feedback error_wus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Ibu Hamil</label>
+                    <input type="number" class="form-control" id="jmlh_ibu_hamil" name="jmlh_ibu_hamil">
+                    <div class="invalid-feedback error_jmlh_ibu_hamil">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Ibu Menyusui</label>
+                    <input type="number" class="form-control" id="jlmh_ibu_menyusui" name="jlmh_ibu_menyusui">
+                    <div class="invalid-feedback error_jlmh_ibu_menyusui">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Lansia</label>
+                    <input type="number" class="form-control" id="jmlh_lansia" name="jmlh_lansia">
+                    <div class="invalid-feedback error_jmlh_lansia">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah 3 Buta</label>
+                    <input type="number" class="form-control" id="jmlh_3_buta" name="jmlh_3_buta">
+                    <div class="invalid-feedback error_jmlh_3_buta">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Jamban Keluarga</label>
+                    <input type="number" class="form-control" id="jmlh_jamban_keluarga" name="jmlh_jamban_keluarga">
+                    <div class="invalid-feedback error_jmlh_jamban_keluarga">
+                    </div>
+                </div>
+
+                <div class="form-group">
                     <label>Berkebutuhan Khusus</label>
                     <input type="text" class="form-control" id="berkebutuhan_khusus" name="berkebutuhan_khusus">
                     <div class="invalid-feedback error_berkebutuhan_khusus">
@@ -235,6 +319,103 @@
                             $('#keterangan').removeClass('is-invalid');
                             $('.error_keterangan').html('');
                         }
+
+                        if (response.error.jmlh_kk) {
+                            $('#jmlh_kk').addClass('is-invalid');
+                            $('.error_jmlh_kk').html(response.error.jmlh_kk);
+                        } else {
+                            $('#jmlh_kk').removeClass('is-invalid');
+                            $('.error_jmlh_kk').html('');
+                        }
+
+                        if (response.error.jmlh_total_laki_laki) {
+                            $('#jmlh_total_laki_laki').addClass('is-invalid');
+                            $('.error_jmlh_total_laki_laki').html(response.error.jmlh_total_laki_laki);
+                        } else {
+                            $('#jmlh_total_laki_laki').removeClass('is-invalid');
+                            $('.error_jmlh_total_laki_laki').html('');
+                        }
+
+                        if (response.error.jmlh_total_perempuan) {
+                            $('#jmlh_total_perempuan').addClass('is-invalid');
+                            $('.error_jmlh_total_perempuan').html(response.error.jmlh_total_perempuan);
+                        } else {
+                            $('#jmlh_total_perempuan').removeClass('is-invalid');
+                            $('.error_jmlh_total_perempuan').html('');
+                        }
+
+                        if (response.error.jmlh_balita_laki_laki) {
+                            $('#jmlh_balita_laki_laki').addClass('is-invalid');
+                            $('.error_jmlh_balita_laki_laki').html(response.error.jmlh_balita_laki_laki);
+                        } else {
+                            $('#jmlh_balita_laki_laki').removeClass('is-invalid');
+                            $('.error_jmlh_balita_laki_laki').html('');
+                        }
+
+                        if (response.error.jmlh_balita_perempuan) {
+                            $('#jmlh_balita_perempuan').addClass('is-invalid');
+                            $('.error_jmlh_balita_perempuan').html(response.error.jmlh_balita_perempuan);
+                        } else {
+                            $('#jmlh_balita_perempuan').removeClass('is-invalid');
+                            $('.error_jmlh_balita_perempuan').html('');
+                        }
+
+                        if (response.error.pus) {
+                            $('#pus').addClass('is-invalid');
+                            $('.error_pus').html(response.error.pus);
+                        } else {
+                            $('#pus').removeClass('is-invalid');
+                            $('.error_pus').html('');
+                        }
+
+                        if (response.error.wus) {
+                            $('#wus').addClass('is-invalid');
+                            $('.error_wus').html(response.error.wus);
+                        } else {
+                            $('#wus').removeClass('is-invalid');
+                            $('.error_wus').html('');
+                        }
+
+                        if (response.error.jmlh_ibu_hamil) {
+                            $('#jmlh_ibu_hamil').addClass('is-invalid');
+                            $('.error_jmlh_ibu_hamil').html(response.error.jmlh_ibu_hamil);
+                        } else {
+                            $('#jmlh_ibu_hamil').removeClass('is-invalid');
+                            $('.error_jmlh_ibu_hamil').html('');
+                        }
+
+                        if (response.error.jlmh_ibu_menyusui) {
+                            $('#jlmh_ibu_menyusui').addClass('is-invalid');
+                            $('.error_jlmh_ibu_menyusui').html(response.error.jlmh_ibu_menyusui);
+                        } else {
+                            $('#jlmh_ibu_menyusui').removeClass('is-invalid');
+                            $('.error_jlmh_ibu_menyusui').html('');
+                        }
+
+                        if (response.error.jmlh_lansia) {
+                            $('#jmlh_lansia').addClass('is-invalid');
+                            $('.error_jmlh_lansia').html(response.error.jmlh_lansia);
+                        } else {
+                            $('#jmlh_lansia').removeClass('is-invalid');
+                            $('.error_jmlh_lansia').html('');
+                        }
+
+                        if (response.error.jmlh_3_buta) {
+                            $('#jmlh_3_buta').addClass('is-invalid');
+                            $('.error_jmlh_3_buta').html(response.error.jmlh_3_buta);
+                        } else {
+                            $('#jmlh_3_buta').removeClass('is-invalid');
+                            $('.error_jmlh_3_buta').html('');
+                        }
+
+                        if (response.error.jmlh_jamban_keluarga) {
+                            $('#jmlh_jamban_keluarga').addClass('is-invalid');
+                            $('.error_jmlh_jamban_keluarga').html(response.error.jmlh_jamban_keluarga);
+                        } else {
+                            $('#jmlh_jamban_keluarga').removeClass('is-invalid');
+                            $('.error_jmlh_jamban_keluarga').html('');
+                        }
+
 
                         if (response.error.data) {
                             Swal.fire({

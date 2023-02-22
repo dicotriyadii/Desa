@@ -92,6 +92,30 @@
         </div>
 
         <div class="col-md-4 my-2">
+            <?= form_open('laporan/catatan_keluarga_tingkat_dusun', ['class' => 'formLaporanCatatanDataKeluargaTingkatDusun', 'target' => '_blank', 'method' => 'get']) ?>
+            <div class="col-md-12">
+                <h5>Rekapitulasi Catatan Data dan Kegiatan Warga Tingkat Dusun</h5>
+                <div class="form-group">
+                    <label>Tanggal Mulai Pencatatan</label>
+                    <input type="date" class="form-control" id="tgl_mulai_catatan_data_tingkat_dusun" name="tgl_mulai_catatan_data_tingkat_dusun" required>
+                    <div class="invalid-feedback error_tgl_mulai_catatan_data_tingkat_dusun">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Tanggal Akhir Pencatatan</label>
+                    <input type="date" class="form-control" id="tgl_akhir_catatan_data_tingkat_dusun" name="tgl_akhir_catatan_data_tingkat_dusun" required>
+                    <div class="invalid-feedback error_tgl_akhir_catatan_data_tingkat_dusun">
+                    </div>
+                </div>
+                <button class="btn btn-primary">
+                    Cetak Rekapitulasi Catatan Data dan Kegiatan Warga</button>
+            </div>
+            <?= form_close() ?>
+        </div>
+
+        <div class="col-md-4 my-2">
             <?= form_open('laporan/catatan_keluarga_tp_pkk_desa', ['class' => 'formLaporanCatatanDataKeluargaTP_PKK_Desa', 'target' => '_blank', 'method' => 'get']) ?>
             <div class="col-md-12">
                 <h5>Rekapitulasi Catatan Data dan Kegiatan Warga TP PKK Desa</h5>

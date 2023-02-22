@@ -4,10 +4,8 @@
     </button><br>
     <a href="<?= base_url() ?>/../assets_dasa_wisma/contoh.xlsx">Unduh Contoh Data Impor Excel</a><br>
     <a href="<?= base_url() ?>/../assets_dasa_wisma/panduan.DOCX">Unduh Panduan Upload Data Melalui Excel</a>
+
     <?= form_open('catatanKeluarga/hapusall', ['class' => 'formhapus mt-2']) ?>
-
-
-
     <button type="submit" class="btn btn-danger">
         <i class="fa fa-trash"></i> Hapus yang diceklist
     </button>
@@ -50,7 +48,7 @@
             <?php if ($data['kode_dasa_wisma'] == $dasa_wisma) : ?>
                 <tr>
                     <td>
-                        <input type="checkbox" name="id[]" class="centangCatatanKeluargaid" value="<?= $data['id'] ?>">
+                        <input type="checkbox" name="idCatatanKeluarga[]" class="centangCatatanKeluargaid" value="<?= $data['idCatatanKeluarga'] ?>">
                     </td>
                     <td><?= $nomor ?></td>
                     <td><?= $data['namaWarga'] ?></td>
@@ -71,10 +69,10 @@
                     <td><?= $data['keterangan'] ?></td>
                     <?php if ($jabatan == 'Anggota') : ?>
                         <td>
-                            <button type="button" class="btn btn-primary mb-2" onclick="edit('<?= $data['id'] ?>')">
+                            <button type="button" class="btn btn-primary mb-2" onclick="edit('<?= $data['idCatatanKeluarga'] ?>')">
                                 <i class="fa fa-edit"></i>
                             </button>
-                            <button type="button" class="btn btn-danger mb-2" onclick="hapus('<?= $data['id'] ?>')">
+                            <button type="button" class="btn btn-danger mb-2" onclick="hapus('<?= $data['idCatatanKeluarga'] ?>')">
                                 <i class="fa fa-trash"></i>
                             </button>
                         </td>
@@ -154,12 +152,12 @@
         });
     });
 
-    function edit(id) {
+    function edit(idCatatanKeluarga) {
         $.ajax({
             type: "post",
             url: "<?= site_url('catatanKeluarga/formedit') ?>",
             data: {
-                id: id
+                idCatatanKeluarga: idCatatanKeluarga
             },
             dataType: "json",
             success: function(response) {
@@ -171,7 +169,7 @@
         });
     }
 
-    function hapus(id) {
+    function hapus(idCatatanKeluarga) {
         Swal.fire({
             title: 'Hapus data?',
             text: `Apakah anda yakin menghapus data?`,
@@ -188,7 +186,7 @@
                     type: "post",
                     dataType: "json",
                     data: {
-                        id: id
+                        idCatatanKeluarga: idCatatanKeluarga
                     },
                     success: function(response) {
                         if (response.sukses) {

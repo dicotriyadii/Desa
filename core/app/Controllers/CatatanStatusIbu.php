@@ -55,7 +55,7 @@ class CatatanStatusIbu extends BaseController
 
             $kode_nik = session()->get('nik');
             $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
-            $dasa_wisma = $kode_dasa_wisma['dasa_wisma_id'];
+            $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
             $jabatan = $kode_dasa_wisma['jabatan'];
 
             $data = [
@@ -206,7 +206,7 @@ class CatatanStatusIbu extends BaseController
                     $desa = $get_kd_desa['kodeDesa'];
 
                     $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
-                    $dasa_wisma = $kode_dasa_wisma['dasa_wisma_id'];
+                    $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
 
                     $nik_ibu = $this->request->getVar('nik_ibu');
 
@@ -364,7 +364,7 @@ class CatatanStatusIbu extends BaseController
                     $desa = $get_kd_desa['kodeDesa'];
 
                     $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
-                    $dasa_wisma = $kode_dasa_wisma['dasa_wisma_id'];
+                    $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
 
                     $nik_ibu = $this->request->getVar('nik_ibu');
                     $get_nama = $this->warga->where('nomorIndukKependudukan', $nik_ibu)->first();
@@ -560,7 +560,7 @@ class CatatanStatusIbu extends BaseController
                 $desa = $get_kd_desa['kodeDesa'];
 
                 $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
-                $dasa_wisma = $kode_dasa_wisma['dasa_wisma_id'];
+                $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
 
                 // if ($ext) {
                 //     $msg = [
@@ -766,7 +766,7 @@ class CatatanStatusIbu extends BaseController
                 $desa = $get_kd_desa['kodeDesa'];
 
                 $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
-                $dasa_wisma = $kode_dasa_wisma['dasa_wisma_id'];
+                $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
 
                 // if ($ext) {
                 //     $msg = [
@@ -1051,7 +1051,7 @@ class CatatanStatusIbu extends BaseController
                     $desa = $get_kd_desa['kodeDesa'];
 
                     $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
-                    $dasa_wisma = $kode_dasa_wisma['dasa_wisma_id'];
+                    $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
 
                     $nik_ibu = $this->request->getVar('nik_ibu');
 
@@ -1209,7 +1209,7 @@ class CatatanStatusIbu extends BaseController
                     $desa = $get_kd_desa['kodeDesa'];
 
                     $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
-                    $dasa_wisma = $kode_dasa_wisma['dasa_wisma_id'];
+                    $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
 
                     $nik_ibu = $this->request->getVar('nik_ibu');
                     $get_nama = $this->warga->where('nomorIndukKependudukan', $nik_ibu)->first();
