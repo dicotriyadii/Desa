@@ -35,10 +35,7 @@
                   <tr>
                     <th>Username</th>
                     <th>Nama</th>
-                    <th>Jabatan</th>
                     <th>Hak Akses</th>
-                    <th>Pertanyaan Lupa Password</th>
-                    <th>Jawaban Lupa Password</th>
                     <th>Action</th>
                   </tr>
                   </thead>
@@ -49,7 +46,6 @@
                   <tr>
                     <td><?= $d['username']?></td>
                     <td><?= $d['nama']?></td>
-                    <td><?= $d['jabatan']?></td>
                     <td>
                       <?php
                         if($d['hakAkses'] == 'admin'){?>
@@ -61,17 +57,10 @@
                         }
                         ?>
                     </td>
-                    <td><?= $d['pertanyaan']?></td>
-                    <td><?= $d['jawaban']?></td>
                     <td>
-                      <?php
-                      if($d['username'] == "dev."){
-                        echo "development";
-                      }else{?>
                       <a href="<?= base_url()?>/hapusAkun/<?=$d['idUser']?>" style="color:red;">Hapus</a><br>
                       <a href="<?= base_url()?>/editAkun/<?=$d['idUser']?>" style="color:green;">Edit</a>
                       <?php
-                      }
                       ?>
                     </td>
                   </tr>

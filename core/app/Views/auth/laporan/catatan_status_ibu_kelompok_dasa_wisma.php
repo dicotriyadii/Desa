@@ -900,7 +900,7 @@
 						<?= $l['sebab_meninggal'] ?>
 					</b></td>
 				<td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=top><b>
-						<?= $l['keterangan'] ?>
+						<?= $l['keterangan_meninggal'] ?>
 					</b></td>
 			</tr>
 		<?php endforeach; ?>

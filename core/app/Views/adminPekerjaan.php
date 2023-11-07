@@ -38,13 +38,12 @@
                   <tbody>
                     <?php
                     $no=0;
-                    foreach($dataPekerjaan as $dp){
-                      $no++;
+                    for($i=1; $i<26; $i++){
                     ?>
                   <tr>
-                    <td><?=$no;?></td>
-                    <td><?=$dp['namaPekerjaan']?></td>
-                    <td><?=$dp['jumlah']?></td>
+                    <td><?=$i;?></td>
+                    <td><?=$rekapitulasiDataPekerjaan[$i]['jenisPekerjaan']?></td>
+                    <td><?=$rekapitulasiDataPekerjaan[$i]['jumlah']?></td>
                   </tr>
                   <?php
                   }

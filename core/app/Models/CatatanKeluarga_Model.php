@@ -80,7 +80,7 @@ class CatatanKeluarga_Model extends Model
             ->join('tb_kegiatan_pkk_yg_diikuti', 'tb_kegiatan_pkk_yg_diikuti.id = tb_catatan_keluarga.jenis_kegiatan_id', 'left')
             ->join('tb_makanan_pokok', 'tb_makanan_pokok.id = tb_catatan_keluarga.makanan_pokok', 'left')
             ->where("tb_catatan_keluarga.tgl BETWEEN '$tgl_mulai' AND '$tgl_akhir'")
-            ->where('tbl_warga.dusun', $dusun)
+            ->where('tbl_warga.kodeDusun', $dusun)
             // ->groupBy('tbl_warga.dusun')
             ->get()->getResultArray();
     }
@@ -114,8 +114,9 @@ class CatatanKeluarga_Model extends Model
             ->join('tb_tempat_sampah', 'tb_tempat_sampah.id = tb_catatan_keluarga.tempat_sampah', 'left')
             ->join('tb_kegiatan_pkk_yg_diikuti', 'tb_kegiatan_pkk_yg_diikuti.id = tb_catatan_keluarga.jenis_kegiatan_id', 'left')
             ->join('tb_makanan_pokok', 'tb_makanan_pokok.id = tb_catatan_keluarga.makanan_pokok', 'left')
+            ->join('tbl_dusun','tbl_dusun.idDusun = tbl_warga.kodeDusun')
             ->where("tb_catatan_keluarga.tgl BETWEEN '$tgl_mulai' AND '$tgl_akhir'")
-            ->groupBy('tbl_warga.dusun')
+            ->groupBy('tbl_warga.kodeDusun')
             ->get()->getResultArray();
     }
 

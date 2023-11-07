@@ -8,12 +8,5 @@ class Model_pengumuman extends Model
     protected $table                = 'tbl_pengumuman';
     protected $primaryKey           = 'idPengumuman';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['tanggalPengumuman','pengumuman'];
-    
-    
-    public function getPengumuman()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','tanggalPengumuman','pengumuman'];
 }

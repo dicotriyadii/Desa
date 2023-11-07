@@ -38,11 +38,11 @@
                   <tbody>
                     <?php
                     $no=0;
-                    foreach($rangeUmur as $ru){
+                    for($i=1;$i<18;$i){
                     $no++;
                     ?>
                   <tr>
-                    <td><?=$no;?></td>
+                    <td><?=$i;?></td>
                     <td><?=$ru['umur']?></td>
                     <td><?=$ru['jumlah']?></td>
                   </tr>

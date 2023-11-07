@@ -8,6 +8,7 @@ use App\Models\Dusun_Model;
 use App\Models\Kecamatan_Model;
 use App\Models\User_Model;
 use App\Models\Warga_Model;
+use App\Models\Model_log;
 
 class DasaWisma extends BaseController
 {
@@ -17,6 +18,7 @@ class DasaWisma extends BaseController
     protected $data_desa;
     protected $data_dusun;
     protected $user;
+    protected $log;
 
     public function __construct()
     {
@@ -26,6 +28,7 @@ class DasaWisma extends BaseController
         $this->data_desa = new Desa_Model();
         $this->data_dusun = new Dusun_Model();
         $this->user = new User_Model();
+        $this->log = new Model_log();
     }
 
     public function index()
@@ -57,10 +60,9 @@ class DasaWisma extends BaseController
             $kode_nik = session()->get('nik');
             $get_token = $this->warga->where('nomorIndukKependudukan', $kode_nik)->first();
 
-            $nama_dusun = $get_token['dusun'];
-
-            $get_kd_dusun = $this->data_dusun->where('namaDusun', $nama_dusun)->first();
-            $dusun = $get_kd_dusun['idDusun'];
+            $dusun = $get_token['kodeDusun'];
+            $kecamatan = $get_token['kodeKecamatan'];
+            $desa = $get_token['kodeDesa'];
 
             $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
             $nama_jabatan = $kode_dasa_wisma['jabatan'];
@@ -68,7 +70,7 @@ class DasaWisma extends BaseController
             $data = [
                 'jabatan' => $nama_jabatan,
                 'dusun' => $dusun,
-                'list' => $this->dasa_wisma->list()
+                'list' => $this->dasa_wisma->list($dusun,$kecamatan,$desa)
             ];
 
             $msg = [
@@ -165,21 +167,22 @@ class DasaWisma extends BaseController
 
                 $kode_nik = session()->get('nik');
                 $get_token = $this->warga->where('nomorIndukKependudukan', $kode_nik)->first();
+                $dataWarga      = $this->warga->where('nomorIndukKependudukan', $kode_nik)->findAll();
 
                 $kode_token = $get_token['token'];
                 // $kode_token = '494';
-                $nama_kecamatan = $get_token['kecamatan'];
-                $nama_desa = $get_token['desa'];
-                $nama_dusun = $get_token['dusun'];
+                $kecamatan = $get_token['kodeKecamatan'];
+                $desa = $get_token['kodeDesa'];
+                $dusun = $get_token['kodeDusun'];
 
-                $get_kd_kecamatan = $this->data_kecamatan->where('namaKecamatan', $nama_kecamatan)->first();
-                $kecamatan = $get_kd_kecamatan['kodeKecamatan'];
+                // $get_kd_kecamatan = $this->data_kecamatan->where('namaKecamatan', $nama_kecamatan)->first();
+                // $kecamatan = $get_kd_kecamatan['kodeKecamatan'];
 
-                $get_kd_desa = $this->data_desa->where('namaDesa', $nama_desa)->first();
-                $desa = $get_kd_desa['kodeDesa'];
+                // $get_kd_desa = $this->data_desa->where('namaDesa', $nama_desa)->first();
+                // $desa = $get_kd_desa['kodeDesa'];
 
-                $get_kd_dusun = $this->data_dusun->where('namaDusun', $nama_dusun)->first();
-                $dusun = $get_kd_dusun['idDusun'];
+                // $get_kd_dusun = $this->data_dusun->where('namaDusun', $nama_dusun)->first();
+                // $dusun = $get_kd_dusun['idDusun'];
 
 
                 $rt = $this->request->getVar('rt');
@@ -198,6 +201,16 @@ class DasaWisma extends BaseController
                 ];
 
                 $this->dasa_wisma->insert($data);
+
+                $dataLog_dasawisma = [
+                    'kodeKecamatan' => $dataWarga[0]['kodeKecamatan'],
+                    'kodeDesa'      => $dataWarga[0]['kodeDesa'],
+                    'nama'          => $dataWarga[0]['namaWarga'],
+                    'waktu'         => date('Y-m-d H:i:s'),
+                    'keterangan'    => 'User Menambah Dasa Wisma',
+                ];
+                $this->log->insert($dataLog_dasawisma);
+
 
 
                 $msg = [
@@ -221,6 +234,17 @@ class DasaWisma extends BaseController
                 $this->dasa_wisma->delete($id[$i]);
             }
 
+            $kode_nik = session()->get('nik');
+            $dataWarga      = $this->warga->where('nomorIndukKependudukan', $kode_nik)->findAll();
+            $dataLog_dasawisma = [
+                'kodeKecamatan' => $dataWarga[0]['kodeKecamatan'],
+                'kodeDesa'      => $dataWarga[0]['kodeDesa'],
+                'nama'          => $dataWarga[0]['namaWarga'],
+                'waktu'         => date('Y-m-d H:i:s'),
+                'keterangan'    => 'User menghapus Data Semua Dasa Wisma',
+            ];
+            $this->log->insert($dataLog_dasawisma);
+
             $msg = [
                 'sukses' => "$jmldata Data Dasa Wisma Berhasil Dihapus"
             ];
@@ -237,6 +261,16 @@ class DasaWisma extends BaseController
             $id = $this->request->getVar('id');
 
             $this->dasa_wisma->delete($id);
+            $kode_nik = session()->get('nik');
+            $dataWarga      = $this->warga->where('nomorIndukKependudukan', $kode_nik)->findAll();
+            $dataLog_dasawisma = [
+                'kodeKecamatan' => $dataWarga[0]['kodeKecamatan'],
+                'kodeDesa'      => $dataWarga[0]['kodeDesa'],
+                'nama'          => $dataWarga[0]['namaWarga'],
+                'waktu'         => date('Y-m-d H:i:s'),
+                'keterangan'    => 'User menghapus Data Dasa Wisma',
+            ];
+            $this->log->insert($dataLog_dasawisma);
 
             $msg = [
                 'sukses' => 'Data Dasa Wisma Berhasil Dihapus'
@@ -273,27 +307,27 @@ class DasaWisma extends BaseController
 
             $validation = \Config\Services::validation();
             $valid = $this->validate([
-                'nama_kecamatan' => [
-                    'label' => 'Kecamatan',
-                    'rules' => 'required',
-                    'errors' => [
-                        'required' => '{field} tidak boleh kosong'
-                    ]
-                ],
-                'nama_desa' => [
-                    'label' => 'Desa',
-                    'rules' => 'required',
-                    'errors' => [
-                        'required' => '{field} tidak boleh kosong'
-                    ]
-                ],
-                'nama_dusun' => [
-                    'label' => 'Dusun',
-                    'rules' => 'required',
-                    'errors' => [
-                        'required' => '{field} tidak boleh kosong'
-                    ]
-                ],
+                // 'nama_kecamatan' => [
+                //     'label' => 'Kecamatan',
+                //     'rules' => 'required',
+                //     'errors' => [
+                //         'required' => '{field} tidak boleh kosong'
+                //     ]
+                // ],
+                // 'nama_desa' => [
+                //     'label' => 'Desa',
+                //     'rules' => 'required',
+                //     'errors' => [
+                //         'required' => '{field} tidak boleh kosong'
+                //     ]
+                // ],
+                // 'nama_dusun' => [
+                //     'label' => 'Dusun',
+                //     'rules' => 'required',
+                //     'errors' => [
+                //         'required' => '{field} tidak boleh kosong'
+                //     ]
+                // ],
                 'rt' => [
                     'label' => 'RT',
                     'rules' => 'required',
@@ -319,9 +353,9 @@ class DasaWisma extends BaseController
             if (!$valid) {
                 $msg = [
                     'error' => [
-                        'nama_kecamatan'  => $validation->getError('nama_kecamatan'),
-                        'nama_desa'    => $validation->getError('nama_desa'),
-                        'nama_dusun'    => $validation->getError('nama_dusun'),
+                        // 'nama_kecamatan'  => $validation->getError('nama_kecamatan'),
+                        // 'nama_desa'    => $validation->getError('nama_desa'),
+                        // 'nama_dusun'    => $validation->getError('nama_dusun'),
                         'rt' => $validation->getError('rt'),
                         'rw' => $validation->getError('rw'),
                         'nama_dasa_wisma' => $validation->getError('nama_dasa_wisma'),
@@ -333,21 +367,22 @@ class DasaWisma extends BaseController
 
                 $kode_nik = session()->get('nik');
                 $get_token = $this->warga->where('nomorIndukKependudukan', $kode_nik)->first();
+                $dataWarga      = $this->warga->where('nomorIndukKependudukan', $kode_nik)->findAll();
 
                 $kode_token = $get_token['token'];
                 // $kode_token = '494';
-                $nama_kecamatan = $get_token['kecamatan'];
-                $nama_desa = $get_token['desa'];
-                $nama_dusun = $get_token['dusun'];
+                $nama_kecamatan = $get_token['kodeKecamatan'];
+                $nama_desa = $get_token['kodeDesa'];
+                $nama_dusun = $get_token['kodeDusun'];
 
-                $get_kd_kecamatan = $this->data_kecamatan->where('namaKecamatan', $nama_kecamatan)->first();
-                $kecamatan = $get_kd_kecamatan['kodeKecamatan'];
+                // $get_kd_kecamatan = $this->data_kecamatan->where('namaKecamatan', $nama_kecamatan)->first();
+                // $kecamatan = $get_kd_kecamatan['kodeKecamatan'];
 
-                $get_kd_desa = $this->data_desa->where('namaDesa', $nama_desa)->first();
-                $desa = $get_kd_desa['kodeDesa'];
+                // $get_kd_desa = $this->data_desa->where('namaDesa', $nama_desa)->first();
+                // $desa = $get_kd_desa['kodeDesa'];
 
-                $get_kd_dusun = $this->data_dusun->where('namaDusun', $nama_dusun)->first();
-                $dusun = $get_kd_dusun['idDusun'];
+                // $get_kd_dusun = $this->data_dusun->where('namaDusun', $nama_dusun)->first();
+                // $dusun = $get_kd_dusun['idDusun'];
 
                 $id = $this->request->getVar('id');
                 $rt = $this->request->getVar('rt');
@@ -363,6 +398,14 @@ class DasaWisma extends BaseController
                 ];
 
                 $this->dasa_wisma->update($id, $data);
+                $dataLog_dasawisma = [
+                    'kodeKecamatan' => $dataWarga[0]['kodeKecamatan'],
+                    'kodeDesa'      => $dataWarga[0]['kodeDesa'],
+                    'nama'          => $dataWarga[0]['namaWarga'],
+                    'waktu'         => date('Y-m-d H:i:s'),
+                    'keterangan'    => 'User Mengedit Data Dasa Wisma',
+                ];
+                $this->log->insert($dataLog_dasawisma);
 
 
                 $msg = [

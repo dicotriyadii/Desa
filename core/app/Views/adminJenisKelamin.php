@@ -38,13 +38,12 @@
                   <tbody>
                     <?php
                     $no=0;
-                    foreach($dataJenisKelamin as $djk){
-                    $no++;
+                    for($i=1;$i<3;$i++){
                     ?>
                   <tr>
-                    <td><?=$no;?></td>
-                    <td><?=$djk['jenisKelamin']?></td>
-                    <td><?=$djk['jumlah']?></td>
+                    <td><?=$i;?></td>
+                    <td><?=$rekapitulasidataKelamin[$i]['jenisKelamin']?></td>
+                    <td><?=$rekapitulasidataKelamin[$i]['jumlah']?></td>
                   </tr>
                   <?php
                   }

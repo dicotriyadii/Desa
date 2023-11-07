@@ -8,12 +8,5 @@ class Model_kritikSaran extends Model
     protected $table                = 'tbl_kritik_saran';
     protected $primaryKey           = 'idKritikSaran';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['nama','email','kritik','saran'];
-    
-    
-    public function getKritikSaran()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','nama','email','kritik','saran','tanggal'];
 }

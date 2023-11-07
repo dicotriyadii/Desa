@@ -37,7 +37,6 @@
                     <th>Nama Anggota</th>
                     <th>Jabatan</th>
                     <th>Gambar</th>
-                    <th>Keterangan</th>
                     <th>Action</th>
                   </tr>
                   </thead>
@@ -49,10 +48,9 @@
                   ?> 
                   <tr>
                     <td><?=$no;?></td>
-                    <td><?= $d['namaAnggota'];?></td>
+                    <td><?= $d['namaWarga'];?></td>
                     <td><?= $d['jabatan'];?></td>
                     <td><img src="../foto/<?= $d['gambar']?>"style="width:50px;heigth:50px;"></td>
-                    <td><?= $d['keterangan'];?></td>
                     <td>
                     <a href="#"data-toggle="modal" data-target="#modalEdit<?= $d['idAnggotaBumdes']?>" style="color:green;">Edit</a><br>
                     <a href="<?=base_url()?>/hapusAnggotaBumdes/<?= $d['idAnggotaBumdes']?>" style="color:red;">Hapus</a>
@@ -67,14 +65,22 @@
                             </button>
                           </div>
                           <div class="modal-body">
-                          <form class="form-horizontal" action="ProsesEditAnggotaBumdes" method="POST"  enctype="multipart/form-data">
+                          <form class="form-horizontal" action="ProsesEditTambahBumdes" method="POST"  enctype="multipart/form-data">
                             <div class="form-group">
                               <label for="exampleFormControlInput1">Nama Anggota</label><br>
-                              <input type="text" name="nama" class="form-control" placeholder="Masukkan Nama Anggota" value="<?=$d['namaAnggota']?>">
+                              <select name="nik" class="form-control selectpicker" data-live-search="true">
+                                <option value="<?=$d['nik']?>"><?=$d['nik']?> | <?=$d['namaWarga']?></option>
+                                <?php
+                                foreach($dataWarga as $dw){?>
+                                <option value="<?=$dw['nomorIndukKependudukan']?>"><?=$dw['nomorIndukKependudukan']?> | <?=$dw['namaWarga']?></option>
+                                <?php
+                                }
+                                ?>
+                              </select>
                             </div>
                             <div class="form-group">
                               <label for="exampleFormControlInput1">Jabatan</label><br>
-                              <select name="jabatan" class="form-control" required>
+                              <select name="jabatan" class="form-control selectpicker" data-live-search="true" required>
                                 <option><?=$d['jabatan']?></option>
                                 <option>Ketua</option>
                                 <option>Wakil Ketua</option>
@@ -83,12 +89,8 @@
                               </select>
                             </div>
                             <div class="form-group">
-                              <label for="exampleFormControlInput1">Keterangan</label><br>
-                              <textarea name="keterangan" class="form-control"><?=$d['keterangan']?></textarea>
-                            </div>
-                            <div class="form-group">
                               <label for="exampleInputEmail1">Upload Foto<span style="color:red;">*</span></span></label><br>
-                              <input type="file" name="foto">
+                              <input type="file" name="gambar">
                             </div>
                             <div class="modal-footer">
                               <button type="submit" class="btn btn-primary">Submit</button>
@@ -129,14 +131,22 @@
         </button>
       </div>
       <div class="modal-body">
-      <form class="form-horizontal" action="ProsesAnggotaBumdes" method="POST"  enctype="multipart/form-data">
+      <form class="form-horizontal" action="ProsesTambahBumdes" method="POST"  enctype="multipart/form-data">
         <div class="form-group">
-          <label for="exampleFormControlInput1">Nama Anggota</label><br>
-          <input type="text" name="namaAnggota" class="form-control" placeholder="Masukkan Nama Anggota" required>
+          <label for="exampleInputEmail1">Nama Warga<span style="color:red;">*</span></span></label>
+          <select name="nik" class="form-control selectpicker" data-live-search="true">
+            <option> - Silahkan Pilih Warga - </option>
+            <?php
+            foreach($dataWarga as $dw){?>
+            <option value="<?=$dw['nomorIndukKependudukan']?>"><?=$dw['nomorIndukKependudukan']?> | <?=$dw['namaWarga']?></option>
+            <?php
+            }
+            ?>
+          </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Jabatan</label><br>
-          <select name="jabatan" class="form-control" required>
+          <select name="jabatan" class="form-control selectpicker" data-live-search="true" required>
             <option>- Silahkan Pilih Jabatan -</option>
             <option>Ketua</option>
             <option>Wakil Ketua</option>
@@ -145,12 +155,8 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="exampleFormControlInput1">Keterangan</label><br>
-          <textarea name="keterangan" class="form-control"></textarea>
-        </div>
-        <div class="form-group">
           <label for="exampleInputEmail1">Upload Foto<span style="color:red;">*</span></span></label><br>
-          <input type="file" name="foto" required>
+          <input type="file" name="gambar" required>
         </div>
         <div class="modal-footer">
           <button type="submit" class="btn btn-primary">Submit</button>

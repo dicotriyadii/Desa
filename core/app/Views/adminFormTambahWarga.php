@@ -55,12 +55,12 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Tempat Lahir <span style="color:red;">*</span></label>
-                    <input type="text"  name="tempatLahir" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Tempat Lahir" required>
+                    <input type="text"  name="tempatLahir" class="form-control"  id="exampleInputEmail1" placeholder="Masukkan Tempat Lahir" required>
                 </div>
                 <div class="form-group">
                     <label>Agama <span style="color:red;">*</span></label>
-                    <select name="agama" class="form-control select2" style="width: 100%;" required onkeyup="this.value = this.value.toUpperCase()">
-                      <option selected="selected"> - </option>
+                    <select name="agama"  class="form-control selectpicker" data-live-search="true" required onkeyup="this.value = this.value.toUpperCase()">
+                      <option> - Silahkan Pilih Agama - </option>
                       <?php
                       foreach($dataAgama as $da){
                       ?>
@@ -72,8 +72,8 @@
                 </div>
                 <div class="form-group">
                     <label>Pendidikan Terakhir <span style="color:red;">*</span></label>
-                    <select name="pendidikanTerakhir" class="form-control select2" style="width: 100%;" required>
-                      <option selected="selected"> - </option>
+                    <select name="pendidikanTerakhir"  class="form-control selectpicker" data-live-search="true" style="width: 100%;" required>
+                      <option> - Silahkan Pilih Pendidikan Terakhir - </option>
                       <?php
                       foreach($dataPendidikanTerakhir as $dpt){
                       ?>
@@ -85,8 +85,8 @@
                 </div>
                 <div class="form-group">
                 <label>Pekerjaan <span style="color:red;">*</span></label>
-                    <select name="pekerjaan" class="form-control select2" style="width: 100%;" required>
-                      <option selected="selected"> - </option>
+                    <select name="pekerjaan"  class="form-control selectpicker" data-live-search="true" style="width: 100%;" required>
+                      <option> - Silahkan Pilih Pekerjaan -</option>
                       <?php
                       foreach($data as $d){?>
                         <option><?= $d['namaPekerjaan']?></option>
@@ -108,12 +108,8 @@
                     <input type="text" name="RT" class="form-control" id="exampleInputEmail1" placeholder="Masukkan RT" required onkeyup="this.value = this.value.toUpperCase()">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Desa<span style="color:red;">*</span></label>
-                    <input type="text" name="desa" class="form-control" id="exampleInputEmail1" value="<?=$dataDesa[0]['namaDesa']?>"  readonly>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Kecamatan<span style="color:red;">*</span></label>
-                    <input type="text" name="kecamatan" class="form-control" id="exampleInputEmail1" value="<?=$dataDesa[0]['namaKecamatan']?>" readonly>
+                    <label for="exampleInputEmail1">Nomor Telepon <span style="color:red;">*</span></label>
+                    <input type="number"   name="noTelp" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Nomor Telepon" required>
                 </div>
                 <!-- /.form-group -->
               </div>
@@ -121,7 +117,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Nomor Kartu Keluarga <span style="color:red;">*</span></label>
-                    <input type="number"  name="nomorKK" class="form-control" id="exampleInputEmail1" placeholder="Nomor Kartu Keluarga" required>
+                    <input type="number"  name="nomorKartuKeluarga" class="form-control" id="exampleInputEmail1" placeholder="Nomor Kartu Keluarga" required>
                 </div>
                 <div class="form-group">
                     <label>Jenis Kelamin <span style="color:red;">*</span></label>
@@ -137,8 +133,8 @@
                 </div>
                 <div class="form-group">
                     <label>Golongan Darah <span style="color:red;">*</span></label>
-                    <select name="golDarah" class="form-control select2" style="width: 100%;" required>
-                    <option selected="selected"> - </option>
+                    <select name="golDarah"  class="form-control selectpicker" data-live-search="true" style="width: 100%;" required>
+                    <option> - Silahkan Pilih Golongan Darah - </option>
                     <option>A</option>
                     <option>B</option>
                     <option>AB</option>
@@ -148,8 +144,8 @@
                 </div>
                 <div class="form-group">
                     <label>Status Kawin <span style="color:red;">*</span></label>
-                    <select name="statusKawin" class="form-control select2" style="width: 100%;" required>
-                      <option selected="selected"> - </option>
+                    <select name="statusKawin"  class="form-control selectpicker" data-live-search="true" style="width: 100%;" required>
+                      <option> - Silahkan Pilih Status Kawin - </option>
                       <option>Belum Kawin</option>
                       <option>Kawin</option>
                       <option>Janda</option>
@@ -158,8 +154,8 @@
                 </div>
                 <div class="form-group">
                 <label>Status Pendidikan <span style="color:red;">*</span></label>
-                    <select name="statusPendidikan" class="form-control select2" style="width: 100%;" required>
-                      <option selected="selected"> - </option>
+                    <select name="pendidikanDitempuh" class="form-control selectpicker" data-live-search="true" style="width: 100%;" required>
+                      <option> - Silahkan Pilih Pendidikan Yang Ditempuh - </option>
                       <?php
                       foreach($dataPendidikanDitempuh as $dpd){
                       ?>
@@ -171,8 +167,8 @@
                 </div>
                 <div class="form-group">
                     <label>Status Keluarga <span style="color:red;">*</span></label>
-                    <select name="statusKeluarga" class="form-control select2" style="width: 100%;" required>
-                      <option selected="selected"> - </option>
+                    <select name="statusKeluarga" class="form-control selectpicker" data-live-search="true" style="width: 100%;" required>
+                      <option> - Silahkan Pilih Status Keluarga - </option>
                       <option>Suami</option>
                       <option>Istri</option>
                       <option>Anak</option>
@@ -193,11 +189,11 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Dusun <span style="color:red;">*</span></label>
-                    <select name="dusun" class="form-control select2" style="width: 100%;" required>
-                        <option selected="selected"> - </option>
+                    <select name="dusun"  class="form-control selectpicker" data-live-search="true" style="width: 100%;" required>
+                        <option> - Silahkan Pilih Dusun - </option>
                         <?php 
                         foreach($dataDusun as $ds){?>
-                        <option><?=$ds['namaDusun']?></option>
+                        <option value="<?=$ds['idDusun']?>"><?=$ds['namaDusun']?></option>
                         <?php
                         }
                         ?>

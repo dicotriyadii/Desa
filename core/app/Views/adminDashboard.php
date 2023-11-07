@@ -1,32 +1,34 @@
 <?php
   require('AHeader.php');
   $status = $session->get('status');
-  $hakAkses = $session->get('hakAkses');
+  $jabatan = $session->get('jabatan');
   if($status != 'login'){
     return redirect()->to(base_url().'/login');
   }
 ?>   
 
+
   <div class="content-wrapper">
+    <!-- Rekapitulasi -->
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">Admin Website Desa Digital <br> Desa <?=$dataDesa[0]['namaDesa']?> Kecamatan <?=$dataDesa[0]['namaKecamatan']?></h1>
           </div>
         </div>
       </div>
     </div>
 
     <?php
-    if($hakAkses != 'warga'){?>
+    if($jabatan == 'operator desa'){?>
     <section class="content">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
               <div class="inner" style="background-color:green;">
-                <h3><?=$dataSeluruhWarga?></h3>
+                <h3><?=$jumlahWarga?></h3>
                 <p>Jumlah <br> Keseluruhan Warga</p>
               </div>
               <div class="icon">
@@ -37,7 +39,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-success">
               <div class="inner" style="background-color:grey;">
-                <h3><?=$dataLakiLaki?></h3>
+                <h3><?=$jumlahLaki?></h3>
                 <p>Jumlah Keseluruhan <br> Warga Laki-Laki</p>
               </div>
               <div class="icon">
@@ -48,7 +50,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-warning">
               <div class="inner" style="background-color:yellow;">
-                <h3><?=$dataPerempuan?></h3>
+                <h3><?=$jumlahPerempuan?></h3>
                 <p>Jumlah Keseluruhan <br> Warga Perempuan</p>
               </div>
               <div class="icon">
@@ -59,7 +61,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
               <div class="inner" style="background-color:lightblue;">
-                <h3><?=$jumlahKartuKeluarga?></h3>
+                <h3><?=$jumlahKeluarga?></h3>
                 <p>Jumlah<br> Kartu Keluarga</p>
               </div>
               <div class="icon">
@@ -70,7 +72,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-danger">
               <div class="inner" style="background-color:red;">
-                <h3><?=$dataMeninggal?></h3>
+                <h3><?=$jumlahSedangPendidikan?></h3>
                 <p>Jumlah Warga <br> yang sudah Meninggal</p>
               </div>
               <div class="icon">
@@ -81,7 +83,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
               <div class="inner">
-                <h3><?=$jumlahBerpendidikan?></h3>
+                <h3><?=$jumlahBekerja?></h3>
                 <p>Warga yang <br> Berpendidikan</p>
               </div>
               <div class="icon">
@@ -92,7 +94,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-success">
               <div class="inner">
-                <h3><?=$jumlahTidakBerpendidikan?></h3>
+                <h3><?=$jumlahTidakBekerja?></h3>
                 <p>Warga yang <br> Tidak Berpendidikan</p>
               </div>
               <div class="icon">
@@ -103,7 +105,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3><?=$jumlahBekerja?></h3>
+                <h3><?=$jumlahPenggunaBPJS?></h3>
                 <p>Warga yang <br> Bekerja</p>
               </div>
               <div class="icon">
@@ -125,22 +127,11 @@
         <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
               <div class="inner" style="background-color:green;">
-                <h3><?=$jumlahBPJS?></h3>
+                <h3><?=$jumlahPenggunaBPJS?></h3>
                 <p>Warga yang <br> Memiliki BPJS</p>
               </div>
               <div class="icon">
                 <i class="fas fa-solid fa-hand-holding-medical"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6">
-            <div class="small-box bg-info">
-              <div class="inner" style="background-color:red;">
-                <h3><?=$dataPenerimaBansos?></h3>
-                <p>Warga Penerima <br> Bantuan Sosial</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-solid fa-dollar-sign"></i>
               </div>
             </div>
           </div>
@@ -165,6 +156,7 @@
                   <thead>
                   <tr>
                     <th>No</th>
+                    <th>Tanggal</th>
                     <th>Nama</th>
                     <th>Email</th>
                     <th>Kritik</th>
@@ -174,11 +166,12 @@
                   <tbody>
                   <?php
                   $no=0;
-                  foreach($dataKritikSaran as $d){
+                  foreach($kritikSaran as $d){
                   $no++;
                   ?> 
                   <tr>
                     <td><?=$no;?></td>
+                    <td><?= $d['tanggal'];?></td>
                     <td><?= $d['nama'];?></td>
                     <td><?= $d['email'];?></td>
                     <td><?= $d['kritik'];?></td>
@@ -201,58 +194,6 @@
     </section>
 
     <?php
-    }else{?>
-    <?php
-    if($jumlahPermohonanSelesai == 0 && $jumlahPermohonanPending == 0 && $jumlahPermohonanProses == 0 && $jumlahPermohonanDitolak == 0){?>
-      <section class="content">
-        <div class="container-fluid" >
-          <div class="row" style="padding:0px 10px 0px 10px;">
-            <div style="border:0px solid black; width:100%; height:150px; background-color:grey; opacity: 0.5; border-radius:10px;">
-              <h1 style="text-align:center; margin-top:4%;">TIDAK ADA MELAKUKAN PERMOHONAN SURAT</h1>    
-            </div>
-        </div>
-      </section>
-    <?php
-    }else{?>
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-3 col-6">
-            <div class="small-box bg-info">
-              <div class="inner" style="background-color:gray;">
-                <h3><?=$jumlahPermohonanPending?></h3>
-                <p>Permohonan <br>Pending</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6">
-            <div class="small-box bg-success">
-              <div class="inner" style="background-color:orange;">
-                <h3><?=$jumlahPermohonanProses?></h3>
-                <p>Permohonan <br>Dalam Proses</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6">
-            <div class="small-box bg-warning">
-              <div class="inner" style="background-color:green; color:white;">
-                <h3><?=$jumlahPermohonanSelesai?></h3>
-                <p>Permohonan <br> Selesai</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6">
-            <div class="small-box bg-warning">
-              <div class="inner" style="background-color:red; color:white;">
-                <h3><?=$jumlahPermohonanDitolak?></h3>
-                <p>Permohonan <br> Ditolak</p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </section>    
-    <?php
-    }
     }
     ?>
   </div>

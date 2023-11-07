@@ -24,7 +24,7 @@
                     <select name="nik" id="nik" class="form-control">
                         <option Disabled=true Selected=true>PILIH...</option>
                         <?php foreach ($nik as $n) : ?>
-                            <?php if ($n['dusun'] == $dusun) : ?>
+                            <?php if ($n['kodeDusun'] == $dusun) : ?>
                                 <option value="<?= $n['nomorIndukKependudukan'] ?>"><?= $n['namaWarga'] ?> , <?= $n['jenisKelamin'] ?> , <?= $n['alamat'] ?></option>
                             <?php endif; ?>
                         <?php endforeach; ?>

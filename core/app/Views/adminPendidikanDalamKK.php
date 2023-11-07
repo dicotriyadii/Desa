@@ -37,14 +37,12 @@
                   </thead>
                   <tbody>
                     <?php
-                      $no=0;
-                      foreach($dataPendidikanTerakhir as $dpt){
-                      $no++;
+                      for($i=1;$i<11;$i++){
                     ?>
                   <tr>
-                    <td><?= $no; ?></td>
-                    <td><?= $dpt['jenisPendidikan']?></td>
-                    <td><?= $dpt['jumlah']?></td>
+                    <td><?= $i ?></td>
+                    <td><?= $rekapitulasiDataPendidikan[$i]['jenisPendidikan']?></td>
+                    <td><?= $rekapitulasiDataPendidikan[$i]['jumlah']?></td>
                   </tr>
                   <?php
                   }

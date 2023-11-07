@@ -8,12 +8,5 @@ class Model_struktur_bumdes extends Model
     protected $table                = 'tbl_struktur_bumdes';
     protected $primaryKey           = 'idAnggotaBumdes';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['namaAnggota','jabatan','keterangan','gambar'];
-    
-    
-    public function getStrukturBumdes()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','nik','namaAnggota','jabatan','keterangan','gambar'];
 }

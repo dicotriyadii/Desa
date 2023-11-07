@@ -8,12 +8,5 @@ class Model_pelaksanaan extends Model
     protected $table                = 'tbl_pelaksanaan';
     protected $primaryKey           = 'idPelaksanaan';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['jenisPelaksanaan','jumlah','statusPelaksanaan','tahun'];
-    
-    
-    public function getPelaksanaan()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','jenisPelaksanaan','jumlah','statusPelaksanaan','tahun'];
 }

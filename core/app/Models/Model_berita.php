@@ -8,12 +8,5 @@ class Model_berita extends Model
     protected $table                = 'tbl_berita';
     protected $primaryKey           = 'idBerita';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['judulBerita','authorBerita','gambarBerita','tanggalBerita','keterangan','status','kategori'];
-    
-    
-    public function getBerita()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','judulBerita','authorBerita','gambarBerita','tanggalBerita','keterangan','status','idKategori'];
 }

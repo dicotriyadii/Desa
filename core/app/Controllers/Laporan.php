@@ -8,16 +8,17 @@ use App\Models\CatatanKematian_Model;
 use App\Models\CatatanStatusIbu_Model;
 use App\Models\DasaWisma_Model;
 use App\Models\Desa_Model;
+use App\Models\Dusun_Model;
 use App\Models\Inventaris_Model;
 use App\Models\JenisKegiatan_Model;
 use App\Models\Kecamatan_Model;
 use App\Models\KriteriaRumah_Model;
 use App\Models\Laporan_Model;
 use App\Models\MakananPokok_Model;
+use App\Models\Model_data;
 use App\Models\SumberAirKeluarga_Model;
 use App\Models\TempatSampah_Model;
 use App\Models\User_Model;
-use App\Models\userModel;
 use App\Models\Warga_Model;
 use Dompdf\Dompdf;
 
@@ -40,6 +41,8 @@ class Laporan extends BaseController
     protected $catatan_status_ibu;
     protected $catatan_melahirkan;
     protected $catatan_meninggal;
+    protected $model_data;
+    protected $data_dusun;
 
     public function __construct()
     {
@@ -47,6 +50,7 @@ class Laporan extends BaseController
         $this->warga = new Warga_Model();
         $this->data_kecamatan = new Kecamatan_Model();
         $this->data_desa = new Desa_Model();
+        $this->data_dusun = new Dusun_Model();
         $this->kriteria_rumah = new KriteriaRumah_Model();
         $this->sumber_air = new SumberAirKeluarga_Model();
         $this->tempat_sampah = new TempatSampah_Model();
@@ -59,6 +63,7 @@ class Laporan extends BaseController
         $this->catatan_status_ibu = new CatatanStatusIbu_Model();
         $this->catatan_melahirkan = new CatatanKelahiran_Model();
         $this->catatan_meninggal = new CatatanKematian_Model();
+        $this->model_data = new Model_data();
     }
 
     public function index()
@@ -88,16 +93,18 @@ class Laporan extends BaseController
     {
         $nik = session()->get('nik');
         $data_user = $this->warga->where('nomorIndukKependudukan', $nik)->first();
-
+        $kode_kecamatan = $data_user['kodeKecamatan'];
+        $kode_desa = $data_user['kodeDesa'];
+        $data_daerah = $this->model_data->getDesa_dasa_wisma($kode_kecamatan,$kode_desa);
+        
 
         $data = [
             'title' => 'Daftar Anggota Dasa Wisma',
             'list' => $this->user->list(),
             'kabupaten' => 'Deli Serdang',
             'provinsi' => 'Sumatera Utara',
-            'kecamatan' => $data_user['kecamatan'],
-            'desa' => $data_user['desa']
-
+            'kecamatan' => $data_daerah['namaKecamatan'],
+            'desa' => $data_daerah['namaDesa']
         ];
 
         $filename = date('y-m-d-H-i-s') . '' . 'Daftar Anggota Dasa Wisma';
@@ -135,6 +142,8 @@ class Laporan extends BaseController
             'nomor_kk' =>  $data_warga['nomorKartuKeluarga']
 
         ];
+
+        
 
         $filename = date('y-m-d-H-i-s') . '' . $data_warga['namaWarga'];
         $dompdf = new Dompdf();
@@ -193,20 +202,30 @@ class Laporan extends BaseController
         $tgl_akhir = $this->request->getVar('tgl_akhir_catatan_data_tingkat_dusun');
 
         $nik = session()->get('nik');
-        $data_user = $this->warga->where('nomorIndukKependudukan', $nik)->first();
+        $data_user = $this->warga->where('nomorIndukKependudukan', $nik)->get()->getRowArray();
+        $dusun = $data_user['kodeDusun'];
+        $kode_dusun = $data_user['kodeDusun'];
+        $kode_desa = $data_user['kodeDesa'];
+
+        $get_nama_desa = $this->data_desa->where('kodeDesa',$kode_desa)->get()->getRowArray();
+        $nama_desa = $get_nama_desa['namaDesa'];
+
+        $get_nama_dusun = $this->data_dusun->where('idDusun',$kode_dusun)->get()->getRowArray();
+        $nama_dusun = $get_nama_dusun['namaDusun'];
+
 
         $data_dasa_wisma = $this->user->where('nik', $nik)->get()->getRowArray();
         $data_anggota = $data_dasa_wisma['idDasawisma'];
 
         $dasa_wisma = $this->dasa_wisma->where('id', $data_anggota)->get()->getRowArray();
-        $dusun = $data_user['dusun'];
+        // $dusun = $data_user['dusun'];
 
 
         $data = [
             'title' => 'REKAPITULASI CATATAN DATA DAN KEGIATAN WARGA TINGKAT DUSUN',
             'list' => $this->catatan_keluarga->list_catatan_keluarga_tingkat_dusun($tgl_mulai, $tgl_akhir, $dusun),
-            'dusun' => $data_user['dusun'],
-            'desa' => $data_user['desa'],
+            'dusun' => $nama_dusun,
+            'desa' => $nama_desa,
             'rt' => $data_user['RT'],
             'rw' => $data_user['RW'],
             'dasa_wisma' => $dasa_wisma['nama_dasa_wisma']
@@ -234,7 +253,10 @@ class Laporan extends BaseController
 
         $nik = session()->get('nik');
         $data_user = $this->warga->where('nomorIndukKependudukan', $nik)->first();
+        $kode_kecamatan = $data_user['kodeKecamatan'];
+        $kode_desa = $data_user['kodeDesa'];
 
+        $data_daerah = $this->model_data->getDesa_dasa_wisma($kode_kecamatan,$kode_desa);
         $data_dasa_wisma = $this->user->where('nik', $nik)->get()->getRowArray();
         $data_anggota = $data_dasa_wisma['idDasawisma'];
 
@@ -244,7 +266,7 @@ class Laporan extends BaseController
         $data = [
             'title' => 'REKAPITULASI CATATAN DATA DAN KEGIATAN WARGA KELOMPOK DASA WISMA',
             'list' => $this->catatan_keluarga->list_catatan_keluarga_kelompok_dasa_wisma($tgl_mulai, $tgl_akhir),
-            'desa' => $data_user['desa'],
+            'desa' => $data_daerah['namaDesa'],
             'rt' => $data_user['RT'],
             'rw' => $data_user['RW'],
             'dasa_wisma' => $dasa_wisma['nama_dasa_wisma']
@@ -273,12 +295,20 @@ class Laporan extends BaseController
 
         $nik = session()->get('nik');
         $data_user = $this->warga->where('nomorIndukKependudukan', $nik)->first();
+        $kode_kecamatan = $data_user['kodeKecamatan'];
+        $kode_desa = $data_user['kodeDesa'];
+
+        $get_nama_desa = $this->data_desa->where('kodeDesa',$kode_desa)->get()->getRowArray();
+        $nama_desa = $get_nama_desa['namaDesa'];
+
+        $get_nama_dusun = $this->data_kecamatan->where('kodeKecamatan',$kode_kecamatan)->get()->getRowArray();
+        $nama_kecamatan = $get_nama_dusun['namaKecamatan'];
 
         $data = [
             'title' => 'REKAPITULASI CATATAN DATA DAN KEGIATAN WARGA TP PKK DESA',
             'list' => $this->catatan_keluarga->list_catatan_keluarga_tp_pkk_desa($tgl_mulai, $tgl_akhir),
-            'desa' => $data_user['desa'],
-            'kecamatan' => $data_user['kecamatan'],
+            'desa' => $nama_desa,
+            'kecamatan' => $nama_kecamatan,
             'kabupaten' => 'Deli Serdang',
             'provinsi' => 'Sumatera&nbsp;Utara'
         ];
@@ -310,37 +340,50 @@ class Laporan extends BaseController
 
         $nik = session()->get('nik');
         $data_user = $this->warga->where('nomorIndukKependudukan', $nik)->first();
+        $kode_kecamatan = $data_user['kodeKecamatan'];
+        $kode_desa = $data_user['kodeDesa'];
+        $kode_dusun = $data_user['kodeDusun'];
+
+        $get_nama_desa = $this->data_desa->where('kodeDesa',$kode_desa)->get()->getRowArray();
+        $nama_desa = $get_nama_desa['namaDesa'];
+
+        $get_nama_dusun = $this->data_kecamatan->where('kodeKecamatan',$kode_kecamatan)->get()->getRowArray();
+        $nama_kecamatan = $get_nama_dusun['namaKecamatan'];
+
+        $get_nama_dusun = $this->data_dusun->where('idDusun',$kode_dusun)->get()->getRowArray();
+        $nama_dusun = $get_nama_dusun['namaDusun'];
 
         $data_dasa_wisma = $this->user->where('nik', $nik)->get()->getRowArray();
         $data_anggota = $data_dasa_wisma['idDasawisma'];
 
         $dasa_wisma = $this->dasa_wisma->where('id', $data_anggota)->get()->getRowArray();
 
-        $cari_jumlah_ibu_hamil = $this->catatan_melahirkan->where('catatan_status_ibu', 'HAMIL')->get()->getResultArray();
-        $jumlah_ibu_hamil = count(array($cari_jumlah_ibu_hamil['catatan_status_ibu']));
+        $cari_jumlah_ibu_hamil = $this->catatan_melahirkan->where('catatan_status_ibu', 'HAMIL')->countAllResults();
+        // $jumlah_ibu_hamil = count(array($cari_jumlah_ibu_hamil['catatan_status_ibu']));
 
-        $cari_jumlah_ibu_melahirkan = $this->catatan_melahirkan->where('catatan_status_ibu', 'MELAHIRKAN')->get()->getResultArray();
-        $jumlah_ibu_melahirkan = count(array($cari_jumlah_ibu_melahirkan['catatan_status_ibu']));
+        $cari_jumlah_ibu_melahirkan = $this->catatan_melahirkan->where('catatan_status_ibu', 'MELAHIRKAN')->countAllResults();
+        // $jumlah_ibu_melahirkan = count(array($cari_jumlah_ibu_melahirkan['catatan_status_ibu']));
 
-        $cari_jumlah_ibu_nifas = $this->catatan_melahirkan->where('catatan_status_ibu', 'NIFAS')->get()->getResultArray();
-        $jumlah_ibu_nifas = count(array($cari_jumlah_ibu_nifas['catatan_status_ibu']));
+        $cari_jumlah_ibu_nifas = $this->catatan_melahirkan->where('catatan_status_ibu', 'NIFAS')->countAllResults();
+        // $jumlah_ibu_nifas = count(array($cari_jumlah_ibu_nifas['catatan_status_ibu']));
 
-        $cari_jumlah_ibu_meninggal = $this->catatan_meninggal->where('catatan_status_ibu_meninggal', 'MENINGGAL')->get()->getResultArray();
-        $jumlah_ibu_meninggal = count(array($cari_jumlah_ibu_meninggal['catatan_status_ibu_meninggal']));
+        $cari_jumlah_ibu_meninggal = $this->catatan_meninggal->where('catatan_status_ibu_meninggal', 'MENINGGAL')->countAllResults();
+        // $jumlah_ibu_meninggal = count(array($cari_jumlah_ibu_meninggal['catatan_status_ibu_meninggal']));
 
         $data = [
             'title' => 'Laporan Catatan Status Ibu Kelompok Dasa Wisma',
             'list' => $this->catatan_status_ibu->list_catatan_status_ibu_kelompok_dasa_wisma($tgl_mulai, $tgl_akhir),
-            'dusun' => $data_user['dusun'],
-            'desa' => $data_user['desa'],
-            'kecamatan' => $data_user['kecamatan'],
+            'dusun' => $nama_dusun,
+            'desa' => $nama_desa,
+            'kecamatan' => $nama_kecamatan,
+            'rt' =>$data_user['RT'],
             'kabupaten' => 'Deli Serdang',
             'provinsi' => 'Sumatera&nbsp;Utara',
             'dasa_wisma' => $dasa_wisma['nama_dasa_wisma'],
-            'ibu_hamil' => $jumlah_ibu_hamil,
-            'ibu_melahirkan' => $jumlah_ibu_melahirkan,
-            'ibu_nifas' => $jumlah_ibu_nifas,
-            'ibu_meninggal' => $jumlah_ibu_meninggal
+            'ibu_hamil' => $cari_jumlah_ibu_hamil,
+            'ibu_melahirkan' => $cari_jumlah_ibu_melahirkan,
+            'ibu_nifas' =>  $cari_jumlah_ibu_nifas,
+            'ibu_meninggal' => $cari_jumlah_ibu_meninggal
         ];
 
         $filename = date('y-m-d-H-i-s') . '' . 'Laporan Catatan Status Ibu Kelompok Dasa Wisma';
@@ -366,7 +409,19 @@ class Laporan extends BaseController
 
         $nik = session()->get('nik');
         $data_user = $this->warga->where('nomorIndukKependudukan', $nik)->first();
-        $dusun = $data_user['dusun'];
+        $kode_dusun = $data_user['kodeDusun'];
+        $kode_desa = $data_user['kodeDesa'];
+        $kode_kecamatan = $data_user['kodeKecamatan'];
+        
+        $get_nama_desa = $this->data_desa->where('kodeDesa',$kode_desa)->get()->getRowArray();
+        $nama_desa = $get_nama_desa['namaDesa'];
+
+        $get_nama_dusun = $this->data_kecamatan->where('kodeKecamatan',$kode_kecamatan)->get()->getRowArray();
+        $nama_kecamatan = $get_nama_dusun['namaKecamatan'];
+
+        $get_nama_dusun = $this->data_dusun->where('idDusun',$kode_dusun)->get()->getRowArray();
+        $nama_dusun = $get_nama_dusun['namaDusun'];
+
 
         $data_dasa_wisma = $this->user->where('nik', $nik)->get()->getRowArray();
         $data_anggota = $data_dasa_wisma['idDasawisma'];
@@ -375,10 +430,10 @@ class Laporan extends BaseController
 
         $data = [
             'title' => 'Laporan Catatan Status Ibu Tingkat Dusun',
-            'list' => $this->catatan_status_ibu->list_catatan_status_ibu_tingkat_dusun($dusun, $tgl_mulai, $tgl_akhir),
-            'dusun' => $data_user['dusun'],
-            'desa' => $data_user['desa'],
-            'kecamatan' => $data_user['kecamatan'],
+            'list' => $this->catatan_status_ibu->list_catatan_status_ibu_tingkat_dusun($kode_dusun, $tgl_mulai, $tgl_akhir),
+            'dusun' => $nama_dusun,
+            'desa' => $nama_desa,
+            'kecamatan' => $nama_kecamatan,
             'kabupaten' => 'Deli Serdang',
             'provinsi' => 'Sumatera&nbsp;Utara',
             'dasa_wisma' => $dasa_wisma['nama_dasa_wisma']
@@ -405,6 +460,19 @@ class Laporan extends BaseController
 
         $nik = session()->get('nik');
         $data_user = $this->warga->where('nomorIndukKependudukan', $nik)->first();
+        $kode_dusun = $data_user['kodeDusun'];
+        $kode_desa = $data_user['kodeDesa'];
+        $kode_kecamatan = $data_user['kodeKecamatan'];
+        
+        $get_nama_desa = $this->data_desa->where('kodeDesa',$kode_desa)->get()->getRowArray();
+        $nama_desa = $get_nama_desa['namaDesa'];
+
+        $get_nama_dusun = $this->data_kecamatan->where('kodeKecamatan',$kode_kecamatan)->get()->getRowArray();
+        $nama_kecamatan = $get_nama_dusun['namaKecamatan'];
+
+        $get_nama_dusun = $this->data_dusun->where('idDusun',$kode_dusun)->get()->getRowArray();
+        $nama_dusun = $get_nama_dusun['namaDusun'];
+
 
         $data_dasa_wisma = $this->user->where('nik', $nik)->get()->getRowArray();
         $data_anggota = $data_dasa_wisma['idDasawisma'];
@@ -415,9 +483,9 @@ class Laporan extends BaseController
             'title' => 'Laporan Catatan Status Ibu Tingkat Desa',
             'list' => $this->user->list(),
             'list' => $this->catatan_status_ibu->list_catatan_status_ibu_tingkat_desa($tgl_mulai, $tgl_akhir),
-            'dusun' => $data_user['dusun'],
-            'desa' => $data_user['desa'],
-            'kecamatan' => $data_user['kecamatan'],
+            'dusun' => $nama_dusun,
+            'desa' => $nama_desa,
+            'kecamatan' => $nama_kecamatan,
             'kabupaten' => 'Deli Serdang',
             'provinsi' => 'Sumatera&nbsp;Utara',
             'dasa_wisma' => $dasa_wisma['nama_dasa_wisma']

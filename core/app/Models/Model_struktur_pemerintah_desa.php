@@ -8,12 +8,5 @@ class Model_struktur_pemerintah_desa extends Model
     protected $table                = 'tbl_struktur_pemerintah_desa';
     protected $primaryKey           = 'idAnggotaPemerintah';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['namaAnggota','jabatan','keterangan','gambar'];
-    
-    
-    public function getStrukturPemerintahDesa()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['nik','namaAnggota','jabatan','gambar','keterangan'];
 }

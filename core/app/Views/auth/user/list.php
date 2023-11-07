@@ -24,7 +24,7 @@
     <tbody>
         <?php $nomor = 1;
         foreach ($list as $data) : ?>
-            <?php if ($data['dusun'] == $dusun) : ?>
+            <?php if ($data['kodeDusun'] == $dusun) : ?>
                 <tr>
                     <td>
                         <input type="checkbox" name="idUserDasawisma[]" class="centangUserid" value="<?= $data['idUserDasawisma'] ?>">

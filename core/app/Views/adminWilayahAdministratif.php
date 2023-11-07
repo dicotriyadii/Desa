@@ -39,20 +39,31 @@
                   </thead>
                   <tbody>
                   <?php
-                  $no=0;
-                  foreach($dataDusun as $ds){
-                  $no++;  
-                  ?>
+                  for($i=1;$i<21;$i++){?>
                   <tr>
-                    <td><?= $no; ?></td>
-                    <td><?= $ds['namaDusun']?></td>
-                    <td><?= $ds['laki']?> Orang</td>
-                    <td><?= $ds['perempuan']?> Orang</td>
-                    <td><?= $ds['jumlah']?> Orang</td>
+                    <td><?=$i?></td>
+                    <td>DUSUN <?=$i?></td>
+                    <td><?= $dataRekapitulasi['DUSUN'.$i]['jumlahWargaDusun'.$i.'Laki']?> Orang</td>
+                    <td><?= $dataRekapitulasi['DUSUN'.$i]['jumlahWargaDusun'.$i.'Perempuan']?> Orang</td>
+                    <td><?= $dataRekapitulasi['DUSUN'.$i]['jumlahWargaDusun'.$i]?> Orang</td>
                   </tr>
                   <?php
                   }
                   ?>
+                  <tr>
+                    <td>21</td>
+                    <td>DUSUN Mawar</td>
+                    <td><?= $dataRekapitulasi['DUSUNMawar']['jumlahWargaDusunMawarLaki']?> Orang</td>
+                    <td><?= $dataRekapitulasi['DUSUNMawar']['jumlahWargaDusunMawarPerempuan']?> Orang</td>
+                    <td><?= $dataRekapitulasi['DUSUNMawar']['jumlahWargaDusunMawar']?> Orang</td>
+                  </tr>
+                  <tr>
+                  <td>22</td>
+                  <td>DUSUN Melati</td>
+                    <td><?= $dataRekapitulasi['DUSUNMelati']['jumlahWargaDusunMelatiLaki']?> Orang</td>
+                    <td><?= $dataRekapitulasi['DUSUNMelati']['jumlahWargaDusunMelatiPerempuan']?> Orang</td>
+                    <td><?= $dataRekapitulasi['DUSUNMelati']['jumlahWargaDusunMelati']?> Orang</td>
+                  </tr>
                 </table>
               </div>
               <!-- /.card-body -->

@@ -26,23 +26,28 @@
           <div class="col-12">
             <div class="card">
               <!-- /.card-header -->
-              <!-- <div class="card-footer" style="text-align:left; margin-top:15px;background-color:white;">
-                <a href=""data-toggle="modal" data-target="#modalPengumuman" style="background-color:green;padding:8px 10px;border-radius:10px;color:white;">Tambah Pengumuman</a>
-              </div> -->
-                <div class="modal fade" id="modalPemberitahuan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="card-footer" style="text-align:left; margin-top:15px;background-color:white;">
+                <?php
+                if($data == null){?>
+                  <a href=""data-toggle="modal" data-target="#modalPengumuman" style="background-color:green;padding:8px 10px;border-radius:10px;color:white;">Tambah Pemberitahuan</a>
+                <?php
+                }
+                ?>
+              </div>
+              <div class="modal fade" id="modalPengumuman" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Tambah Pengumuman</h5>
+                          <h5 class="modal-title" id="exampleModalLabel">Tambah Pemberitahuan</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
                         <div class="modal-body">
-                          <form class="form-horizontal" action="tambahPengumuman" method="POST"  enctype="multipart/form-data">
+                          <form class="form-horizontal" action="ProsesTambahPemberitahuan" method="POST"  enctype="multipart/form-data">
                           <div class="form-group">
-                              <label for="exampleInputEmail1">Pengumuman<span style="color:red;">*</span></label>
-                              <textarea name="pengumuman" class="form-control" style="width:100%;height:150px;"></textarea>
+                              <label for="exampleInputEmail1">Pemberitahuan<span style="color:red;">*</span></label>
+                              <textarea name="pemberitahuan" class="form-control" style="width:100%;height:150px;"></textarea>
                           </div>
                         </div>
                         <div class="modal-footer">
@@ -71,8 +76,7 @@
                     <td><?= $no; ?></td>
                     <td><?= $d['pemberitahuan'] ?></td>
                     <td>
-                      <a href=""data-toggle="modal" data-target="#modalEditPemberitahuan" style="color:green;">Edit</a><br>
-                      <!-- <a href="<?=base_url()?>/hapusPengumuman/<?= $d['idPemberitahuan']?>" style="color:red;">Hapus</a> -->
+                      <a href="" data-toggle="modal" data-target="#modalEditPemberitahuan" style="color:green;">Edit</a><br>
                       <div class="modal fade" id="modalEditPemberitahuan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog">
                         <div class="modal-content">
@@ -83,7 +87,7 @@
                               </button>
                             </div>
                             <div class="modal-body">
-                              <form class="form-horizontal" action="TambahEditPemberitahuan" method="POST"  enctype="multipart/form-data">
+                              <form class="form-horizontal" action="ProsesEditTambahPemberitahuan" method="POST"  enctype="multipart/form-data">
                               <div class="form-group">
                                   <label for="exampleInputEmail1">Pemberitahuan<span style="color:red;">*</span></label>
                                   <textarea name="pemberitahuan" class="form-control" style="width:100%;height:150px;"><?=$d['pemberitahuan']?></textarea>

@@ -8,7 +8,7 @@ class Model_informasi_publik extends Model
     protected $table                = 'tbl_informasi_publik';
     protected $primaryKey           = 'idInformasiPublik';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['namaInformasiPublik','berkasInformasiPublik','keterangan','authorInformasiPublik','tanggalUpload'];
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','namaInformasiPublik','berkasInformasiPublik','keterangan','authorInformasiPublik','tanggalUpload'];
     
     
     public function getInformasiPublik()

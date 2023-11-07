@@ -10,14 +10,24 @@ class ProsesKritikSaran extends ResourceController
 
     public function create()
     {
-        $session             = session();
-        $kritikSaran         = new Model_KritikSaran();
+        // inisialisasi Variable
+        $session            = session();
+        $kritikSaran        = new Model_KritikSaran();
+        $kodeKecamatanLog   = $session->get('kodeKecamatan');
+        $kodeDesaLog        = $session->get('kodeDesa');
+        $usernameLog        = $session->get('nama'); 
+        $nama               = $this->request->getPost('nama');
+        $email              = $this->request->getPost('email');
+        $kritik             = $this->request->getPost('kritik');
+        $saran              = $this->request->getPost('saran');
         $data = [
-            'nama'      => $this->request->getPost('nama'),
-            'email'     => $this->request->getPost('email'),
-            'kritik'    => $this->request->getPost('kritik'),
-            'saran'     => $this->request->getPost('saran'),
-            'tanggal'   => date('Y-m-d'),
+            'kodeKecamatan' => $kodeKecamatanLog,
+            'kodeDesa'      => $kodeDesaLog,
+            'nama'          => $nama,
+            'email'         => $email,
+            'kritik'        => $kritik,
+            'saran'         => $saran,
+            'tanggal'       => date('Y-m-d'),
         ];
         $kritikSaran->insert($data);
         $ses_data = [
@@ -25,6 +35,6 @@ class ProsesKritikSaran extends ResourceController
             'keterangan'    => "Kritik dan Saran anda sudah masuk ke dalam sistem kami, Terimakasih"
         ];
         $session->set($ses_data);
-        return redirect()->to(base_url());
+        return redirect()->back();
     }
 }

@@ -879,7 +879,7 @@
 						<?= $i++ ?>
 					</b></td>
 				<td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top><b>
-						<?= $l['dusun'] ?>
+						<?= $l['namaDusun'] ?>
 					</b></td>
 				<td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top><b>
 						<font face="Tahoma" color="#000000"><br></font>

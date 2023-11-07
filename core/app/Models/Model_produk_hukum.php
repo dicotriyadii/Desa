@@ -8,12 +8,5 @@ class Model_produk_hukum extends Model
     protected $table                = 'tbl_produk_hukum';
     protected $primaryKey           = 'idProdukHukum';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['namaProdukHukum','berkasProdukHukum','keterangan','authorProdukHukum','tanggalUpload'];
-    
-    
-    public function getProdukHukum()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','namaProdukHukum','berkasProdukHukum','keterangan','authorProdukHukum','tanggalUpload'];
 }

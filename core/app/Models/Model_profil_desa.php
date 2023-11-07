@@ -8,12 +8,5 @@ class Model_profil_desa extends Model
     protected $table                = 'tbl_profil_desa';
     protected $primaryKey           = 'idProfilDesa';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['keteranganDesa'];
-    
-    
-    public function getProfilDesa()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','tahun','namaDesa','namaKecamatan','namaKabupaten','namaProvinsi','tahunPembentukan','luasDesa','penetapanBatas','dasarHukumPerdes','dasarHukumPerda','petaWilayah','koordinat','tipologi','klasifikasi','kategori','batasWilayahUtara','batasWilayahSelatan','batasWilayahTimur','batasWilayahBarat'];
 }

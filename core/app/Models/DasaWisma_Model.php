@@ -17,13 +17,16 @@ class DasaWisma_Model extends Model
         $this->curl =  \Config\Services::curlrequest();
     }
 
-    public function list()
+    public function list($dusun,$kecamatan,$desa)
     {
         return $this->table('tb_dasa_wisma')
             ->join('tbl_kode_desa', 'tbl_kode_desa.kodeDesa = tb_dasa_wisma.kode_desa')
             ->join('tbl_kode_kecamatan', 'tbl_kode_kecamatan.kodeKecamatan = tb_dasa_wisma.kode_kecamatan')
             ->join('tbl_dusun', 'tbl_dusun.idDusun = tb_dasa_wisma.kode_dusun')
             ->orderBy('id', 'DESC')
+            ->where('tb_dasa_wisma.kode_desa',$desa)
+            ->where('tb_dasa_wisma.kode_kecamatan',$kecamatan)
+            ->where('tb_dasa_wisma.kode_dusun',$dusun)
             ->get()->getResultArray();
     }
 

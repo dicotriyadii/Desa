@@ -13,7 +13,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Potensi Desa</h1>
+            <h1>Potensi Unggulan</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -56,7 +56,7 @@
                     <td><?= $d['namaPotensi']?></td>
                     <td><?= $d['alamatPotensi']?></td>
                     <td><?= $d['helpdesk']?></td>
-                    <td><img src="../potensi/<?= $d['gambar'] ?>"style="width:100px;heigth:100px;"></td>
+                    <td><img src="potensi/<?= $d['gambar'] ?>"style="width:100px;heigth:100px;"></td>
                     <td>
                       <a href=""data-toggle="modal" data-target="#modalEdit<?= $d['idPotensi']?>" style="color:green;">Edit</a><br>
                       <!-- Modal -->
@@ -64,22 +64,22 @@
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Edit Potensi Desa</h5>
+                              <h5 class="modal-title" id="exampleModalLabel">Edit Potensi Unggulan</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
                             </div>
-                            <form class="form-horizontal" action="CProsesEditPotensi" method="POST"  enctype="multipart/form-data">
+                            <form class="form-horizontal" action="ProsesEditTambahPotensi" method="POST"  enctype="multipart/form-data">
                               <div class="modal-body">
                                 <div class="form-group">
                                   <label for="exampleFormControlInput1">Jenis Potensi</label><br>
                                   <select class="form-control" name="jenisPotensi" required>
-                                    <option><?= $d['jenisPotensi']?></option>
-                                    <option value="pertanina">Pertanian</option>
-                                    <option value="perkebunan">Perkebunan</option>
-                                    <option value="perikanan">Perikanan</option>
-                                    <option value="desaWisata">Desa Wisata</option>
-                                    <option value="energiBaruTerbarukan">Energi Baru Terbarukan</option>
+                                  <?php
+                                  foreach($dataJenisPotensi as $djp){?>
+                                  <option value=<?=$djp['idJenisPotensi']?>><?=$djp['jenisPotensi']?></option>
+                                  <?php
+                                  }
+                                  ?>
                                   </select>
                                   <input type="text" name="idPotensi" value="<?= $d['idPotensi']?>" hidden required>
                                 </div>
@@ -140,17 +140,18 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form class="form-horizontal" action="CProsesPotensi" method="POST"  enctype="multipart/form-data">
+      <form class="form-horizontal" action="ProsesTambahPotensi" method="POST"  enctype="multipart/form-data">
         <div class="modal-body">
           <div class="form-group">
             <label for="exampleFormControlInput1">Jenis Potensi</label><br>
             <select class="form-control" name="jenisPotensi" required>
-              <option></option>
-              <option value="pertanian">Pertanian</option>
-              <option value="perkebunan">Perkebunan</option>
-              <option value="perikanan">Perikanan</option>
-              <option value="desaWisata">Desa Wisata</option>
-              <option value="energiBaruTerbarukan">Energi Baru Terbarukan</option>
+              <option>- Silahkan Pilih Jenis Potensi -</option>
+              <?php
+              foreach($dataJenisPotensi as $djp){?>
+              <option value=<?=$djp['idJenisPotensi']?>><?=$djp['jenisPotensi']?></option>
+              <?php
+              }
+              ?>
             </select>
           </div>
           <div class="form-group">

@@ -8,11 +8,5 @@ class Model_galeri_foto extends Model
     protected $table                = 'tbl_galeri_foto';
     protected $primaryKey           = 'idGaleri';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['namaGambar','gambar','keterangan','posted','status'];
-    
-    public function getGaleri()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','judul','jenis','status','link'];
 }

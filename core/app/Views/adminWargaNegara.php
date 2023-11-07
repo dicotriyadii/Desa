@@ -56,10 +56,12 @@
                     <td><?=$d['pekerjaan']?></td>
                     <td>
                       <a href="<?=base_url()?>/adminDetailWarga/<?= $d['idWarga']?>" style="color:grey;">Detail</a><br>
-                      <a href="<?=base_url()?>/editWarga/<?= $d['idWarga']?>" style="color:green;">Edit</a><br>
+                      <a href="<?=base_url()?>/formTambahWargaEdit/<?= $d['idWarga']?>" style="color: green;">Edit</a><br>
                       <a href="<?=base_url()?>/hapusWarga/<?= $d['idWarga']?>" style="color:red;">Hapus</a>
                     </td>
                   </tr>
+                    </div>
+                  </div>
                   <?php
                   }
                   ?>

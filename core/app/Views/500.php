@@ -1,9 +1,5 @@
 <?php
   require('AHeader.php');
-  $status = $session->get('status');
-  if($status != 'login'){
-    return redirect()->to(base_url().'/login');
-  }
 ?>   
 
   <!-- Content Wrapper. Contains page content -->

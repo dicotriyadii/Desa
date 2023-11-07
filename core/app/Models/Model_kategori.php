@@ -8,12 +8,6 @@ class Model_kategori extends Model
     protected $table                = 'tbl_kategori';
     protected $primaryKey           = 'idKategori';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['jenisKategori'];
-    
-    
-    public function getKategori()
-    {
-        return $this->findAll();
-    }
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','jenisKategori'];
  
 }

@@ -27,7 +27,7 @@
             <div class="card">
               <!-- /.card-header -->
               <div class="card-footer" style="text-align:left; margin-top:15px;background-color:white;">
-                <a href="<?= base_url()?>/formArtikel" style="background-color:green;padding:8px 10px;border-radius:10px;color:white;">Tambah Artikel</a>
+                <a href="" data-toggle="modal" data-target="#modalTambahWarga" style="background-color:green;padding:8px 10px;border-radius:10px;color:white;">Tambah Artikel</a>
               </div>
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
@@ -54,7 +54,7 @@
                     <td><?=$d['judulArtikel']?></td>
                     <td><?=$d['tanggalArtikel']?></td>
                     <td><?=$d['keterangan']?></td>
-                    <td><img src="../artikel/<?= $d['gambarArtikel'] ?>" style="width:100px;heigth:100px;"></td>
+                    <td><img src="artikel/<?= $d['gambarArtikel'] ?>" style="width:100px;heigth:100px;"></td>
                     <td><?=$d['authorArtikel']?></td>
                     <?php
                     if($d['status'] == 'Sudah Validasi'){?>
@@ -66,17 +66,37 @@
                     } 
                     ?>
                     <td>
-                      <?php
-                      if($session->get('hakAkses') == "superAdmin"){?>
-                        <a href="<?=base_url()?>/belumValidasiArtikel/<?= $d['idArtikel']?>" style="color:red;">Belum Validasi</a><br>
-                        <a href="<?=base_url()?>/sudahValidasiArtikel/<?= $d['idArtikel']?>" style="color:green;">Sudah Validasi</a><br>                        
-                      <?php
-                      }
-                      ?>
-                      <a href="<?=base_url()?>/editArtikel/<?= $d['idArtikel']?>" style="color:green;">Edit</a><br>
+                      <a href="<?=base_url()?>/sudahValidasiArtikel/<?= $d['idArtikel']?>" style="color:green;">Sudah Validasi</a><br>                        
+                      <a href="<?=base_url()?>/belumValidasiArtikel/<?= $d['idArtikel']?>" style="color:orange;">Belum Validasi</a><br>
+                      <a href="" data-toggle="modal" data-target="#edit<?=$d['idArtikel']?>"  style="color:gray;">Edit</a><br>
                       <a href="<?=base_url()?>/hapusArtikel/<?= $d['idArtikel']?>" style="color:red;">Hapus</a>
                     </td>
                   </tr>
+                  <!-- Modal -->
+                  <div class="modal fade" id="edit<?=$d['idArtikel']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Edit Artikel</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                        <form class="form-horizontal" action="ProsesEditTambahArtikel" method="POST"  enctype="multipart/form-data">
+                          <label for="exampleInputEmail1">Judul Artikel<span style="color:red;">*</span></span></label>
+                          <input type="text" name="judulArtikel" class="form-control" id="exampleInputEmail1" value="<?=$d['judulArtikel']?>">
+                          <label for="exampleInputEmail1">Keterangan<span style="color:red;">*</span></label>
+                          <textarea name="keterangan" style="width:100%;height:150px;" class="ckeditor" id="ckedtor"><?=$d['judulArtikel']?></textarea>
+                          <label for="exampleInputEmail1">Upload Gambar<span style="color:red;">*</span></span></label><br>
+                          <input type="file" name="file">
+                        </div>
+                      <div class="modal-footer">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    </form>
+                    </div>
+                  </div>
                   <?php
                   }
                   ?>
@@ -97,6 +117,32 @@
   <!-- /.content-wrapper -->
 </div>
 <!-- ./wrapper -->
+<!-- Modal -->
+<div class="modal fade" id="modalTambahWarga" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tambah Artikel</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <div class="modal-body">
+        <form class="form-horizontal" action="ProsesTambahArtikel" method="POST"  enctype="multipart/form-data">
+              <label for="exampleInputEmail1">Judul Artikel<span style="color:red;">*</span></span></label>
+              <input type="text" name="judulArtikel" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Judul Artikel">
+              <label for="exampleInputEmail1">Keterangan<span style="color:red;">*</span></label>
+              <!-- <textarea name="keterangan" class="form-control" style="width:100%;height:150px;"></textarea> -->
+              <textarea name="keterangan" style="width:100%;height:150px;" class="ckeditor" id="ckedtor"></textarea>
+              <label for="exampleInputEmail1">Upload Gambar<span style="color:red;">*</span></span></label><br>
+              <input type="file" name="file" required>
+        </div>
+      <div class="modal-footer">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </form>
+  </div>
+</div>
 
 <?php
   require('AFooter.php');

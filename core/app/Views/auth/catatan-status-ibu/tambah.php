@@ -23,7 +23,7 @@
                     <select name="nik_ibu" id="nik_ibu" class="form-control">
                         <option Disabled=true Selected=true>PILIH...</option>
                         <?php foreach ($nik_ibu as $ni) : ?>
-                            <?php if ($ni['jenisKelamin'] == 'Perempuan' and $ni['dusun'] == $dusun) : ?>
+                            <?php if ($ni['jenisKelamin'] == 'Perempuan' and $ni['kodeDusun'] == $dusun) : ?>
                                 <option value="<?= $ni['nomorIndukKependudukan'] ?>"><?= $ni['namaWarga'] ?> , <?= $ni['alamat'] ?></option>
                             <?php endif; ?>
                         <?php endforeach; ?>

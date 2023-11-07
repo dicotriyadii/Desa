@@ -8,12 +8,5 @@ class Model_pendapatan extends Model
     protected $table                = 'tbl_pendapatan';
     protected $primaryKey           = 'idPendapatan';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['jenisPendapatan','jumlah','statusPendapatan','tahun'];
-    
-    
-    public function getPendapatan()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','jenisPendapatan','jumlah','statusPendapatan','tahun'];
 }

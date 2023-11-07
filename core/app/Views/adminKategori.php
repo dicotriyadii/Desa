@@ -111,7 +111,7 @@
                     <form class="form-horizontal" action="ProsesTambahKategori" method="POST"  enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Jenis Kategori</label><br>
-                        <input type="text" name="kategori" class="form-control" placeholder="Masukkan Jenis Kategori" required>
+                        <input type="text" name="jenisKategori" class="form-control" placeholder="Masukkan Jenis Kategori" required>
                     </div>
                 </div>
                 <div class="modal-footer">

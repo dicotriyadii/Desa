@@ -8,12 +8,5 @@ class Model_pemberitahuan extends Model
     protected $table                = 'tbl_pemberitahuan';
     protected $primaryKey           = 'idPemberitahuan';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['pemberitahuan'];
-    
-    
-    public function getPemberitahuan()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','pemberitahuan'];
 }

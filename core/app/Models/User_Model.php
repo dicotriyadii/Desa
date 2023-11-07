@@ -8,7 +8,7 @@ class User_Model extends Model
 {
     protected $table      = 'tbl_user_dasawisma';
     protected $primaryKey = 'idUserDasawisma';
-    protected $allowedFields = ['nik', 'jabatan', 'idDasawisma', 'jabatan'];
+    protected $allowedFields = ['nik','kodeKecamatanDasawisma','kodeDesaDasawisma','kodeDusunDasawisma', 'jabatan', 'idDasawisma', 'jabatan'];
 
     protected $curl;
 
@@ -17,12 +17,14 @@ class User_Model extends Model
         $this->curl =  \Config\Services::curlrequest();
     }
 
-    public function list()
+    public function list($desa,$kecamatan)
     {
         return $this->table('tbl_user_dasawisma')
             ->join('tbl_warga', 'tbl_warga.nomorIndukKependudukan = tbl_user_dasawisma.nik')
             ->join('tb_dasa_wisma', 'tb_dasa_wisma.id = tbl_user_dasawisma.idDasawisma')
             ->orderBy('tbl_user_dasawisma.idUserDasawisma', 'DESC')
+            ->where('tbl_user_dasawisma.kodeDesa',$desa)
+            ->where('tbl_user_dasawisma.kodeKecamatan',$kecamatan)
             ->get()->getResultArray();
     }
 

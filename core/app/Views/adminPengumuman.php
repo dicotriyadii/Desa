@@ -39,7 +39,7 @@
                           </button>
                         </div>
                         <div class="modal-body">
-                          <form class="form-horizontal" action="TambahPengumuman" method="POST"  enctype="multipart/form-data">
+                          <form class="form-horizontal" action="ProsesTambahPengumuman" method="POST"  enctype="multipart/form-data">
                           <div class="form-group">
                               <label for="exampleInputEmail1">Pengumuman<span style="color:red;">*</span></label>
                               <textarea name="pengumuman" class="form-control" style="width:100%;height:150px;"></textarea>
@@ -85,7 +85,7 @@
                               </button>
                             </div>
                             <div class="modal-body">
-                              <form class="form-horizontal" action="TambahEditPengumuman" method="POST"  enctype="multipart/form-data">
+                              <form class="form-horizontal" action="ProsesEditTambahPengumuman" method="POST"  enctype="multipart/form-data">
                               <div class="form-group">
                                   <label for="exampleInputEmail1">Pengumuman<span style="color:red;">*</span></label>
                                   <textarea name="pengumuman" class="form-control" style="width:100%;height:150px;"><?=$d['pengumuman']?></textarea>

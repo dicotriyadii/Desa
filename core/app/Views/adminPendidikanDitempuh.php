@@ -38,12 +38,12 @@
                   <tbody>
                     <?php
                       $no=0;
-                      foreach($dataPendidikanDitempuh as $dpd){
+                      for($i=1;$i<19;$i++){
                     ?>
                   <tr>
                     <td><?= $no; ?></td>
-                    <td><?= $dpd['jenisPendidikan']?></td>
-                    <td><?= $dpd['jumlah']?></td>
+                    <td><?= $rekapitulasiDataPendidikan[$i]['jenisPendidikan']?></td>
+                    <td><?= $rekapitulasiDataPendidikan[$i]['jumlah']?></td>
                   </tr>
                   <?php
                   }

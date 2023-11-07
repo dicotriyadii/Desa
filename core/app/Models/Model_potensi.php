@@ -8,12 +8,5 @@ class Model_potensi extends Model
     protected $table                = 'tbl_potensi';
     protected $primaryKey           = 'idPotensi';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['jenisPotensi','namaPotensi','alamatPotensi','helpdesk','gambar'];
-    
-    
-    public function getPotensi()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','jenisPotensi','namaPotensi','alamatPotensi','helpdesk','gambar'];
 }

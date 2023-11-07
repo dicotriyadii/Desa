@@ -76,22 +76,10 @@
                     <td style="padding:5px; width:50%; font-size:13px;" align="left"><?=$d['bpjs']?></td>
                   </tr>
                   <tr>
-                    <td style="padding:5px; width:45%; font-weight:bold;">Desa</td>
-                    <td style="padding:5px; width:5%;" align="center">:</td>
-                    <td style="padding:5px; width:50%; font-size:13px;" align="left"><?=$d['desa']?></td>
-                  </tr>
-
-                  <tr>
                     <td style="padding:5px; width:45%; font-weight:bold;">RT</td>
                     <td style="padding:5px; width:5%;" align="center">:</td>
                     <td style="padding:5px; width:50%; font-size:13px;" align="left"><?=$d['RT']?></td>
                   </tr>
-                  <tr>
-                    <td style="padding:5px; width:45%; font-weight:bold;">Kecamatan</td>
-                    <td style="padding:5px; width:5%;" align="center">:</td>
-                    <td style="padding:5px; width:50%; font-size:13px;" align="left"><?=$d['kecamatan']?></td>
-                  </tr>
-                 <tr>
                     <td style="padding:5px; width:45%; padding-top: 20px;">
                       <a href="<?=base_url()?>/resetPassword/<?=$d['nomorIndukKependudukan']?>?>" style="background-color:red;padding:8px 10px;border-radius:10px;color:white;">Reset Password</a>
                     </td>
@@ -143,11 +131,6 @@
                     <td style="padding:5px; width:45%; font-weight:bold;">Penghasilan Per Bulan</td>
                     <td style="padding:5px; width:5%;" align="center">:</td>
                     <td style="padding:5px; width:50%; font-size:13px;" align="left"><?=rupiah($d['penghasilan'])?></td>
-                  </tr>
-                  <tr>
-                    <td style="padding:5px; width:45%; font-weight:bold;">Dusun</td>
-                    <td style="padding:5px; width:5%;" align="center">:</td>
-                    <td style="padding:5px; width:50%; font-size:13px;" align="left"><?=$d['dusun']?></td>
                   </tr>
                   <tr>
                     <td style="padding:5px; width:45%; font-weight:bold;">RW</td>

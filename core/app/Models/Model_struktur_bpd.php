@@ -8,12 +8,5 @@ class Model_struktur_bpd extends Model
     protected $table                = 'tbl_struktur_bpd';
     protected $primaryKey           = 'idAnggotaBpd';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['namaAnggota','jabatan','keterangan','gambar'];
-    
-    
-    public function getStrukturBPD()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['nik','jabatan','gambar'];
 }

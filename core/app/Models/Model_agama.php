@@ -9,11 +9,4 @@ class Model_agama extends Model
     protected $primaryKey           = 'idAgama';
     protected $useAutoIncrement     = true;
     protected $allowedFields        = ['jenisAgama','jumlah'];
-    
-    
-    public function getAgama()
-    {
-        return $this->findAll();
-    }
- 
 }

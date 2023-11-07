@@ -8,12 +8,5 @@ class Model_log extends Model
     protected $table                = 'tbl_log';
     protected $primaryKey           = 'idLog';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['nama','waktu','keterangan','hakAkses'];
-    
-    
-    public function getLog()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','nama','waktu','keterangan'];
 }

@@ -8,12 +8,5 @@ class Model_visiMisi extends Model
     protected $table                = 'tbl_visimisi';
     protected $primaryKey           = 'idVisiMisi';
     protected $useAutoIncrement     = true;
-    protected $allowedFields        = ['visi','misi','keterangan'];
-    
-    
-    public function getVisiMisi()
-    {
-        return $this->findAll();
-    }
- 
+    protected $allowedFields        = ['kodeKecamatan','kodeDesa','visi','misi','keterangan','gambar'];
 }

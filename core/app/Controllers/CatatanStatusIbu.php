@@ -80,7 +80,7 @@ class CatatanStatusIbu extends BaseController
 
             $kode_nik = session()->get('nik');
             $nama_dusun = $this->warga->where('nomorIndukKependudukan', $kode_nik)->get()->getRowArray();
-            $dusun = $nama_dusun['dusun'];
+            $dusun = $nama_dusun['kodeDusun'];
 
             $data = [
                 'title' => 'Form Tambah Dasa Wisma',
@@ -196,22 +196,15 @@ class CatatanStatusIbu extends BaseController
 
                     $kode_token = $get_token['token'];
                     // $kode_token = '494';
-                    $nama_kecamatan = $get_token['kecamatan'];
-                    $nama_desa = $get_token['desa'];
-
-                    $get_kd_kecamatan = $this->data_kecamatan->where('namaKecamatan', $nama_kecamatan)->first();
-                    $kecamatan = $get_kd_kecamatan['kodeKecamatan'];
-
-                    $get_kd_desa = $this->data_desa->where('namaDesa', $nama_desa)->first();
-                    $desa = $get_kd_desa['kodeDesa'];
+                    $kecamatan = $get_token['kodeKecamatan'];
+                    $desa = $get_token['kodeDesa'];
 
                     $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
                     $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
 
                     $nik_ibu = $this->request->getVar('nik_ibu');
 
-
-                    $get_nama = $this->warga->where('nomorIndukKependudukan', $nik_ibu)->first();
+                    $get_nama = $this->warga->where('nomorIndukKependudukan', $nik_ibu)->get()->getRowArray();
                     $nama_ibu = $get_nama['namaWarga'];
 
                     $tgl = $this->request->getVar('tgl');
@@ -354,20 +347,14 @@ class CatatanStatusIbu extends BaseController
 
                     $kode_token = $get_token['token'];
                     // $kode_token = '494';
-                    $nama_kecamatan = $get_token['kecamatan'];
-                    $nama_desa = $get_token['desa'];
-
-                    $get_kd_kecamatan = $this->data_kecamatan->where('namaKecamatan', $nama_kecamatan)->first();
-                    $kecamatan = $get_kd_kecamatan['kodeKecamatan'];
-
-                    $get_kd_desa = $this->data_desa->where('namaDesa', $nama_desa)->first();
-                    $desa = $get_kd_desa['kodeDesa'];
+                    $kecamatan = $get_token['kodeKecamatan'];
+                    $desa = $get_token['kodeDesa'];
 
                     $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
                     $dasa_wisma = $kode_dasa_wisma['idDasawisma'];
 
                     $nik_ibu = $this->request->getVar('nik_ibu');
-                    $get_nama = $this->warga->where('nomorIndukKependudukan', $nik_ibu)->first();
+                    $get_nama = $this->warga->where('nomorIndukKependudukan', $nik_ibu)->get()->getRowArray();
                     $nama_ibu = $get_nama['namaWarga'];
 
                     $tgl = $this->request->getVar('tgl');

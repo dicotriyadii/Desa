@@ -219,9 +219,6 @@
 			<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>
 				<font color="#000000">NO</font>
 			</td>
-			<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="justify" valign=middle>
-				<font color="#000000">NOMOR REGISTRASI TP PKK</font>
-			</td>
 			<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>
 				<font color="#000000">NAMA</font>
 			</td>
@@ -300,9 +297,7 @@
 			<td style="border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="12" sdnum="1033;">
 				<font color="#000000">12</font>
 			</td>
-			<td style="border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="center" valign=middle sdval="13" sdnum="1033;">
-				<font color="#000000">13</font>
-			</td>
+
 		</tr>
 		<?php $i = 1; ?>
 		<?php foreach ($list as $l) : ?>
@@ -310,9 +305,7 @@
 				<td style="border-bottom: 2px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom>
 					<font color="#000000"><?= $i++ ?><br></font>
 				</td>
-				<td style="border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
-					<font color="#000000"><?= $l['idAnggotaPKK'] ?><br></font>
-				</td>
+	
 				<td style="border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom>
 					<font color="#000000"><?= $l['namaWarga'] ?><br></font>
 				</td>

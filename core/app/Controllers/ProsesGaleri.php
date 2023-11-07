@@ -11,37 +11,80 @@ class ProsesGaleri extends ResourceController
 
     public function create()
     {
+        // inisialisasi variable
         $session             = session();
         $galeri              = new Model_galeri_foto();
-        $log                 = new Model_log();        
-        $file                = $this->request->getFile('file');
-        $acak                = rand(10,500);
-        $namaGaleri          = "galeri_".$acak.".jpg";
-        $cekGambarGaleri     = $galeri->where('gambar',$namaGaleri)->findAll();
+        $log                 = new Model_log();       
+        $kodeKecamatanLog    = $session->get('kodeKecamatan');
+        $kodeDesaLog         = $session->get('kodeDesa');
+        $usernameLog         = $session->get('nama');   
+        $jenisGaleri         = $this->request->getPost('jenis');
+        $judulGaleri         = $this->request->getPost('judul');
+        $linkEmbed           = $this->request->getPost('video'); 
+        $gambar              = $this->request->getFile('gambar');
+        // validasi file
+        $validationRule = [
+            'gambar' => [
+                'label' => 'Image File',
+                'rules' => [
+                    'uploaded[gambar]',
+                    'is_image[gambar]',
+                    'mime_in[gambar,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
+                    'max_size[gambar,5120]',
+                ],
+            ],
+        ];
+        if (! $this->validate($validationRule)) {
+            $ses_data = [
+                'statusTambah'  => "Gagal",
+                'keterangan'    => "Mohon maaf, untuk upload gambar, maximal size gambar 5 mb dengan tipe data jpg/jpeg"
+            ];
+            $session->set($ses_data);
+            return redirect()->to(base_url().'/adminGaleri');    
+        }
+        // proses
+        $cekGambarGaleri     = $galeri->where('judul',$judulGaleri)->findAll();
         if($cekGambarGaleri != null){
             $ses_data = [
                 'statusTambah'  => "Gagal",
-                'keterangan'    => "Gambar / Berkas sudah disimpan"
+                'keterangan'    => "Galeri sudah tersimpan"
             ];
             $session->set($ses_data);
-            return redirect()->to(base_url().'/formGaleri');    
+            return redirect()->to(base_url().'/adminGaleri');    
         }
-        $file->move('galeri/', $namaGaleri);
-        $data = [
-            'namaGambar'    => $this->request->getPost('judulGambar'),
-            'gambar'        => $namaGaleri,
-            'keterangan'    => $this->request->getPost('keterangan'),
-            'posted'        => $session->get('nama'),
-            'tanggalArtikel'=> date('Y-m-d'),
-            'status'        => 'Belum Validasi'
-        ];
-        $galeri->insert($data);
+        if(!$gambar ->isValid()){
+            // Proses Galeri Video
+            $data = [
+                'kodeKecamatan' => $kodeKecamatanLog,
+                'kodeDesa'      => $kodeDesaLog,
+                'judul'         => $judulGaleri,
+                'jenis'         => $jenisGaleri,
+                'status'        => 'Belum Validasi',
+                'link'          => $linkEmbed,
+            ];
+            $galeri->insert($data);
+        }else{
+            // Proses galeri foto
+            $acak       = rand(10,500);
+            $namaFoto   = "galeri_".$acak.".jpg";
+            $gambar->move('galeri/', $namaFoto);
+            $data = [
+                'kodeKecamatan' => $kodeKecamatanLog,
+                'kodeDesa'      => $kodeDesaLog,
+                'judul'         => $judulGaleri,
+                'jenis'         => $jenisGaleri,
+                'status'        => 'Belum Validasi',         
+                'link'          => $namaFoto
+            ];
+            $galeri->insert($data);
+        }
         //Log
         $dataLog = [
-            'nama'          => $session->get('nama'),
+            'kodeKecamatan' => $kodeKecamatanLog,
+            'kodeDesa'      => $kodeDesaLog,
+            'nama'          => $usernameLog,
             'waktu'         => date('Y-m-d H:i:s'),
-            'keterangan'    => 'menambah galeri '. $this->request->getPost('judulGambar'),
-            'hakAkses'      => $session->get('hakAkses'),
+            'keterangan'    => 'menambah galeri '.$judulGaleri,
         ];
         $log->insert($dataLog);
         $ses_data = [
@@ -49,7 +92,7 @@ class ProsesGaleri extends ResourceController
             'keterangan'    => "Gambar berhasil di tambah"
         ];
         $session->set($ses_data);
-        return redirect()->to(base_url().'/formGaleri');
+        return redirect()->to(base_url().'/adminGaleri');
     }
 
     public function hapusGaleri($id=null)
@@ -57,25 +100,28 @@ class ProsesGaleri extends ResourceController
         $session                = session();
         $Galeri                 = new Model_galeri_foto();
         $log                    = new Model_log();
+        $kodeKecamatanLog       = $session->get('kodeKecamatan');
+        $kodeDesaLog            = $session->get('kodeDesa');
+        $usernameLog            = $session->get('nama');   
         $data                   = $Galeri->where('idGaleri',$id)->findAll();  
         $hapus                  = $Galeri->delete($id);
-        if($data[0]['gambar'] != "video"){
-            unlink('galeri/'.$data[0]['gambar']);    
+        if($data[0]['jenis'] != "video"){
+            unlink('galeri/'.$data[0]['link']);    
         }
         $dataLog = [
-            'nama'          => $session->get('nama'),
+            'kodeKecamatan' => $kodeKecamatanLog,
+            'kodeDesa'      => $kodeDesaLog,
+            'nama'          => $usernameLog,
             'waktu'         => date('Y-m-d H:i:s'),
-            'keterangan'    => 'Penghapusan data Galeri '.$data[0]['namaGambar'],
-            'hakAkses'      => $session->get('hakAkses'),
+            'keterangan'    => 'Penghapusan data Galeri '.$data[0]['judul'],
         ];
         $log->insert($dataLog);
-
         $ses_data = [
             'statusTambah' => "Berhasil",
             'keterangan'=> "Gambar berhasil di hapus"
         ];
         $session->set($ses_data);
-        return redirect()->to(base_url().'/adminGaleriFoto');
+        return redirect()->to(base_url().'/adminGaleri');
     }
 
     public function belumValidasi($id=null)
@@ -91,7 +137,7 @@ class ProsesGaleri extends ResourceController
         $dataLog = [
             'nama'          => $session->get('nama'),
             'waktu'         => date('Y-m-d H:i:s'),
-            'keterangan'    => 'Perubahan Status Galeri '.$data[0]['namaGambar'],
+            'keterangan'    => 'Perubahan Status Galeri '.$data[0]['judul'],
             'hakAkses'      => $session->get('hakAkses'),
         ];
         $log->insert($dataLog);
@@ -100,7 +146,7 @@ class ProsesGaleri extends ResourceController
             'keterangan'=> "Status Galeri berhasil di rubah"
         ];
         $session->set($ses_data);
-        return redirect()->to(base_url().'/adminGaleriFoto');
+        return redirect()->to(base_url().'/adminGaleri');
     }
     public function sudahValidasi($id=null)
     {
@@ -115,7 +161,7 @@ class ProsesGaleri extends ResourceController
         $dataLog = [
             'nama'          => $session->get('nama'),
             'waktu'         => date('Y-m-d H:i:s'),
-            'keterangan'    => 'Perubahan Status Galeri '.$data[0]['namaGambar'],
+            'keterangan'    => 'Perubahan Status Galeri '.$data[0]['judul'],
             'hakAkses'      => $session->get('hakAkses'),
         ];
         $log->insert($dataLog);
@@ -124,7 +170,7 @@ class ProsesGaleri extends ResourceController
             'keterangan'=> "Status Galeri berhasil di rubah"
         ];
         $session->set($ses_data);
-        return redirect()->to(base_url().'/adminGaleriFoto');
+        return redirect()->to(base_url().'/adminGaleri');
     }
  
 }

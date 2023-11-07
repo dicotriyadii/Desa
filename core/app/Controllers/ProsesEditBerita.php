@@ -17,6 +17,7 @@ class ProsesEditBerita extends ResourceController
         $log                 = new Model_log();
         $idBerita            = $this->request->getPost('idBerita');
         $file                = $this->request->getFile('file');
+
         if(!$file ->isValid()){
              $data = [
                 'judulBerita'      => $this->request->getPost('judulBerita'),
@@ -27,6 +28,26 @@ class ProsesEditBerita extends ResourceController
             ];
             $berita->update($idBerita,$data);
         }else{
+            // validasi file
+            $validationRule = [
+                'file' => [
+                    'label' => 'Image File',
+                    'rules' => [
+                        'uploaded[file]',
+                        'is_image[file]',
+                        'mime_in[file,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
+                        'max_size[file,5120]',
+                    ],
+                ],
+            ];
+            if (! $this->validate($validationRule)) {
+                $ses_data = [
+                    'statusTambah'  => "Gagal",
+                    'keterangan'    => "Mohon maaf, untuk upload gambar, maximal size gambar 5 mb dengan tipe data jpg/jpeg"
+                ];
+                $session->set($ses_data);
+                return redirect()->to(base_url().'/adminBerita');    
+            }
             $acak                = rand(10,500);
             $namaBerita          = "berita_".$acak.".jpg";
             unlink('berita/'.$data[0]['gambarBerita']);   

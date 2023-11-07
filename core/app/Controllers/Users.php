@@ -6,6 +6,7 @@ use App\Models\DasaWisma_Model;
 use App\Models\Dusun_Model;
 use App\Models\User_Model;
 use App\Models\Warga_Model;
+use App\Models\Model_log;
 
 class Users extends BaseController
 {
@@ -14,6 +15,7 @@ class Users extends BaseController
     protected $warga;
     protected $dasa_wisma;
     protected $data_dusun;
+    protected $log;
 
     public function __construct()
     {
@@ -21,6 +23,7 @@ class Users extends BaseController
         $this->warga = new Warga_Model();
         $this->dasa_wisma = new DasaWisma_Model();
         $this->data_dusun = new Dusun_Model();
+        $this->log = new Model_log();
     }
 
     public function index()
@@ -30,6 +33,7 @@ class Users extends BaseController
         }
 
         $kode_nik = session()->get('nik');
+        // $dataWarga      = $this->warga->where('nomorIndukKependudukan', $kode_nik)->findAll();
         $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
         $nama_jabatan = $kode_dasa_wisma['jabatan'];
 
@@ -37,6 +41,16 @@ class Users extends BaseController
             'jabatan' => $nama_jabatan,
             'title' => 'Pengaturan Users - Dashboard Dasa Wisma',
         ];
+
+        // $dataLog_dasawisma = [
+        //     'kodeKecamatan' => $dataWarga[0]['kodeKecamatan'],
+        //     'kodeDesa'      => $dataWarga[0]['kodeDesa'],
+        //     'nama'          => $dataWarga[0]['namaWarga'],
+        //     'waktu'         => date('Y-m-d H:i:s'),
+        //     'keterangan'    => 'User Pindah Ke Menu User Dasa Wisma',
+        // ];
+        // $this->log->insert($dataLog_dasawisma);
+
         return view('auth/user/index', $data);
     }
 
@@ -46,7 +60,9 @@ class Users extends BaseController
 
             $kode_nik = session()->get('nik');
             $nama_dusun = $this->warga->where('nomorIndukKependudukan', $kode_nik)->get()->getRowArray();
-            $dusun = $nama_dusun['dusun'];
+            $dusun = $nama_dusun['kodeDusun'];
+            $desa = $nama_dusun['kodeDesa'];
+            $kecamatan = $nama_dusun['kodeKecamatan'];
 
             $kode_dasa_wisma = $this->user->where('nik', $kode_nik)->get()->getRowArray();
 
@@ -55,7 +71,7 @@ class Users extends BaseController
             $data = [
                 'jabatan' => $nama_jabatan,
                 'dusun' => $dusun,
-                'list' => $this->user->list()
+                'list' => $this->user->list($desa,$kecamatan)
             ];
 
             $msg = [
@@ -73,17 +89,20 @@ class Users extends BaseController
 
             $kode_nik = session()->get('nik');
             $nama_dusun = $this->warga->where('nomorIndukKependudukan', $kode_nik)->get()->getRowArray();
-            $dusun = $nama_dusun['dusun'];
+            $id_dusun = $nama_dusun['kodeDusun'];
+            $id_kecamatan = $nama_dusun['kodeKecamatan'];
+            $id_desa = $nama_dusun['kodeDesa'];
 
-            $get_kd_dusun = $this->data_dusun->where('namaDusun', $dusun)->first();
-            $kd_dusun = $get_kd_dusun['idDusun'];
+
+            $get_kd_dusun = $this->data_dusun->where('idDusun', $id_dusun)->first();
+            $nama_dusun = $get_kd_dusun['namaDusun'];
 
             $data = [
                 'title' => 'Form Tambah Users',
-                'nik' => $this->warga->get()->getResultArray(),
+                'nik' => $this->warga->where('kodeDusun', $id_dusun)->where('kodeKecamatan', $id_kecamatan)->where('kodeDesa', $id_desa)->get()->getResultArray(),
                 'dasa_wisma' => $this->dasa_wisma->get()->getResultArray(),
-                'dusun' => $dusun,
-                'kd_dusun' => $kd_dusun
+                'dusun' => $nama_dusun,
+                'kd_dusun' => $id_dusun
             ];
 
             $msg = [
@@ -150,9 +169,15 @@ class Users extends BaseController
 
                 $kode_nik = session()->get('nik');
                 $get_token = $this->warga->where('nomorIndukKependudukan', $kode_nik)->first();
+                $dataWarga      = $this->warga->where('nomorIndukKependudukan', $kode_nik)->findAll();
 
-                $kode_token = $get_token['token'];
+                // $kode_token = $get_token['token'];
+                $kodeKecamatan = $get_token['kodeKecamatan'];
+                $kode_desa = $get_token['kodeDesa'];
                 // $kode_token = '494';
+                // var_dump($kodeKecamatan);
+                // var_dump($kode_desa);
+                // dd($get_token);
 
                 $nik = $this->request->getVar('nik');
                 $jabatan = $this->request->getVar('jabatan');
@@ -165,6 +190,8 @@ class Users extends BaseController
                 ];
 
                 $data_anggota = [
+                    'kodeKecamatan' => $kodeKecamatan,
+                    'kodeDesa' => $kode_desa,
                     'nik' => $nik,
                     'jabatan' => $jabatan,
                     'idDasawisma' => $dasa_wisma_id
@@ -172,6 +199,15 @@ class Users extends BaseController
 
                 $get_id_warga = $this->warga->where('nomorIndukKependudukan', $nik)->first();
                 $id_warga = $get_id_warga['idWarga'];
+
+                $dataLog_dasawisma = [
+                    'kodeKecamatan' => $dataWarga[0]['kodeKecamatan'],
+                    'kodeDesa'      => $dataWarga[0]['kodeDesa'],
+                    'nama'          => $dataWarga[0]['namaWarga'],
+                    'waktu'         => date('Y-m-d H:i:s'),
+                    'keterangan'    => 'User Melakukan Tambah User Baru',
+                ];
+                $this->log->insert($dataLog_dasawisma);
 
 
                 // $this->user->post_anggota_pkk($kode_nik, $kode_token, $nik, $jabatan);
@@ -200,6 +236,16 @@ class Users extends BaseController
 
                 $this->user->delete($id[$i]);
             }
+            $kode_nik = session()->get('nik');
+            $dataWarga      = $this->warga->where('nomorIndukKependudukan', $kode_nik)->findAll();
+            $dataLog_dasawisma = [
+                'kodeKecamatan' => $dataWarga[0]['kodeKecamatan'],
+                'kodeDesa'      => $dataWarga[0]['kodeDesa'],
+                'nama'          => $dataWarga[0]['namaWarga'],
+                'waktu'         => date('Y-m-d H:i:s'),
+                'keterangan'    => 'User menghapus Data Semua Anggota/admin',
+            ];
+            $this->log->insert($dataLog_dasawisma);
 
             $msg = [
                 'sukses' => "$jmldata User Berhasil Dihapus"
@@ -218,6 +264,17 @@ class Users extends BaseController
 
             $this->user->delete($id);
 
+            $kode_nik = session()->get('nik');
+            $dataWarga      = $this->warga->where('nomorIndukKependudukan', $kode_nik)->findAll();
+            $dataLog_dasawisma = [
+                'kodeKecamatan' => $dataWarga[0]['kodeKecamatan'],
+                'kodeDesa'      => $dataWarga[0]['kodeDesa'],
+                'nama'          => $dataWarga[0]['namaWarga'],
+                'waktu'         => date('Y-m-d H:i:s'),
+                'keterangan'    => 'User menghapus Data Anggota/admin',
+            ];
+            $this->log->insert($dataLog_dasawisma);
+
             $msg = [
                 'sukses' => 'Data Berhasil Dihapus'
             ];
@@ -232,10 +289,10 @@ class Users extends BaseController
 
             $kode_nik = session()->get('nik');
             $nama_dusun = $this->warga->where('nomorIndukKependudukan', $kode_nik)->get()->getRowArray();
-            $dusun = $nama_dusun['dusun'];
+            $dusun = $nama_dusun['kodeDusun'];
 
-            $get_kd_dusun = $this->data_dusun->where('namaDusun', $dusun)->first();
-            $kd_dusun = $get_kd_dusun['idDusun'];
+            $get_kd_dusun = $this->data_dusun->where('idDusun', $dusun)->first();
+            $nama_dusun = $get_kd_dusun['namaDusun'];
 
             $id = $this->request->getVar('idUserDasawisma');
 
@@ -244,8 +301,8 @@ class Users extends BaseController
                 'title' => 'Form Edit Users',
                 'nik' => $this->warga->get()->getResultArray(),
                 'dasa_wisma' => $this->dasa_wisma->get()->getResultArray(),
-                'dusun' => $dusun,
-                'kd_dusun' => $kd_dusun
+                'dusun' => $nama_dusun,
+                'kd_dusun' => $dusun
             ];
 
             $msg = [
@@ -321,6 +378,7 @@ class Users extends BaseController
 
                 $kode_nik = session()->get('nik');
                 $get_token = $this->warga->where('nomorIndukKependudukan', $kode_nik)->first();
+                $dataWarga      = $this->warga->where('nomorIndukKependudukan', $kode_nik)->findAll();
 
                 $kode_token = $get_token['token'];
                 // $kode_token = '494';
@@ -340,7 +398,7 @@ class Users extends BaseController
                 $data_anggota = [
                     'nik' => $nik,
                     'jabatan' => $jabatan,
-                    'dasa_wisma_id' => $dasa_wisma_id,
+                    'idDasawisma' => $dasa_wisma_id,
                     'gambar' => 'PKK__430.jpg'
                 ];
 
@@ -352,6 +410,14 @@ class Users extends BaseController
                 $this->user->update($idUserDasawisma, $data_anggota);
 
                 $this->warga->update($id_warga, $data_password);
+                $dataLog_dasawisma = [
+                    'kodeKecamatan' => $dataWarga[0]['kodeKecamatan'],
+                    'kodeDesa'      => $dataWarga[0]['kodeDesa'],
+                    'nama'          => $dataWarga[0]['namaWarga'],
+                    'waktu'         => date('Y-m-d H:i:s'),
+                    'keterangan'    => 'User mengedit Data Anggota/admin',
+                ];
+                $this->log->insert($dataLog_dasawisma);
 
 
                 $msg = [

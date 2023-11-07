@@ -38,13 +38,12 @@
                   <tbody>
                     <?php
                     $no=0;
-                    foreach($dataAgama as $da){
-                    $no++;
+                    for($i=1;$i<7;$i++){
                     ?>
                   <tr>
-                    <td><?=$no;?></td>
-                    <td><?=$da['jenisAgama']?></td>
-                    <td><?=$da['jumlah']?></td>
+                    <td><?=$i;?></td>
+                    <td><?=$rekapitulasidataAgama[$i]['jenisAgama']?></td>
+                    <td><?=$rekapitulasidataAgama[$i]['jumlah']?></td>
                   </tr>
                   <?php
                   }

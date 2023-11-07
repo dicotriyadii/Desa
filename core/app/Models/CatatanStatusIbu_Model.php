@@ -8,7 +8,7 @@ class CatatanStatusIbu_Model extends Model
 {
     protected $table      = 'tb_catatan_status_ibu';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['kode_kecamatan', 'kode_desa', 'kode_dasa_wisma', 'nik_ibu', 'nama ibu', 'nama_suami', 'sumber_air', 'status', 'tgl'];
+    protected $allowedFields = ['kode_kecamatan', 'kode_desa', 'kode_dasa_wisma', 'nik_ibu', 'nama ibu', 'nama_suami', 'status', 'tgl'];
 
     protected $curl;
 
@@ -80,7 +80,7 @@ class CatatanStatusIbu_Model extends Model
             ->get()->getResultArray();
     }
 
-    public function list_catatan_status_ibu_tingkat_dusun($dusun, $tgl_mulai, $tgl_akhir)
+    public function list_catatan_status_ibu_tingkat_dusun($kode_dusun, $tgl_mulai, $tgl_akhir)
     {
         return $this->table('tb_catatan_status_ibu')
             ->select("*,count(tbl_warga.rt) as jumlah_rt,count(tb_dasa_wisma.kode_dusun) as jumlah_dasa_wisma,count(if(tb_catatan_kelahiran.catatan_status_ibu ='HAMIL',1,null)) as jumlah_hamil,count(if(tb_catatan_kelahiran.catatan_status_ibu ='MELAHIRKAN',1,null)) as jumlah_melahirkan,count(if(tb_catatan_kelahiran.catatan_status_ibu ='NIFAS',1,null)) as jumlah_nifas,count(if(tb_catatan_kematian.catatan_status_ibu_meninggal ='MENINGGAL',1,null)) as jumlah_meninggal,count(if(tb_catatan_kelahiran.jenis_kelamin ='laki-laki',1,null)) as jumlah_bayi_laki_laki,count(if(tb_catatan_kelahiran.jenis_kelamin ='perempuan',1,null)) as jumlah_bayi_perempuan,count(tb_catatan_kelahiran.akte) as jumlah_akte,count(if(tb_catatan_kelahiran.akte ='tidak ada',1,null)) as jumlah_akte_tidak_ada,count(if(tb_catatan_kematian.jenis_kelamin_meninggal ='laki-laki',1,null)) as jumlah_bayi_meninggal_laki_laki,count(if(tb_catatan_kematian.jenis_kelamin_meninggal ='perempuan',1,null)) as jumlah_bayi_meninggal_perempuan")
@@ -91,8 +91,8 @@ class CatatanStatusIbu_Model extends Model
             ->join('tb_catatan_kelahiran', 'tb_catatan_kelahiran.catatan_status_ibu_id= tb_catatan_status_ibu.id', 'left')
             ->join('tb_catatan_kematian', 'tb_catatan_kematian.catatan_status_ibu_id= tb_catatan_status_ibu.id', 'left')
             ->where("tb_catatan_status_ibu.tgl BETWEEN '$tgl_mulai' AND '$tgl_akhir'")
-            ->where('tbl_warga.dusun', $dusun)
-            ->groupBy('tbl_warga.dusun')
+            ->where('tbl_warga.kodeDusun', $kode_dusun)
+            ->groupBy('tbl_warga.kodeDusun')
             ->get()->getResultArray();
     }
 
@@ -106,9 +106,10 @@ class CatatanStatusIbu_Model extends Model
             ->join('tbl_warga', 'tbl_warga.nomorIndukKependudukan = tb_catatan_status_ibu.nik_ibu', 'left')
             ->join('tb_catatan_kelahiran', 'tb_catatan_kelahiran.catatan_status_ibu_id= tb_catatan_status_ibu.id', 'left')
             ->join('tb_catatan_kematian', 'tb_catatan_kematian.catatan_status_ibu_id= tb_catatan_status_ibu.id', 'left')
+            ->join('tbl_dusun','tbl_warga.kodeDusun = tbl_dusun.idDusun')
             ->where("tb_catatan_status_ibu.tgl BETWEEN '$tgl_mulai' AND '$tgl_akhir'")
             ->orderBy('tb_catatan_status_ibu.id', 'DESC')
-            ->groupBy('tbl_warga.dusun')
+            ->groupBy('tbl_warga.kodeDusun')
             ->get()->getResultArray();
     }
 
